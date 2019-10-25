@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mbank-web:war">
+    <output-path>$PROJECT_DIR$/mbank-web/target</output-path>
+    <root id="archive" name="mbank-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="mbank-web:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dbank-base" />
+        <module name="dbank-core" />
+        <module name="dbank-dao" />
+        <module name="dbank-generator" />
+        <module name="dbank-manager" />
+        <module name="dbank-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dbank-base" target="1.8" />
+      <module name="dbank-core" target="1.8" />
+      <module name="dbank-dao" target="1.8" />
+      <module name="dbank-generator" target="1.5" />
+      <module name="dbank-manager" target="1.8" />
+      <module name="dbank-parent" target="1.8" />
+      <module name="dbank-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

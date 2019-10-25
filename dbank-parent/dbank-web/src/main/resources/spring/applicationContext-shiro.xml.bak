@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <description>Shiro与Spring整合</description>
+    <!-- filter-name这个名字的值来自于web.xml中filter的名字 -->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <!--登录页面 如果没有登录 访问项目的方法或页面 直接跳转到这个页面  -->
+        <property name="loginUrl" value="/login.jsp"></property>
+        <!--登录后 在访问没有经过授权的方法或页面时 直接跳转到这个页面  -->
+        <property name="unauthorizedUrl" value="/unauthorized.jsp"></property>
+
+        <!--过滤器链-->
+        <property name="filterChainDefinitions">
+            <!--代表下面的多级目录也过滤 -->
+            <value>
+                <!--不需要登录即可以访问的内容-->
+                /login.jsp = anon
+                /css/** = anon
+                /img/** = anon
+                /plugins/** = anon
+                /make/** = anon
+                /login.do = anon
+
+                <!--需要有指定权限（注解指定）才可以访问的内容-->
+                /company/list.do = perms["企业管理"]
+                <!--/system/dept/list.do = perms["部门管理"]
+                /system/module/list.do = perms["模块管理"]
+                /system/role/list.do = perms["角色管理"]
+                /system/log/list.do = perms["日志管理"]
+                /system/user/list.do = perms["用户管理"]-->
+
+                <!--需要登录后访问的内容（必须放在最后面）-->
+                /** = authc
+            </value>
+        </property>
+    </bean>
+
+    <!--注入权限验证类-->
+    <bean id="saasRealm" class="cn.itcast.realm.SaasRealm"/>
+
+    <!--优化：使用缓存，缓存中存储的是授权方法需要查询的数据（使用缓存则只需要查询一次数据库，减少授权方法与数据库的交互次数）-->
+    <bean id="cacheManager" class="org.apache.shiro.cache.MemoryConstrainedCacheManager"/>
+
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="saasRealm"/>
+        <!-- 引用自定义的realm -->
+        <property name="cacheManager" ref="cacheManager"/>
+    </bean>
+
+    <!-- 安全管理器 -->
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"/>
+    </bean>
+
+    <!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
+    <!-- 生成代理，通过代理进行控制 -->
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+          depends-on="lifecycleBeanPostProcessor">
+        <property name="proxyTargetClass" value="true"/>
+    </bean>
+
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+</beans>

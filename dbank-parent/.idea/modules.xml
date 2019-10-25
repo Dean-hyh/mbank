@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dbank-base/dbank-base.iml" filepath="$PROJECT_DIR$/dbank-base/dbank-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbank-core/dbank-core.iml" filepath="$PROJECT_DIR$/dbank-core/dbank-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbank-dao/dbank-dao.iml" filepath="$PROJECT_DIR$/dbank-dao/dbank-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dbank-generator/dbank-generator.iml" filepath="$PROJECT_DIR$/../dbank-generator/dbank-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbank-manager/dbank-manager.iml" filepath="$PROJECT_DIR$/dbank-manager/dbank-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbank-parent.iml" filepath="$PROJECT_DIR$/dbank-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbank-web/dbank-web.iml" filepath="$PROJECT_DIR$/dbank-web/dbank-web.iml" />
+    </modules>
+  </component>
+</project>

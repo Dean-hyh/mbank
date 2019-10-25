@@ -1,0 +1,10 @@
+#Ð´¿â
+master.driver=com.mysql.jdbc.Driver
+master.url=jdbc:mysql://localhost:3306/saas
+master.username=root
+master.password=hz13554
+#¶Á¿â
+slave.driver=com.mysql.jdbc.Driver
+slave.url=jdbc:mysql://localhost:3306/saas
+slave.username=root
+slave.password=hz13554

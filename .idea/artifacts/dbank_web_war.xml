@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dbank-web:war">
+    <output-path>$PROJECT_DIR$/dbank-parent/dbank-web/target</output-path>
+    <root id="archive" name="dbank-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="dbank-web:war exploded" />
+    </root>
+  </artifact>
+</component>
