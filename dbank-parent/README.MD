@@ -1,0 +1,5 @@
+测试Demo用于测试SSM框架下动态切换数据源的实际效果
+设计原理：使用AOP思想，
+1.在切面类DataSourceAspect中通过前置通知获取持久层方法上通过@Datasource注解标注的数据源信息
+2.将数据源信息通过DataSourceContextHolder中的set方法存入线程局部变量ThreadLocal中
+3.通过AbstractRoutingDataSource的子类DynamicDataSource从ThreadLocal中获取数据源信息，执行持久层代码将数据写入至对应的数据库或从对应数据库中读取数据
