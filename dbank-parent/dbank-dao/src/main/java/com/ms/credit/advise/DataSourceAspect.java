@@ -16,7 +16,7 @@ import java.lang.reflect.Method;
 @Component
 public class DataSourceAspect {
     /**
-     * 拦截目标方法，获取由@DataSource指定的数据源标识，设置到线程存储中以便切换数据源
+     * 拦截目标方法，获取由@DataSource指定的数据源标识，设置到线程局部表变量中以便切换数据源
      *
      * @param point
      * @throws Exception

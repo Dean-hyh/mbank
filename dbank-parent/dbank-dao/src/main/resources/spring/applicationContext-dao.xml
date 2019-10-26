@@ -27,26 +27,6 @@
     <!--数据源-->
     <!--引入数据库配置文件-->
     <context:property-placeholder location="classpath:ojdbc.properties"/>
-    <!--Oracle数据库-->
-    <!--<bean id="oracleDataSource"
-          class="com.alibaba.druid.pool.DruidDataSource">
-        <property name="driverClassName" value="${ojdbc.driver}"/>
-        <property name="url" value="${ojdbc.url}"/>
-        <property name="username" value="${ojdbc.username}"/>
-        <property name="password" value="${ojdbc.password}"/>
-        &lt;!&ndash; 初始化连接大小 &ndash;&gt;
-        <property name="initialSize" value="${ojdbc.initialSize}"/>
-        &lt;!&ndash; 连接池最大数量 &ndash;&gt;
-        <property name="maxActive" value="${ojdbc.maxActive}"/>
-        &lt;!&ndash; 连接池最大空闲 &ndash;&gt;
-        <property name="maxIdle" value="${ojdbc.maxIdle}"/>
-        &lt;!&ndash; 连接池最小空闲 &ndash;&gt;
-        <property name="minIdle" value="${ojdbc.minIdle}"/>
-        &lt;!&ndash; 获取连接最大等待时间 &ndash;&gt;
-        <property name="maxWait" value="${ojdbc.maxWait}"/>
-    </bean>-->
-    <!--Oracle数据库-->
-
     <!--MySQL 读库-->
     <bean id="slavedataSource"
           class="com.alibaba.druid.pool.DruidDataSource">
@@ -115,22 +95,6 @@
         <!-- 这里可以指定默认的数据源 -->
         <property name="defaultTargetDataSource" ref="masterdataSource"/>
     </bean>
-
-    <!--动态数据源配置2-->
-    <!--<bean id="dataSource" class="com.msedit.utils.DynamicDataSource">
-        <property name="targetDataSources">
-            <map key-type="java.lang.String">
-                &lt;!&ndash; write &ndash;&gt;
-                <entry key="master" value-ref="masterdataSource"/>
-                &lt;!&ndash; read &ndash;&gt;
-                <entry key="slave" value-ref="slavedataSource"/>
-                &lt;!&ndash;oracle&ndash;&gt;
-                &lt;!&ndash;<entry key="oracle" value-ref="oracleDataSource"/>&ndash;&gt;
-            </map>
-        </property>
-        <property name="defaultTargetDataSource" ref="masterdataSource"/>
-    </bean>-->
-    <!--动态数据源配置2-->
 
     <!-- 配置SqlSessionFactoryBean -->
     <bean id="sqlSessionFactoryOracle" class="org.mybatis.spring.SqlSessionFactoryBean">

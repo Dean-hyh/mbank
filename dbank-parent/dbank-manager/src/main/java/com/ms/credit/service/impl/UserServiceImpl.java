@@ -29,7 +29,7 @@ import java.util.UUID;
  * @date 2019/9/20 17:02
  */
 @Service
-@Transactional
+//@Transactional
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
@@ -43,7 +43,7 @@ public class UserServiceImpl implements UserService {
     private static Log log = LogFactory.getLog(UserServiceImpl.class);
 
     @Override
-    @Transactional(propagation = Propagation.SUPPORTS)
+    //@Transactional(propagation = Propagation.SUPPORTS)
     public List<UserVO> queryUserList() {
         UserExample userExample = new UserExample();
         List<User> userList = userDao.selectByExample(userExample);
