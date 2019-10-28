@@ -11,15 +11,11 @@ public interface UserDao {
 
     int insertSelective(User record);
 
-    List<User> selectByExampleWithBLOBs(UserExample example);
-
     List<User> selectByExample(UserExample example);
 
     User selectByPrimaryKey(String userId);
 
     int updateByPrimaryKeySelective(User record);
-
-    int updateByPrimaryKeyWithBLOBs(User record);
 
     int updateByPrimaryKey(User record);
 }

@@ -26,7 +26,7 @@
 
     <!--数据源-->
     <!--引入数据库配置文件-->
-    <context:property-placeholder location="classpath:ojdbc.properties"/>
+    <context:property-placeholder location="classpath:jdbc.properties"/>
     <!--MySQL 读库-->
     <bean id="slavedataSource"
           class="com.alibaba.druid.pool.DruidDataSource">
@@ -92,7 +92,7 @@
                 <entry key="slave" value-ref="slavedataSource"/>
             </map>
         </property>
-        <!-- 这里可以指定默认的数据源 -->
+        <!-- 指定默认的数据源 -->
         <property name="defaultTargetDataSource" ref="masterdataSource"/>
     </bean>
 

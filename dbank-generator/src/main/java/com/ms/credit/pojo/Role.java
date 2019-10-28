@@ -6,15 +6,25 @@ import java.util.Date;
 public class Role implements Serializable {
     private String roleId;
 
-    private String roleName;
+    private String name;
 
-    private String description;
+    private String remark;
+
+    private Long orderNo;
+
+    private String createBy;
+
+    private String createDept;
 
     private Date createTime;
 
+    private String updateBy;
+
     private Date updateTime;
 
-    private String type;
+    private String companyId;
+
+    private String companyName;
 
     private static final long serialVersionUID = 1L;
 
@@ -26,20 +36,44 @@ public class Role implements Serializable {
         this.roleId = roleId == null ? null : roleId.trim();
     }
 
-    public String getRoleName() {
-        return roleName;
+    public String getName() {
+        return name;
     }
 
-    public void setRoleName(String roleName) {
-        this.roleName = roleName == null ? null : roleName.trim();
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
     }
 
-    public String getDescription() {
-        return description;
+    public String getRemark() {
+        return remark;
     }
 
-    public void setDescription(String description) {
-        this.description = description == null ? null : description.trim();
+    public void setRemark(String remark) {
+        this.remark = remark == null ? null : remark.trim();
+    }
+
+    public Long getOrderNo() {
+        return orderNo;
+    }
+
+    public void setOrderNo(Long orderNo) {
+        this.orderNo = orderNo;
+    }
+
+    public String getCreateBy() {
+        return createBy;
+    }
+
+    public void setCreateBy(String createBy) {
+        this.createBy = createBy == null ? null : createBy.trim();
+    }
+
+    public String getCreateDept() {
+        return createDept;
+    }
+
+    public void setCreateDept(String createDept) {
+        this.createDept = createDept == null ? null : createDept.trim();
     }
 
     public Date getCreateTime() {
@@ -50,6 +84,14 @@ public class Role implements Serializable {
         this.createTime = createTime;
     }
 
+    public String getUpdateBy() {
+        return updateBy;
+    }
+
+    public void setUpdateBy(String updateBy) {
+        this.updateBy = updateBy == null ? null : updateBy.trim();
+    }
+
     public Date getUpdateTime() {
         return updateTime;
     }
@@ -58,11 +100,19 @@ public class Role implements Serializable {
         this.updateTime = updateTime;
     }
 
-    public String getType() {
-        return type;
+    public String getCompanyId() {
+        return companyId;
     }
 
-    public void setType(String type) {
-        this.type = type == null ? null : type.trim();
+    public void setCompanyId(String companyId) {
+        this.companyId = companyId == null ? null : companyId.trim();
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName == null ? null : companyName.trim();
     }
 }

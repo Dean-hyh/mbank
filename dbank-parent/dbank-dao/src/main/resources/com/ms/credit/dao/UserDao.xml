@@ -2,24 +2,31 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ms.credit.dao.UserDao">
   <resultMap id="BaseResultMap" type="com.ms.credit.pojo.DO.User">
-    <id column="USER_ID" jdbcType="VARCHAR" property="userId" />
-    <result column="LOGIN_NAME" jdbcType="VARCHAR" property="loginName" />
-    <result column="PASSWORD" jdbcType="VARCHAR" property="password" />
-    <result column="USER_NAME" jdbcType="VARCHAR" property="userName" />
-    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
-    <result column="TELEPHONE" jdbcType="VARCHAR" property="telephone" />
-    <result column="MOBILE" jdbcType="VARCHAR" property="mobile" />
-    <result column="USER_ADDRESS" jdbcType="VARCHAR" property="userAddress" />
-    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
-    <result column="LOGIN_TIME" jdbcType="TIMESTAMP" property="loginTime" />
-    <result column="LOGOUT_TIME" jdbcType="TIMESTAMP" property="logoutTime" />
-    <result column="STATUS" jdbcType="VARCHAR" property="status" />
-    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
-    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
-    <result column="TYPE" jdbcType="CHAR" property="type" />
-  </resultMap>
-  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.ms.credit.pojo.DO.User">
-    <result column="AVATAR" jdbcType="BLOB" property="avatar" />
+    <id column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="dept_id" jdbcType="VARCHAR" property="deptId" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="station" jdbcType="VARCHAR" property="station" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="state" jdbcType="DECIMAL" property="state" />
+    <result column="company_id" jdbcType="VARCHAR" property="companyId" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+    <result column="dept_name" jdbcType="VARCHAR" property="deptName" />
+    <result column="manager_id" jdbcType="VARCHAR" property="managerId" />
+    <result column="gender" jdbcType="CHAR" property="gender" />
+    <result column="telephone" jdbcType="VARCHAR" property="telephone" />
+    <result column="birthday" jdbcType="VARCHAR" property="birthday" />
+    <result column="degree" jdbcType="INTEGER" property="degree" />
+    <result column="salary" jdbcType="DECIMAL" property="salary" />
+    <result column="join_date" jdbcType="VARCHAR" property="joinDate" />
+    <result column="order_no" jdbcType="INTEGER" property="orderNo" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_dept" jdbcType="VARCHAR" property="createDept" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_by" jdbcType="VARCHAR" property="updateBy" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="open_id" jdbcType="VARCHAR" property="openId" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -51,37 +58,17 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    USER_ID, LOGIN_NAME, PASSWORD, USER_NAME, ORG_ID, TELEPHONE, MOBILE, USER_ADDRESS, 
-    EMAIL, LOGIN_TIME, LOGOUT_TIME, STATUS, CREATE_TIME, UPDATE_TIME, TYPE
+    user_id, dept_id, email, user_name, station, password, state, company_id, company_name, 
+    dept_name, manager_id, gender, telephone, birthday, degree, salary, join_date, order_no, 
+    create_by, create_dept, create_time, update_by, update_time, remark, open_id
   </sql>
-  <sql id="Blob_Column_List">
-    AVATAR
-  </sql>
-  <select id="selectByExampleWithBLOBs" parameterType="com.ms.credit.pojo.DO.UserExample" resultMap="ResultMapWithBLOBs">
-    select
-    <if test="distinct">
-      distinct
-    </if>
-    'false' as QUERYID,
-    <include refid="Base_Column_List" />
-    ,
-    <include refid="Blob_Column_List" />
-    from SYS_USER
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-    <if test="orderByClause != null">
-      order by ${orderByClause}
-    </if>
-  </select>
   <select id="selectByExample" parameterType="com.ms.credit.pojo.DO.UserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
-    'false' as QUERYID,
     <include refid="Base_Column_List" />
-    from SYS_USER
+    from pe_user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -89,226 +76,297 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    ,
-    <include refid="Blob_Column_List" />
-    from SYS_USER
-    where USER_ID = #{userId,jdbcType=VARCHAR}
+    from pe_user
+    where user_id = #{userId,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
-    delete from SYS_USER
-    where USER_ID = #{userId,jdbcType=VARCHAR}
+    delete from pe_user
+    where user_id = #{userId,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.ms.credit.pojo.DO.User">
-    insert into SYS_USER (USER_ID, LOGIN_NAME, PASSWORD, 
-      USER_NAME, ORG_ID, TELEPHONE, 
-      MOBILE, USER_ADDRESS, EMAIL, 
-      LOGIN_TIME, LOGOUT_TIME, STATUS, 
-      CREATE_TIME, UPDATE_TIME, TYPE, 
-      AVATAR)
-    values (#{userId,jdbcType=VARCHAR}, #{loginName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{userName,jdbcType=VARCHAR}, #{orgId,jdbcType=VARCHAR}, #{telephone,jdbcType=VARCHAR}, 
-      #{mobile,jdbcType=VARCHAR}, #{userAddress,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
-      #{loginTime,jdbcType=TIMESTAMP}, #{logoutTime,jdbcType=TIMESTAMP}, #{status,jdbcType=VARCHAR}, 
-      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{type,jdbcType=CHAR}, 
-      #{avatar,jdbcType=BLOB})
+    insert into pe_user (user_id, dept_id, email, 
+      user_name, station, password, 
+      state, company_id, company_name, 
+      dept_name, manager_id, gender, 
+      telephone, birthday, degree, 
+      salary, join_date, order_no, 
+      create_by, create_dept, create_time, 
+      update_by, update_time, remark, 
+      open_id)
+    values (#{userId,jdbcType=VARCHAR}, #{deptId,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{userName,jdbcType=VARCHAR}, #{station,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{state,jdbcType=DECIMAL}, #{companyId,jdbcType=VARCHAR}, #{companyName,jdbcType=VARCHAR}, 
+      #{deptName,jdbcType=VARCHAR}, #{managerId,jdbcType=VARCHAR}, #{gender,jdbcType=CHAR}, 
+      #{telephone,jdbcType=VARCHAR}, #{birthday,jdbcType=VARCHAR}, #{degree,jdbcType=INTEGER}, 
+      #{salary,jdbcType=DECIMAL}, #{joinDate,jdbcType=VARCHAR}, #{orderNo,jdbcType=INTEGER}, 
+      #{createBy,jdbcType=VARCHAR}, #{createDept,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateBy,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR}, 
+      #{openId,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.ms.credit.pojo.DO.User">
-    insert into SYS_USER
+    insert into pe_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="userId != null">
-        USER_ID,
+        user_id,
       </if>
-      <if test="loginName != null">
-        LOGIN_NAME,
-      </if>
-      <if test="password != null">
-        PASSWORD,
-      </if>
-      <if test="userName != null">
-        USER_NAME,
-      </if>
-      <if test="orgId != null">
-        ORG_ID,
-      </if>
-      <if test="telephone != null">
-        TELEPHONE,
-      </if>
-      <if test="mobile != null">
-        MOBILE,
-      </if>
-      <if test="userAddress != null">
-        USER_ADDRESS,
+      <if test="deptId != null">
+        dept_id,
       </if>
       <if test="email != null">
-        EMAIL,
+        email,
       </if>
-      <if test="loginTime != null">
-        LOGIN_TIME,
+      <if test="userName != null">
+        user_name,
       </if>
-      <if test="logoutTime != null">
-        LOGOUT_TIME,
+      <if test="station != null">
+        station,
       </if>
-      <if test="status != null">
-        STATUS,
+      <if test="password != null">
+        password,
+      </if>
+      <if test="state != null">
+        state,
+      </if>
+      <if test="companyId != null">
+        company_id,
+      </if>
+      <if test="companyName != null">
+        company_name,
+      </if>
+      <if test="deptName != null">
+        dept_name,
+      </if>
+      <if test="managerId != null">
+        manager_id,
+      </if>
+      <if test="gender != null">
+        gender,
+      </if>
+      <if test="telephone != null">
+        telephone,
+      </if>
+      <if test="birthday != null">
+        birthday,
+      </if>
+      <if test="degree != null">
+        degree,
+      </if>
+      <if test="salary != null">
+        salary,
+      </if>
+      <if test="joinDate != null">
+        join_date,
+      </if>
+      <if test="orderNo != null">
+        order_no,
+      </if>
+      <if test="createBy != null">
+        create_by,
+      </if>
+      <if test="createDept != null">
+        create_dept,
       </if>
       <if test="createTime != null">
-        CREATE_TIME,
+        create_time,
+      </if>
+      <if test="updateBy != null">
+        update_by,
       </if>
       <if test="updateTime != null">
-        UPDATE_TIME,
+        update_time,
       </if>
-      <if test="type != null">
-        TYPE,
+      <if test="remark != null">
+        remark,
       </if>
-      <if test="avatar != null">
-        AVATAR,
+      <if test="openId != null">
+        open_id,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="userId != null">
         #{userId,jdbcType=VARCHAR},
       </if>
-      <if test="loginName != null">
-        #{loginName,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null">
-        #{password,jdbcType=VARCHAR},
-      </if>
-      <if test="userName != null">
-        #{userName,jdbcType=VARCHAR},
-      </if>
-      <if test="orgId != null">
-        #{orgId,jdbcType=VARCHAR},
-      </if>
-      <if test="telephone != null">
-        #{telephone,jdbcType=VARCHAR},
-      </if>
-      <if test="mobile != null">
-        #{mobile,jdbcType=VARCHAR},
-      </if>
-      <if test="userAddress != null">
-        #{userAddress,jdbcType=VARCHAR},
+      <if test="deptId != null">
+        #{deptId,jdbcType=VARCHAR},
       </if>
       <if test="email != null">
         #{email,jdbcType=VARCHAR},
       </if>
-      <if test="loginTime != null">
-        #{loginTime,jdbcType=TIMESTAMP},
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
       </if>
-      <if test="logoutTime != null">
-        #{logoutTime,jdbcType=TIMESTAMP},
+      <if test="station != null">
+        #{station,jdbcType=VARCHAR},
       </if>
-      <if test="status != null">
-        #{status,jdbcType=VARCHAR},
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null">
+        #{state,jdbcType=DECIMAL},
+      </if>
+      <if test="companyId != null">
+        #{companyId,jdbcType=VARCHAR},
+      </if>
+      <if test="companyName != null">
+        #{companyName,jdbcType=VARCHAR},
+      </if>
+      <if test="deptName != null">
+        #{deptName,jdbcType=VARCHAR},
+      </if>
+      <if test="managerId != null">
+        #{managerId,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=CHAR},
+      </if>
+      <if test="telephone != null">
+        #{telephone,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="degree != null">
+        #{degree,jdbcType=INTEGER},
+      </if>
+      <if test="salary != null">
+        #{salary,jdbcType=DECIMAL},
+      </if>
+      <if test="joinDate != null">
+        #{joinDate,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNo != null">
+        #{orderNo,jdbcType=INTEGER},
+      </if>
+      <if test="createBy != null">
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createDept != null">
+        #{createDept,jdbcType=VARCHAR},
       </if>
       <if test="createTime != null">
         #{createTime,jdbcType=TIMESTAMP},
       </if>
+      <if test="updateBy != null">
+        #{updateBy,jdbcType=VARCHAR},
+      </if>
       <if test="updateTime != null">
         #{updateTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="type != null">
-        #{type,jdbcType=CHAR},
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
       </if>
-      <if test="avatar != null">
-        #{avatar,jdbcType=BLOB},
+      <if test="openId != null">
+        #{openId,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.ms.credit.pojo.DO.User">
-    update SYS_USER
+    update pe_user
     <set>
-      <if test="loginName != null">
-        LOGIN_NAME = #{loginName,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null">
-        PASSWORD = #{password,jdbcType=VARCHAR},
-      </if>
-      <if test="userName != null">
-        USER_NAME = #{userName,jdbcType=VARCHAR},
-      </if>
-      <if test="orgId != null">
-        ORG_ID = #{orgId,jdbcType=VARCHAR},
-      </if>
-      <if test="telephone != null">
-        TELEPHONE = #{telephone,jdbcType=VARCHAR},
-      </if>
-      <if test="mobile != null">
-        MOBILE = #{mobile,jdbcType=VARCHAR},
-      </if>
-      <if test="userAddress != null">
-        USER_ADDRESS = #{userAddress,jdbcType=VARCHAR},
+      <if test="deptId != null">
+        dept_id = #{deptId,jdbcType=VARCHAR},
       </if>
       <if test="email != null">
-        EMAIL = #{email,jdbcType=VARCHAR},
+        email = #{email,jdbcType=VARCHAR},
       </if>
-      <if test="loginTime != null">
-        LOGIN_TIME = #{loginTime,jdbcType=TIMESTAMP},
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
       </if>
-      <if test="logoutTime != null">
-        LOGOUT_TIME = #{logoutTime,jdbcType=TIMESTAMP},
+      <if test="station != null">
+        station = #{station,jdbcType=VARCHAR},
       </if>
-      <if test="status != null">
-        STATUS = #{status,jdbcType=VARCHAR},
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null">
+        state = #{state,jdbcType=DECIMAL},
+      </if>
+      <if test="companyId != null">
+        company_id = #{companyId,jdbcType=VARCHAR},
+      </if>
+      <if test="companyName != null">
+        company_name = #{companyName,jdbcType=VARCHAR},
+      </if>
+      <if test="deptName != null">
+        dept_name = #{deptName,jdbcType=VARCHAR},
+      </if>
+      <if test="managerId != null">
+        manager_id = #{managerId,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        gender = #{gender,jdbcType=CHAR},
+      </if>
+      <if test="telephone != null">
+        telephone = #{telephone,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        birthday = #{birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="degree != null">
+        degree = #{degree,jdbcType=INTEGER},
+      </if>
+      <if test="salary != null">
+        salary = #{salary,jdbcType=DECIMAL},
+      </if>
+      <if test="joinDate != null">
+        join_date = #{joinDate,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNo != null">
+        order_no = #{orderNo,jdbcType=INTEGER},
+      </if>
+      <if test="createBy != null">
+        create_by = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createDept != null">
+        create_dept = #{createDept,jdbcType=VARCHAR},
       </if>
       <if test="createTime != null">
-        CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null">
+        update_by = #{updateBy,jdbcType=VARCHAR},
       </if>
       <if test="updateTime != null">
-        UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP},
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="type != null">
-        TYPE = #{type,jdbcType=CHAR},
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
       </if>
-      <if test="avatar != null">
-        AVATAR = #{avatar,jdbcType=BLOB},
+      <if test="openId != null">
+        open_id = #{openId,jdbcType=VARCHAR},
       </if>
     </set>
-    where USER_ID = #{userId,jdbcType=VARCHAR}
-  </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.ms.credit.pojo.DO.User">
-    update SYS_USER
-    set LOGIN_NAME = #{loginName,jdbcType=VARCHAR},
-      PASSWORD = #{password,jdbcType=VARCHAR},
-      USER_NAME = #{userName,jdbcType=VARCHAR},
-      ORG_ID = #{orgId,jdbcType=VARCHAR},
-      TELEPHONE = #{telephone,jdbcType=VARCHAR},
-      MOBILE = #{mobile,jdbcType=VARCHAR},
-      USER_ADDRESS = #{userAddress,jdbcType=VARCHAR},
-      EMAIL = #{email,jdbcType=VARCHAR},
-      LOGIN_TIME = #{loginTime,jdbcType=TIMESTAMP},
-      LOGOUT_TIME = #{logoutTime,jdbcType=TIMESTAMP},
-      STATUS = #{status,jdbcType=VARCHAR},
-      CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
-      UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP},
-      TYPE = #{type,jdbcType=CHAR},
-      AVATAR = #{avatar,jdbcType=BLOB}
-    where USER_ID = #{userId,jdbcType=VARCHAR}
+    where user_id = #{userId,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.ms.credit.pojo.DO.User">
-    update SYS_USER
-    set LOGIN_NAME = #{loginName,jdbcType=VARCHAR},
-      PASSWORD = #{password,jdbcType=VARCHAR},
-      USER_NAME = #{userName,jdbcType=VARCHAR},
-      ORG_ID = #{orgId,jdbcType=VARCHAR},
-      TELEPHONE = #{telephone,jdbcType=VARCHAR},
-      MOBILE = #{mobile,jdbcType=VARCHAR},
-      USER_ADDRESS = #{userAddress,jdbcType=VARCHAR},
-      EMAIL = #{email,jdbcType=VARCHAR},
-      LOGIN_TIME = #{loginTime,jdbcType=TIMESTAMP},
-      LOGOUT_TIME = #{logoutTime,jdbcType=TIMESTAMP},
-      STATUS = #{status,jdbcType=VARCHAR},
-      CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
-      UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP},
-      TYPE = #{type,jdbcType=CHAR}
-    where USER_ID = #{userId,jdbcType=VARCHAR}
+    update pe_user
+    set dept_id = #{deptId,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
+      station = #{station,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      state = #{state,jdbcType=DECIMAL},
+      company_id = #{companyId,jdbcType=VARCHAR},
+      company_name = #{companyName,jdbcType=VARCHAR},
+      dept_name = #{deptName,jdbcType=VARCHAR},
+      manager_id = #{managerId,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=CHAR},
+      telephone = #{telephone,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=VARCHAR},
+      degree = #{degree,jdbcType=INTEGER},
+      salary = #{salary,jdbcType=DECIMAL},
+      join_date = #{joinDate,jdbcType=VARCHAR},
+      order_no = #{orderNo,jdbcType=INTEGER},
+      create_by = #{createBy,jdbcType=VARCHAR},
+      create_dept = #{createDept,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_by = #{updateBy,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      remark = #{remark,jdbcType=VARCHAR},
+      open_id = #{openId,jdbcType=VARCHAR}
+    where user_id = #{userId,jdbcType=VARCHAR}
   </update>
-
-  <!--查询用户是否存在-->
-  <select id="isExit" parameterType="String" resultType="Boolean">
-    <![CDATA[SELECT COUNT(0) FROM SYS_USER WHERE USER_ID = #{id,jdbcType=VARCHAR}]]>
-  </select>
 </mapper>

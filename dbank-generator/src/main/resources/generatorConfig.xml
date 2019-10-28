@@ -5,7 +5,7 @@
 <generatorConfiguration>
     <!-- classPathEntry:数据库的 JDBC驱动的jar 包地址 -->
     <classPathEntry
-            location="D:\idea\ojdbc6-12.1.0.2.0.jar" />
+            location="D:\\idea\\mysql-connector-java-5.1.32.jar" />
     <context id="caigouTables" targetRuntime="MyBatis3">
 
         <property name="javaFileEncoding" value="UTF-8" />
@@ -19,13 +19,15 @@
         </commentGenerator>
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
 
-        <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
-                        connectionURL="jdbc:oracle:thin:@localhost:1521:orcl"
-                        userId="scott"
-                        password="Mm19920729">
-            <!-- 针对oracle数据库 -->
-            <property name="remarksReporting" value="true"></property>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/saas"
+                        userId="root"
+                        password="hz13554">
         </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
 
         <!--实体类  映射文件  mapper接口-->
 
@@ -50,64 +52,16 @@
 
 
         <!-- 指定数据库表 -->
-        <table  tableName="sys_demo" domainObjectName="Demo" mapperName="DemoDao"
+        <table  tableName="ss_module" domainObjectName="Module" mapperName="ModuleDao"
                 enableCountByExample="false" enableUpdateByExample="false"
-                enableDeleteByExample="false" enableSelectByExample="true"
-                selectByExampleQueryId="false"/>
+                enableDeleteByExample="false" enableSelectByExample="true"/>
 
-        <table  tableName="sys_func" domainObjectName="Func" mapperName="FuncDao"
+        <table  tableName="pe_role" domainObjectName="Role" mapperName="RoleDao"
                 enableCountByExample="false" enableUpdateByExample="false"
-                enableDeleteByExample="false" enableSelectByExample="true"
-                selectByExampleQueryId="false"/>
+                enableDeleteByExample="false" enableSelectByExample="true"/>
 
-        <table  tableName="sys_menu" domainObjectName="Menu" mapperName="MenuDao"
+        <table  tableName="pe_user" domainObjectName="User" mapperName="UserDao"
                 enableCountByExample="false" enableUpdateByExample="false"
-                enableDeleteByExample="false" enableSelectByExample="true"
-                selectByExampleQueryId="false"/>
-
-        <table  tableName="sys_org" domainObjectName="Org" mapperName="OrgDao"
-                enableCountByExample="false" enableUpdateByExample="false"
-                enableDeleteByExample="false" enableSelectByExample="true"
-                selectByExampleQueryId="false"/>
-
-        <table  tableName="sys_perm" domainObjectName="Perm" mapperName="PermDao"
-                enableCountByExample="false" enableUpdateByExample="false"
-                enableDeleteByExample="false" enableSelectByExample="true"
-                selectByExampleQueryId="false"/>
-
-        <table  tableName="sys_perm_func" domainObjectName="PermFunc" mapperName="PermFuncDao"
-                enableCountByExample="false" enableUpdateByExample="false"
-                enableDeleteByExample="false" enableSelectByExample="true"
-                selectByExampleQueryId="false"/>
-
-        <table  tableName="sys_perm_menu" domainObjectName="PermMenu" mapperName="PermMenuDao"
-                enableCountByExample="false" enableUpdateByExample="false"
-                enableDeleteByExample="false" enableSelectByExample="true"
-                selectByExampleQueryId="false"/>
-
-        <table  tableName="sys_role" domainObjectName="Role" mapperName="RoleDao"
-                enableCountByExample="false" enableUpdateByExample="false"
-                enableDeleteByExample="false" enableSelectByExample="true"
-                selectByExampleQueryId="false"/>
-
-        <table  tableName="sys_role_perm" domainObjectName="RolePerm" mapperName="RolePermDao"
-                enableCountByExample="false" enableUpdateByExample="false"
-                enableDeleteByExample="false" enableSelectByExample="true"
-                selectByExampleQueryId="false"/>
-
-        <table  tableName="sys_seq_conf" domainObjectName="SeqConf" mapperName="SeqConfDao"
-                enableCountByExample="false" enableUpdateByExample="false"
-                enableDeleteByExample="false" enableSelectByExample="true"
-                selectByExampleQueryId="false"/>
-
-        <table  tableName="sys_user" domainObjectName="User" mapperName="UserDao"
-                enableCountByExample="false" enableUpdateByExample="false"
-                enableDeleteByExample="false" enableSelectByExample="true"
-                selectByExampleQueryId="false"/>
-
-        <table  tableName="sys_user_role" domainObjectName="UserRole" mapperName="UserRoleDao"
-                enableCountByExample="false" enableUpdateByExample="false"
-                enableDeleteByExample="false" enableSelectByExample="true"
-                selectByExampleQueryId="false"/>
+                enableDeleteByExample="false" enableSelectByExample="true"/>
     </context>
 </generatorConfiguration>

@@ -39,7 +39,9 @@ public enum DbankExceptionEnum {
     INVALID_ORDER_STATUS(500, "订单状态不正确！"),
 
     UNAUTHORIZED(401, "登录失效或未登录！"),
-    STOCK_NOT_ENOUGH_ERROR(500,"库存不足，无法下单");
+    STOCK_NOT_ENOUGH_ERROR(500,"库存不足，无法下单"),
+
+    USER_HAS_NONE_ROLE(500,"用户角色为空");
 
     private int status;
     private String message;

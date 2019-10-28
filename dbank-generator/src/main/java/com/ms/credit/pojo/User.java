@@ -6,35 +6,53 @@ import java.util.Date;
 public class User implements Serializable {
     private String userId;
 
-    private String loginName;
-
-    private String password;
-
-    private String userName;
-
-    private String orgId;
-
-    private String telephone;
-
-    private String mobile;
-
-    private String userAddress;
+    private String deptId;
 
     private String email;
 
-    private Date loginTime;
+    private String userName;
 
-    private Date logoutTime;
+    private String station;
 
-    private String status;
+    private String password;
+
+    private Long state;
+
+    private String companyId;
+
+    private String companyName;
+
+    private String deptName;
+
+    private String managerId;
+
+    private String gender;
+
+    private String telephone;
+
+    private String birthday;
+
+    private Integer degree;
+
+    private Long salary;
+
+    private String joinDate;
+
+    private Integer orderNo;
+
+    private String createBy;
+
+    private String createDept;
 
     private Date createTime;
 
+    private String updateBy;
+
     private Date updateTime;
 
-    private String type;
+    private String remark;
 
-    private byte[] avatar;
+    private String openId;
 
     private static final long serialVersionUID = 1L;
 
@@ -46,60 +64,12 @@ public class User implements Serializable {
         this.userId = userId == null ? null : userId.trim();
     }
 
-    public String getLoginName() {
-        return loginName;
+    public String getDeptId() {
+        return deptId;
     }
 
-    public void setLoginName(String loginName) {
-        this.loginName = loginName == null ? null : loginName.trim();
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName == null ? null : userName.trim();
-    }
-
-    public String getOrgId() {
-        return orgId;
-    }
-
-    public void setOrgId(String orgId) {
-        this.orgId = orgId == null ? null : orgId.trim();
-    }
-
-    public String getTelephone() {
-        return telephone;
-    }
-
-    public void setTelephone(String telephone) {
-        this.telephone = telephone == null ? null : telephone.trim();
-    }
-
-    public String getMobile() {
-        return mobile;
-    }
-
-    public void setMobile(String mobile) {
-        this.mobile = mobile == null ? null : mobile.trim();
-    }
-
-    public String getUserAddress() {
-        return userAddress;
-    }
-
-    public void setUserAddress(String userAddress) {
-        this.userAddress = userAddress == null ? null : userAddress.trim();
+    public void setDeptId(String deptId) {
+        this.deptId = deptId == null ? null : deptId.trim();
     }
 
     public String getEmail() {
@@ -110,28 +80,140 @@ public class User implements Serializable {
         this.email = email == null ? null : email.trim();
     }
 
-    public Date getLoginTime() {
-        return loginTime;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setLoginTime(Date loginTime) {
-        this.loginTime = loginTime;
+    public void setUserName(String userName) {
+        this.userName = userName == null ? null : userName.trim();
     }
 
-    public Date getLogoutTime() {
-        return logoutTime;
+    public String getStation() {
+        return station;
     }
 
-    public void setLogoutTime(Date logoutTime) {
-        this.logoutTime = logoutTime;
+    public void setStation(String station) {
+        this.station = station == null ? null : station.trim();
     }
 
-    public String getStatus() {
-        return status;
+    public String getPassword() {
+        return password;
     }
 
-    public void setStatus(String status) {
-        this.status = status == null ? null : status.trim();
+    public void setPassword(String password) {
+        this.password = password == null ? null : password.trim();
+    }
+
+    public Long getState() {
+        return state;
+    }
+
+    public void setState(Long state) {
+        this.state = state;
+    }
+
+    public String getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(String companyId) {
+        this.companyId = companyId == null ? null : companyId.trim();
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName == null ? null : companyName.trim();
+    }
+
+    public String getDeptName() {
+        return deptName;
+    }
+
+    public void setDeptName(String deptName) {
+        this.deptName = deptName == null ? null : deptName.trim();
+    }
+
+    public String getManagerId() {
+        return managerId;
+    }
+
+    public void setManagerId(String managerId) {
+        this.managerId = managerId == null ? null : managerId.trim();
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender == null ? null : gender.trim();
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone == null ? null : telephone.trim();
+    }
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(String birthday) {
+        this.birthday = birthday == null ? null : birthday.trim();
+    }
+
+    public Integer getDegree() {
+        return degree;
+    }
+
+    public void setDegree(Integer degree) {
+        this.degree = degree;
+    }
+
+    public Long getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Long salary) {
+        this.salary = salary;
+    }
+
+    public String getJoinDate() {
+        return joinDate;
+    }
+
+    public void setJoinDate(String joinDate) {
+        this.joinDate = joinDate == null ? null : joinDate.trim();
+    }
+
+    public Integer getOrderNo() {
+        return orderNo;
+    }
+
+    public void setOrderNo(Integer orderNo) {
+        this.orderNo = orderNo;
+    }
+
+    public String getCreateBy() {
+        return createBy;
+    }
+
+    public void setCreateBy(String createBy) {
+        this.createBy = createBy == null ? null : createBy.trim();
+    }
+
+    public String getCreateDept() {
+        return createDept;
+    }
+
+    public void setCreateDept(String createDept) {
+        this.createDept = createDept == null ? null : createDept.trim();
     }
 
     public Date getCreateTime() {
@@ -142,6 +224,14 @@ public class User implements Serializable {
         this.createTime = createTime;
     }
 
+    public String getUpdateBy() {
+        return updateBy;
+    }
+
+    public void setUpdateBy(String updateBy) {
+        this.updateBy = updateBy == null ? null : updateBy.trim();
+    }
+
     public Date getUpdateTime() {
         return updateTime;
     }
@@ -150,19 +240,19 @@ public class User implements Serializable {
         this.updateTime = updateTime;
     }
 
-    public String getType() {
-        return type;
+    public String getRemark() {
+        return remark;
     }
 
-    public void setType(String type) {
-        this.type = type == null ? null : type.trim();
+    public void setRemark(String remark) {
+        this.remark = remark == null ? null : remark.trim();
     }
 
-    public byte[] getAvatar() {
-        return avatar;
+    public String getOpenId() {
+        return openId;
     }
 
-    public void setAvatar(byte[] avatar) {
-        this.avatar = avatar;
+    public void setOpenId(String openId) {
+        this.openId = openId == null ? null : openId.trim();
     }
 }

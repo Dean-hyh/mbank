@@ -7,15 +7,26 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 
+/**
+ * @author Dean
+ * @version 1.0
+ * @date 2019/10/28 14:31
+ */
 public class BaseController {
-    //@Autowired
+
     protected HttpServletRequest request;
-    //@Autowired
+
     protected HttpServletResponse response;
-    //@Autowired
+
     protected HttpSession session;
 
-    @ModelAttribute  //attribute注解的方法在子类方法执行的之前执行
+    /**
+     * @param request
+     * @param response
+     * @param session
+     * attribute注解的方法在子类方法执行的之前执行
+     */
+    @ModelAttribute
     public void setRequestAndResponse(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
         this.request = request;
         this.response = response;
