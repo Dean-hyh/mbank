@@ -1,7 +1,7 @@
 package com.ms.credit.advise;
 
-import com.ms.credit.utils.DataSource;
-import com.ms.credit.utils.DataSourceContextHolder;
+import com.ms.credit.datasource.DataSource;
+import com.ms.credit.datasource.DataSourceContextHolder;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;

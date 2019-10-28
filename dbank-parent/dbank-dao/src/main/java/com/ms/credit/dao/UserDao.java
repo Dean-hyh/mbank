@@ -2,9 +2,8 @@ package com.ms.credit.dao;
 
 import com.ms.credit.pojo.DO.User;
 import com.ms.credit.pojo.DO.UserExample;
-import com.ms.credit.utils.DataSource;
+import com.ms.credit.datasource.DataSource;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 

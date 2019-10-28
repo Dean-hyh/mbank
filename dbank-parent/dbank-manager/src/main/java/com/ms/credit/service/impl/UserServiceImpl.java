@@ -3,6 +3,8 @@ package com.ms.credit.service.impl;
 import com.ms.credit.dao.RoleDao;
 import com.ms.credit.dao.UserDao;
 import com.ms.credit.dao.UserRoleDao;
+import com.ms.credit.enums.DbankExceptionEnum;
+import com.ms.credit.exception.DbankException;
 import com.ms.credit.pojo.DO.Role;
 import com.ms.credit.pojo.DO.User;
 import com.ms.credit.pojo.DO.UserExample;
@@ -14,8 +16,6 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import java.util.Date;
@@ -29,7 +29,7 @@ import java.util.UUID;
  * @date 2019/9/20 17:02
  */
 @Service
-//@Transactional
+//@Transactional  //为实现读写分离，暂不进行事务控制
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
@@ -82,16 +82,16 @@ public class UserServiceImpl implements UserService {
         User user = userDao.selectByPrimaryKey(id);
         if(user==null || StringUtils.isEmpty(String.valueOf(user))){
             log.error("查询单个用户失败！");
-            return;
+            throw new DbankException(DbankExceptionEnum.UPDATE_OPERATION_FAIL);
         }
         String[] loginName = {"Jack","Jerry","John","Jobs","Tom","Mark"};
         String prefix = UUID.randomUUID().toString().substring(0,4);
         user.setLoginName(loginName[new Random().nextInt(6)+1]+"·"+prefix.substring(0,2));
         user.setUpdateTime(new Date());
-        int a = 1/0;
         int update = userDao.updateByPrimaryKey(user);
         if(update<1){
             log.error("修改用户失败！");
+            throw new DbankException(DbankExceptionEnum.UPDATE_OPERATION_FAIL);
         }
     }
 

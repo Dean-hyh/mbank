@@ -1,4 +1,4 @@
-package com.ms.credit.utils;
+package com.ms.credit.datasource;
 
 import java.lang.annotation.*;
 

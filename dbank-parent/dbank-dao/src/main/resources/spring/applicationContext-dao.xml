@@ -84,7 +84,7 @@
     </bean>
 
     <!--动态数据源配置1-->
-    <bean id="dataSource" class="com.ms.credit.utils.DynamicDataSource">
+    <bean id="dataSource" class="com.ms.credit.datasource.DynamicDataSource">
         <property name="targetDataSources">
             <map key-type="java.lang.String">
                 <!-- 指定lookupKey和与之对应的数据源 -->
