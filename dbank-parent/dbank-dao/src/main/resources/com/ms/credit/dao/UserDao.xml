@@ -369,4 +369,12 @@
       open_id = #{openId,jdbcType=VARCHAR}
     where user_id = #{userId,jdbcType=VARCHAR}
   </update>
+
+  <select id="isExit" parameterType="String" resultType="Boolean">
+     SELECT COUNT(0) FROM pe_user WHERE user_id = #{id}
+  </select>
+
+  <delete id="deleteRoleUser" parameterType="String">
+     DELETE FROM pe_role_user where user_id = #{id}
+  </delete>
 </mapper>

@@ -20,6 +20,8 @@ public class BaseController {
 
     protected HttpSession session;
 
+    protected String deptId;
+
     /**
      * @param request
      * @param response
@@ -31,5 +33,6 @@ public class BaseController {
         this.request = request;
         this.response = response;
         this.session = session;
+        this.deptId = "100";
     }
 }

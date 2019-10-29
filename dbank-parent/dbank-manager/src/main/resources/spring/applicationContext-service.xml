@@ -12,6 +12,19 @@
 
     <!--配置要扫描的包-->
     <context:component-scan base-package="com.ms.credit.service.impl"/>
+    <context:component-scan base-package="com.ms.credit.service.config"/>
+
+    <!--加载配置文件-->
+    <!--<context:property-placeholder location="classpath:config/SnowFlake.properties"/>-->
+
+    <bean id="propertiesReader"
+          class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath:config/SnowFlake.properties</value>
+            </list>
+        </property>
+    </bean>
 
     <!--开启声明式事务的注解支持-->
     <tx:annotation-driven/>

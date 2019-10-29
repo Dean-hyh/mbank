@@ -1,6 +1,7 @@
 package com.ms.credit.dao;
 
 import com.ms.credit.datasource.DataSource;
+import com.ms.credit.pojo.DO.Role;
 import com.ms.credit.pojo.DO.User;
 import com.ms.credit.pojo.DO.UserExample;
 import org.apache.ibatis.annotations.Param;
@@ -30,5 +31,13 @@ public interface UserDao {
     int updateByPrimaryKey(User record);
 
     @DataSource(value = "slave")
-    boolean isExit(@Param("id") String id);
+    Boolean isExit(@Param("id") String id);
+
+    /**
+     * 删除用户角色信息
+     * @param id 用户主键
+     * @return 返回删除结果信息
+     */
+    @DataSource(value = "master")
+    Boolean deleteRoleUser(String id);
 }

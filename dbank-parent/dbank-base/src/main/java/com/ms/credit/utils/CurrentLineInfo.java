@@ -1,5 +1,8 @@
 package com.ms.credit.utils;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * @auther Dean
  * @Date 2019-10-28  15:05:21
@@ -7,6 +10,14 @@ package com.ms.credit.utils;
  */
 public class CurrentLineInfo {
     private static int originStackIndex = 2;
+
+    /**
+     * 获取当前时间
+     * @return
+     */
+    public static String getTime(){
+        return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+    }
 
     /**
      * 获取class文件名   eg:CurrentLineInfo.java
@@ -45,8 +56,9 @@ public class CurrentLineInfo {
      * @return  xx.xx.xx.xx\xxxx\45
      */
     public static String getFileAddress(){
-        return  Thread.currentThread().getStackTrace()[originStackIndex].getClassName()+"\\"+
-                Thread.currentThread().getStackTrace()[originStackIndex].getMethodName()+"\\第"+
+        return  CurrentLineInfo.getTime()+" "+
+                Thread.currentThread().getStackTrace()[originStackIndex].getClassName()+"."+
+                Thread.currentThread().getStackTrace()[originStackIndex].getMethodName()+" "+"第"+
                 Thread.currentThread().getStackTrace()[originStackIndex].getLineNumber()+"行";
     }
 }

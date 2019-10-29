@@ -10,8 +10,11 @@ import com.ms.credit.pojo.DO.UserExample;
 import com.ms.credit.pojo.VO.RoleVO;
 import com.ms.credit.pojo.VO.UserVO;
 import com.ms.credit.service.UserService;
+import com.ms.credit.service.config.SnowFlakeProperties;
 import com.ms.credit.utils.BeanHelper;
 import com.ms.credit.utils.CurrentLineInfo;
+import com.ms.credit.utils.JsonUtils;
+import com.ms.credit.utils.SnowFlake;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +22,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
@@ -39,6 +41,8 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private RoleDao roleDao;
 
+    @Autowired
+    private SnowFlake snowFlake;
 
     private static Log log = LogFactory.getLog(UserServiceImpl.class);
 
@@ -55,22 +59,34 @@ public class UserServiceImpl implements UserService {
         UserExample example = new UserExample();
         example.createCriteria().andUserIdEqualTo(uid);
         User user = userDao.selectByPrimaryKey(uid);
+        if(user==null || StringUtils.isEmpty(String.valueOf(user))){
+            throw new DbankException(DbankExceptionEnum.USER_NOT_FOUND);
+        }
         return BeanHelper.copyProperties(user, UserVO.class);
     }
 
     @Override
     public void addUser(User user) {
         int insert = userDao.insert(user);
-        if(insert<1){
-            log.error("插入用户失败!");
+        log.info("插入用户数据:"+ JsonUtils.toString(user)+"\\"+CurrentLineInfo.getFileAddress());
+        if (insert < 1) {
+            log.error("插入用户失败:"+"\\"+CurrentLineInfo.getFileAddress());
+            throw new DbankException(DbankExceptionEnum.INSERT_OPERATION_FAIL);
         }
     }
 
     @Override
     public void deleteUserById(String id) {
-        int delete = userDao.deleteByPrimaryKey(id);
-        if(delete<1){
+        //删除中间表数据
+        Boolean isDelete = userDao.deleteRoleUser(id);
+        //中间表删除成功后删除用户信息
+        if(isDelete!=null && isDelete) {
+            int delete = userDao.deleteByPrimaryKey(id);
+            log.info("删除用户数据:"+ id+"\\"+CurrentLineInfo.getFileAddress());
+        }
+        if (!isDelete) {
             log.error("删除用户失败！");
+            throw new DbankException(DbankExceptionEnum.DELETE_OPERATION_FAIL);
         }
     }
 
@@ -78,22 +94,16 @@ public class UserServiceImpl implements UserService {
     public void updateUserById(String id) {
         //查询用户
         User user = userDao.selectByPrimaryKey(id);
-        if(user==null || StringUtils.isEmpty(String.valueOf(user))){
-            try {
-                log.debug("查询用户信息-->id:"+id +
-                        " 时间：" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()) +
-                        " 位置：" + CurrentLineInfo.getFileAddress());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        if (user == null || StringUtils.isEmpty(String.valueOf(user))) {
+            log.debug("查询用户信息-->id:" + id + "\\" + CurrentLineInfo.getFileAddress());
             throw new DbankException(DbankExceptionEnum.UPDATE_OPERATION_FAIL);
         }
-        String[] email_prefix = {"Jack","Jerry","John","Jobs","Tom","Mark"};
-        String prefix = UUID.randomUUID().toString().substring(0,4);
-        user.setEmail(email_prefix[new Random().nextInt(6)+1]+"_"+prefix.substring(0,2)+"@gmail.com");
+        String[] email_prefix = {"Jack", "Jerry", "John", "Jobs", "Tom", "Mark"};
+        String prefix = UUID.randomUUID().toString().substring(0, 4);
+        user.setEmail(email_prefix[new Random().nextInt(6) + 1] + "_" + prefix.substring(0, 2) + "@gmail.com");
         user.setUpdateTime(new Date());
         int update = userDao.updateByPrimaryKey(user);
-        if(update<1){
+        if (update < 1) {
             log.error("修改用户失败！");
             throw new DbankException(DbankExceptionEnum.UPDATE_OPERATION_FAIL);
         }
@@ -106,6 +116,7 @@ public class UserServiceImpl implements UserService {
 
     /**
      * 根据用户id查询用户角色信息
+     *
      * @param id 用户主键
      * @return roleVoList
      */
@@ -113,7 +124,7 @@ public class UserServiceImpl implements UserService {
     public List<RoleVO> queryRoleByUid(String id) {
         List<Role> roles = roleDao.selectByUserId(id);
         List<RoleVO> roleVoList = BeanHelper.copyWithCollection(roles, RoleVO.class);
-        if(CollectionUtils.isEmpty(roleVoList)){
+        if (CollectionUtils.isEmpty(roleVoList)) {
             throw new DbankException(DbankExceptionEnum.USER_HAS_NONE_ROLE);
         }
         return roleVoList;

@@ -1,11 +1,11 @@
 package com.ms.credit.controller;
 
 import com.ms.credit.BaseController;
-import com.ms.credit.constant.BaseUserId;
+import com.ms.credit.enums.DbankExceptionEnum;
+import com.ms.credit.exception.DbankException;
 import com.ms.credit.pojo.DO.User;
 import com.ms.credit.pojo.VO.RoleVO;
 import com.ms.credit.pojo.VO.UserVO;
-import com.ms.credit.result.ErrorMsg;
 import com.ms.credit.service.UserService;
 import com.ms.credit.utils.RandomValueUtil;
 import org.apache.commons.logging.Log;
@@ -43,7 +43,7 @@ public class UserController extends BaseController {
     /**
      * 查询用户列表
      */
-    @RequestMapping(value = "/userList")
+    @RequestMapping(value = "/userList",method = RequestMethod.GET)
     public ResponseEntity<List<UserVO>> findUserList() {
         List<UserVO> userList = userService.queryUserList();
         return ResponseEntity.ok(userList);
@@ -55,20 +55,12 @@ public class UserController extends BaseController {
      * @param id 主键
      * @return 返回UserVO对象
      */
-    @RequestMapping("/queryUserById/{id}")
-    public Object queryUserById(@PathVariable("id") Integer id) {
-        if (id == null) {
-            return new ErrorMsg(100, "参数异常");
+    @RequestMapping(value = "/queryUserById/{id}" ,method = RequestMethod.GET)
+    public Object queryUserById(@PathVariable("id") String id) {
+        if (StringUtils.isEmpty(id)) {
+            throw new DbankException(DbankExceptionEnum.INVALID_PARAM_ERROR);
         }
-        String uid;
-        if (id == 1) {
-            uid = BaseUserId.UID_1;
-        } else if (id == 2) {
-            uid = BaseUserId.UID_2;
-        } else {
-            return new ErrorMsg(100, "参数异常");
-        }
-        return userService.queryUserById(uid);
+        return userService.queryUserById(id);
     }
 
     /**
@@ -83,7 +75,7 @@ public class UserController extends BaseController {
         String prefix = UUID.randomUUID().toString().substring(0,4);
         userId = userId+prefix;
         user.setUserId(userId);
-        user.setDeptId("1000");
+        user.setDeptId("100");
         user.setEmail(prefix.substring(0,2)+"_dean@gamil.com");
         user.setUserName(prefix.substring(0,2)+"_dean");
         String[] arr = {"Java/WEB开发","Python","IOS","Android","前端","C#","C++",".net","PHP"};
@@ -92,7 +84,7 @@ public class UserController extends BaseController {
         user.setState(0L);
         user.setCompanyId("U000");
         user.setCompanyName("Dean.Co.Ltd");
-        user.setDeptId("100");
+        user.setDeptName("技术部");
         user.setGender((String.valueOf(new Random().nextInt(2))));
         user.setTelephone(RandomValueUtil.getTel());
         user.setBirthday(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
@@ -100,7 +92,7 @@ public class UserController extends BaseController {
         user.setSalary(12000L);
         user.setJoinDate(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         user.setCreateBy(userId);
-        user.setCreateDept("技术部");
+        user.setCreateDept("100");
         user.setCreateTime(new Date());
         user.setUpdateBy(userId);
         user.setUpdateTime(new Date());
@@ -126,14 +118,14 @@ public class UserController extends BaseController {
 
     /**
      * 删除用户
-     *
+     * TODO 需要先删除用户-角色中间表中的用户数据
      * @param id 用户主键id
      * @return 查询结果--状态码，无查询结果
      */
     @RequestMapping(value = "/deleteUser/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Void> deleteUserById(@PathVariable("id") String id) {
         if (StringUtils.isEmpty(id)) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+            throw new DbankException(DbankExceptionEnum.INVALID_PARAM_ERROR);
         }
         userService.deleteUserById(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
@@ -162,7 +154,7 @@ public class UserController extends BaseController {
     @RequestMapping(value = "/queryRoleByUserId/{userId}", method = RequestMethod.GET)
     public ResponseEntity<List<RoleVO>> queryRoleByUserId(@PathVariable("userId") String userId) {
         if (StringUtils.isEmpty(userId)) {
-            return ResponseEntity.ok(null);
+            throw new DbankException(DbankExceptionEnum.INVALID_PARAM_ERROR);
         }
         List<RoleVO> roleList = userService.queryRoleByUid(userId);
         return ResponseEntity.ok(roleList);

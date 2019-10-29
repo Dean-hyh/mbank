@@ -205,8 +205,8 @@
     where role_id = #{roleId,jdbcType=VARCHAR}
   </update>
 
-  <select id="selectByUserId" parameterType="String" resultType="List">
-    SELECT * FROM pe_role WHERE role_id IN
-    (SELECT role_id FROM pe_role_user WHERE user_id = #{id});
+  <!--根据用户id查询用户角色-->
+  <select id="selectByUserId" parameterType="String" resultMap="BaseResultMap">
+    SELECT r.name,r.remark,r.company_name FROM pe_role r,pe_role_user ur WHERE r.role_id = ur.role_id AND ur.user_id=#{id};
   </select>
 </mapper>

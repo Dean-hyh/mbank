@@ -1,4 +1,4 @@
-package com.ms.credit.constant;
+package com.ms.credit.constants;
 
 import org.springframework.stereotype.Component;
 

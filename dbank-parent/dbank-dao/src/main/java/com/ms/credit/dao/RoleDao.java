@@ -30,4 +30,6 @@ public interface RoleDao {
 
     @DataSource(value = "slave")
     List<Role> selectByUserId(String id);
+
+
 }
