@@ -7,6 +7,7 @@ import com.ms.credit.pojo.DO.User;
 import com.ms.credit.pojo.VO.RoleVO;
 import com.ms.credit.pojo.VO.UserVO;
 import com.ms.credit.service.UserService;
+import com.ms.credit.utils.JsonUtils;
 import com.ms.credit.utils.RandomValueUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -20,10 +21,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.Random;
-import java.util.UUID;
+import java.util.*;
 
 /**
  * @author Dean

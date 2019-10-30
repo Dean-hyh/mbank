@@ -17,7 +17,14 @@
     <!--<aop:aspectj-autoproxy/>-->
 
     <!-- 设置默认配置方案(开启注解驱动) -->
-    <mvc:annotation-driven/>
+    <mvc:annotation-driven>
+        <!-- 消息转换器,解决responseBody返回中外乱码问题 -->
+        <mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes" value="text/plain;charset=UTF-8" />
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
 
     <!-- 使用默认的Servlet来响应静态文件 -->
     <mvc:default-servlet-handler/>
