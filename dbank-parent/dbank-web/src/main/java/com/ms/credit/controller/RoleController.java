@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -62,6 +63,8 @@ public class RoleController extends BaseController {
         map.put("url", requestURL);
         map.put("name", name);
         map.put("header", header);
+
+        HttpSession session = request.getSession();
         return ResponseEntity.ok(map);
     }
 

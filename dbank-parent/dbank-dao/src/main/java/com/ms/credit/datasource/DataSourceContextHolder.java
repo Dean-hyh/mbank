@@ -1,5 +1,6 @@
 package com.ms.credit.datasource;
 
+import com.ms.credit.pojo.DO.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
@@ -12,6 +13,7 @@ import org.springframework.util.Assert;
 public class DataSourceContextHolder {
     private static final Logger log = LoggerFactory.getLogger(DataSourceContextHolder.class);
     private final static ThreadLocal<String> THREAD_DATA_SOURCE = new ThreadLocal<String>();
+    private final static ThreadLocal<User> THREAD_DATA_SOURCE1 = new ThreadLocal<User>();
 
     public static void setDataSource(String dbType) {
         Assert.notNull(dbType, "DataSourceType cannot be null");

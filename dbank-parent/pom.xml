@@ -13,6 +13,7 @@
         <module>dbank-dao</module>
         <module>dbank-web</module>
         <module>dbank-manager</module>
+        <module>dbank-quartz</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -226,6 +227,21 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
             <version>2.9.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <!--redis缓存-->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+
+        <!--定时任务-->
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>2.2.3</version>
         </dependency>
     </dependencies>
 

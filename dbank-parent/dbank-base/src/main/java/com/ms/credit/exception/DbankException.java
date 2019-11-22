@@ -1,8 +1,6 @@
 package com.ms.credit.exception;
 
 import com.ms.credit.enums.DbankExceptionEnum;
-import lombok.Getter;
-import org.springframework.context.annotation.Bean;
 
 /**
  * @version 1.0

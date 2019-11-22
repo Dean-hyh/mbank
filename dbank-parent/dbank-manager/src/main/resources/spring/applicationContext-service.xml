@@ -17,6 +17,7 @@
     <!--加载配置文件-->
     <!--<context:property-placeholder location="classpath:config/SnowFlake.properties"/>-->
 
+    <!--加载配置文件方式2-->
     <bean id="propertiesReader"
           class="org.springframework.beans.factory.config.PropertiesFactoryBean">
         <property name="locations">

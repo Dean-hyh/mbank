@@ -2,6 +2,7 @@ package com.ms.credit.utils.constants;
 
 /**
  * @author 虎哥
+ * 正则校验
  */
 public abstract class RegexPatterns {
     /**

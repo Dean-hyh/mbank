@@ -7,8 +7,8 @@ import com.ms.credit.pojo.DO.User;
 import com.ms.credit.pojo.VO.RoleVO;
 import com.ms.credit.pojo.VO.UserVO;
 import com.ms.credit.service.UserService;
-import com.ms.credit.utils.JsonUtils;
 import com.ms.credit.utils.RandomValueUtil;
+import com.ms.credit.utils.SnowFlake;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +35,9 @@ public class UserController extends BaseController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private SnowFlake snowFlake;
 
     private static Log log = LogFactory.getLog(UserController.class);
 
@@ -69,9 +72,8 @@ public class UserController extends BaseController {
      */
     @RequestMapping(value = "/addUser", method = RequestMethod.POST)
     public ResponseEntity<Void> addUser(User user) {
-        String userId = "U000000000000000";
         String prefix = UUID.randomUUID().toString().substring(0,4);
-        userId = userId+prefix;
+        String userId = String.valueOf(snowFlake.nextId());
         user.setUserId(userId);
         user.setDeptId("100");
         user.setEmail(prefix.substring(0,2)+"_dean@gamil.com");
@@ -118,7 +120,7 @@ public class UserController extends BaseController {
      * 删除用户
      * TODO 需要先删除用户-角色中间表中的用户数据
      * @param id 用户主键id
-     * @return 查询结果--状态码，无查询结果
+     * @return 查询结果--状态码
      */
     @RequestMapping(value = "/deleteUser/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Void> deleteUserById(@PathVariable("id") String id) {
@@ -156,5 +158,16 @@ public class UserController extends BaseController {
         }
         List<RoleVO> roleList = userService.queryRoleByUid(userId);
         return ResponseEntity.ok(roleList);
+    }
+
+    /**
+     * 雪花算法生成Id测试
+     * @return
+     */
+    @RequestMapping(value = "/getId",method = RequestMethod.GET)
+    public ResponseEntity<Map<String, Long>> getSnowFlakeId(){
+        Map<String, Long> snowFlakeId = new HashMap<>();
+        snowFlakeId.put("snowFlakeId",snowFlake.nextId());
+        return ResponseEntity.ok(snowFlakeId);
     }
 }

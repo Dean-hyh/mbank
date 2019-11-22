@@ -5,6 +5,7 @@ import com.ms.credit.datasource.DataSourceContextHolder;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Method;
 
@@ -13,7 +14,7 @@ import java.lang.reflect.Method;
  * @date 2019-10-22
  * 动态数据源切面类
  */
-@Component
+@Service
 public class DataSourceAspect {
     /**
      * 拦截目标方法，获取由@DataSource指定的数据源标识，设置到线程局部表变量中以便切换数据源
