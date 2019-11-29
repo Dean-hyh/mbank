@@ -11,7 +11,7 @@
         <module name="dbank-dao" />
         <module name="dbank-generator" />
         <module name="dbank-manager" />
-        <module name="dbank-quartz" />
+        <module name="dbank-pusher" />
         <module name="dbank-web" />
         <module name="mbank-quartz" />
       </profile>
@@ -23,6 +23,7 @@
       <module name="dbank-generator" target="1.5" />
       <module name="dbank-manager" target="1.8" />
       <module name="dbank-parent" target="1.8" />
+      <module name="dbank-pusher" target="1.8" />
       <module name="dbank-quartz" target="1.8" />
       <module name="dbank-web" target="1.8" />
       <module name="mbank-quartz" target="1.8" />

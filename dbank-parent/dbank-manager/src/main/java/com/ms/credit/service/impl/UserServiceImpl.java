@@ -10,11 +10,9 @@ import com.ms.credit.pojo.DO.UserExample;
 import com.ms.credit.pojo.VO.RoleVO;
 import com.ms.credit.pojo.VO.UserVO;
 import com.ms.credit.service.UserService;
-import com.ms.credit.service.config.SnowFlakeProperties;
 import com.ms.credit.utils.BeanHelper;
 import com.ms.credit.utils.CurrentLineInfo;
 import com.ms.credit.utils.JsonUtils;
-import com.ms.credit.utils.SnowFlake;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,16 +31,12 @@ import java.util.UUID;
  * @date 2019/9/20 17:02
  */
 @Service
-//@Transactional  //为实现读写分离，暂不进行事务控制
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
     @Autowired
     private RoleDao roleDao;
-
-    @Autowired
-    private SnowFlake snowFlake;
 
     private static Log log = LogFactory.getLog(UserServiceImpl.class);
 

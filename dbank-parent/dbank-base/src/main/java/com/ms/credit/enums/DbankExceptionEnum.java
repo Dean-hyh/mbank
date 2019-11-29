@@ -11,6 +11,7 @@ import lombok.Getter;
 @Getter
 public enum DbankExceptionEnum {
     INVALID_FILE_TYPE(400, "无效的文件类型！"),
+    FILE_CONTENT_IS_EMPTY(400,"文件内容为空"),
     INVALID_PARAM_ERROR(400, "无效的请求参数！"),
     INVALID_PHONE_NUMBER(400, "无效的手机号码"),
     INVALID_VERIFY_CODE(400, "验证码错误！"),
@@ -37,6 +38,7 @@ public enum DbankExceptionEnum {
     FILE_WRITER_ERROR(500, "文件写入失败！"),
     SEND_MESSAGE_ERROR(500, "短信发送失败！"),
     INVALID_ORDER_STATUS(500, "订单状态不正确！"),
+    MULTIMEDIA_FILE_PARSING_FAILED(500,"多媒体文件解析异常"),
 
     UNAUTHORIZED(401, "登录失效或未登录！"),
     STOCK_NOT_ENOUGH_ERROR(500,"库存不足，无法下单"),

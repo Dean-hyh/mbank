@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/dbank-parent/dbank-web" />
+    <file type="web" url="file://$PROJECT_DIR$/dbank-pusher" />
   </component>
   <component name="Kotlin2JsCompilerArguments">
     <option name="sourceMapEmbedSources" />
@@ -12,7 +13,14 @@
       <list>
         <option value="$PROJECT_DIR$/dbank-parent/pom.xml" />
         <option value="$PROJECT_DIR$/dbank-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/../dbank-pusher/pom.xml" />
+        <option value="$PROJECT_DIR$/dbank-pusher/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-quartz/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />

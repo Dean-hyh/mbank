@@ -1,5 +1,7 @@
 package com.ms.credit;
 
+import com.ms.credit.utils.FileUtils;
+import org.aspectj.util.FileUtil;
 import org.junit.Test;
 
 import java.text.SimpleDateFormat;
@@ -26,5 +28,19 @@ public class GetTime {
             return;
         }
         System.out.println(hour+":"+minute);
+    }
+
+    @Test
+    public void getFileName(){
+        String fileName = "nihao.txt";
+        String extensionName = FileUtils.getExtensionName(fileName);
+        System.out.println(extensionName);
+
+        System.out.println(FileUtils.getPreFileNameNoEx(fileName));
+    }
+
+    @Test
+    public void toUper(){
+        System.out.println("Multimedia file parsing failed".toUpperCase());
     }
 }
