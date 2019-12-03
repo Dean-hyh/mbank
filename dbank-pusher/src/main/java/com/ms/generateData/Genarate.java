@@ -19,7 +19,7 @@ public class Genarate {
 
     public static void main(String[] args) {
         String fileName = new SimpleDateFormat("yyyyMMdd").format(new Date());
-        String path = "D:\\idea\\ideaSpace_dynamicDbbank\\dbank\\dbank-parent\\dbank-quartz\\src\\main\\resources\\data";
+        String path = "D:\\idea\\ideaSpace_dynamicDbbank\\dbank\\dbank-pusher\\src\\main\\resources\\data";
         try {
             /* 写入Txt文件 */
             File file = new File(path);
@@ -33,7 +33,7 @@ public class Genarate {
 
             /*造数据*/
             for (int i = 0; i < 10; i++) {
-                StringBuffer bf = new StringBuffer();
+                StringBuilder bd = new StringBuilder();
                 //证件类型
                 Map<String, String> idType = new HashMap<>();
                 String[] idTypeKey = {"01", "03", "12", "13", "14"};
@@ -63,7 +63,7 @@ public class Genarate {
                 cardLevel.put("45", "豪白");
 
                 //拼接
-                String content = bf.append(idTypeKey[new Random().nextInt(5)]).append(SPLIT).
+                String content = bd.append(idTypeKey[new Random().nextInt(5)]).append(SPLIT).
                         append(idNo.get(new Random().nextInt(3)+1)).append(SPLIT).
                         append(cardLevelKey[new Random().nextInt(4)]).append(SPLIT).
                         append(custTypeKey[new Random().nextInt(2)]).toString();
@@ -72,6 +72,7 @@ public class Genarate {
                 out.flush();
             }
             out.close();
+            System.out.println("数据生成完毕！");
         } catch (Exception e) {
             System.out.println("写入失败！");
         }

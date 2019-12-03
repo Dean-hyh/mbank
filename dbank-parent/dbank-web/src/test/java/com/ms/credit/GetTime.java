@@ -1,7 +1,6 @@
 package com.ms.credit;
 
-import com.ms.credit.utils.FileUtils;
-import org.aspectj.util.FileUtil;
+import com.ms.credit.utils.LocalFileUtils;
 import org.junit.Test;
 
 import java.text.SimpleDateFormat;
@@ -33,10 +32,10 @@ public class GetTime {
     @Test
     public void getFileName(){
         String fileName = "nihao.txt";
-        String extensionName = FileUtils.getExtensionName(fileName);
+        String extensionName = LocalFileUtils.getExtensionName(fileName);
         System.out.println(extensionName);
 
-        System.out.println(FileUtils.getPreFileNameNoEx(fileName));
+        System.out.println(LocalFileUtils.getPreFileNameNoEx(fileName));
     }
 
     @Test

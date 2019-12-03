@@ -7,7 +7,7 @@
     <script>
         function checkId() {
             var code = document.getElementById("CardNo").value;
-            // alert(code);
+            //alert(code);
             //身份证号合法性验证
             //支持15位和18位身份证号
             //支持地址编码、出生日期、校验位验证
@@ -88,25 +88,27 @@
 <body>
 <h3>请输入证件信息</h3>
 <form id="checkId" method="post">
-    <tr>
-        <td>证件类别:</td>
-        <td>
-            <select>
-                <option name="certificate" value="idCard" selected>身份证</option>
-                <option name="certificate" value="passport">护照</option>
-                <option name="certificate" value="Hk">港澳通行证</option>
-                <option name="certificate" value="Tw">台胞证</option>
-                <option name="certificate" value="others">其他</option>
-            </select>
-        </td>
-    </tr>
+    <table>
+        <tr>
+            <td>证件类别:</td>
+            <td>
+                <select>
+                    <option name="certificate" value="idCard" selected="selected">身份证</option>
+                    <option name="certificate" value="passport">护照</option>
+                    <option name="certificate" value="Hk">港澳通行证</option>
+                    <option name="certificate" value="Tw">台胞证</option>
+                    <option name="certificate" value="others">其他</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>证件号码:</td>
+            <td><input id="CardNo" name="name" placeholder="请输入证件号码"/></td>
+        </tr>
+    </table>
     <br/>
-    <tr>
-        <td>证件号码:</td>
-        <td><input id="CardNo" name="name" placeholder="请输入证件号码" fun="checkId(id)"></td>
-    </tr>
-    <br/>
-    <input type="submit" name="提交" onclick="checkId()">
+    <input type="submit" name="提交" onclick="checkId()"/>
 </form>
 </body>
 </html>

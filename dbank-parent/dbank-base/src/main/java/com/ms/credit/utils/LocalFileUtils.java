@@ -9,7 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
  * @date 2019/11/29 10:07
  * 文件处理工具类
  */
-public class FileUtils {
+public class LocalFileUtils {
     /**
      * 获取无后缀文件名
      *

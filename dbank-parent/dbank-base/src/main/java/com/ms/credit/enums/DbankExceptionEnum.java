@@ -36,6 +36,7 @@ public enum DbankExceptionEnum {
     FILE_UPLOAD_ERROR(500, "文件上传失败！"),
     DIRECTORY_WRITER_ERROR(500, "目录写入失败！"),
     FILE_WRITER_ERROR(500, "文件写入失败！"),
+    FILE_READE_ERROR(500, "文件读取失败！"),
     SEND_MESSAGE_ERROR(500, "短信发送失败！"),
     INVALID_ORDER_STATUS(500, "订单状态不正确！"),
     MULTIMEDIA_FILE_PARSING_FAILED(500,"多媒体文件解析异常"),
