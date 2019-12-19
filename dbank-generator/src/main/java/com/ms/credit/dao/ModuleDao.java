@@ -1,7 +1,7 @@
 package com.ms.credit.dao;
 
-import com.ms.credit.pojo.Module;
-import com.ms.credit.pojo.ModuleExample;
+import com.ms.credit.pojo.DO.Module;
+import com.ms.credit.pojo.DO.ModuleExample;
 import java.util.List;
 
 public interface ModuleDao {

@@ -1,7 +1,7 @@
 package com.ms.credit.dao;
 
-import com.ms.credit.pojo.User;
-import com.ms.credit.pojo.UserExample;
+import com.ms.credit.pojo.DO.User;
+import com.ms.credit.pojo.DO.UserExample;
 import java.util.List;
 
 public interface UserDao {

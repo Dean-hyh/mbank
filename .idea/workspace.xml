@@ -7,24 +7,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00d50398-bfb4-4eaa-95d3-4e01c8200634" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/ResourceFileController.java" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/dbank_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dbank_web_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/ModuleDao.java" afterPath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/ModuleDao.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/RoleDao.java" afterPath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/RoleDao.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/UserDao.java" afterPath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/UserDao.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/Module.java" afterPath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/Module.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/ModuleExample.java" afterPath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/ModuleExample.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/Role.java" afterPath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/Role.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/RoleExample.java" afterPath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/RoleExample.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/User.java" afterPath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/User.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/UserExample.java" afterPath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/UserExample.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/dbank-generator/src/main/resources/generatorConfig.xml" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/dao/ModuleDao.class" afterPath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/dao/ModuleDao.class" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/dao/RoleDao.class" afterPath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/dao/RoleDao.class" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/dao/UserDao.class" afterPath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/dao/UserDao.class" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/Module.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/ModuleExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/ModuleExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/ModuleExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/ModuleExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/Role.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/RoleExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/RoleExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/RoleExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/RoleExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/UserExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/UserExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/UserExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/com/ms/credit/pojo/UserExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-generator/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/dbank-generator/target/classes/generatorConfig.xml" />
       <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/dbank-base.iml" afterPath="$PROJECT_DIR$/dbank-parent/dbank-base/dbank-base.iml" />
       <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/pom.xml" afterPath="$PROJECT_DIR$/dbank-parent/dbank-base/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/enums/DbankExceptionEnum.java" afterPath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/enums/DbankExceptionEnum.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/FileUtils.java" afterPath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/LocalFileUtils.java" />
       <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/dbank-core.iml" afterPath="$PROJECT_DIR$/dbank-parent/dbank-core/dbank-core.iml" />
       <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/dbank-dao.iml" afterPath="$PROJECT_DIR$/dbank-parent/dbank-dao/dbank-dao.iml" />
       <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/dbank-manager.iml" afterPath="$PROJECT_DIR$/dbank-parent/dbank-manager/dbank-manager.iml" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/ResourceFileServiceImpl.java" afterPath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/ResourceFileServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-parent.iml" afterPath="$PROJECT_DIR$/dbank-parent/dbank-parent.iml" />
       <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/dbank-web.iml" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/dbank-web.iml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/pom.xml" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/AddInBulkController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/UserController.java" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/UserController.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/BaseController.java" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/BaseController.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/ResourceFileController.java" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/ResourceFileController.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/resources/spring/springmvc.xml" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/resources/spring/springmvc.xml" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/data/nameList.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/datanameList.txt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/make/xlsprint/registForm.xlsx" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/make/xlsprint/registForm.xlsx" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/GetTime.java" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/GetTime.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/generateData/Genarate.java" afterPath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/generateData/Genarate.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/webapp/WEB-INF/page/checkId.html" afterPath="$PROJECT_DIR$/dbank-pusher/src/main/webapp/WEB-INF/page/checkId.html" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/page/checkId.html" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/page/checkId.html" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/Length.java" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/Length.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/POITest.java" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/POITest.java" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/target/classes/spring/springmvc.xml" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/target/classes/spring/springmvc.xml" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/target/dbank-web-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/target/dbank-web-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/target/dbank-web-1.0-SNAPSHOT/WEB-INF/datanameList.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/target/dbank-web-1.0-SNAPSHOT/WEB-INF/make/xlsprint/registForm.xlsx" afterPath="$PROJECT_DIR$/dbank-parent/dbank-web/target/dbank-web-1.0-SNAPSHOT/WEB-INF/make/xlsprint/registForm.xlsx" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/target/dbank-web-1.0-SNAPSHOT/WEB-INF/page/checkId.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dbank-parent/pom.xml" afterPath="$PROJECT_DIR$/dbank-parent/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/dbank-generator/target/" />
     <ignored path="$PROJECT_DIR$/dbank-parent/target/" />
@@ -46,42 +82,11 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/mbank$dbbank.coverage" NAME="dbbank Coverage Results" MODIFIED="1576231404923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ResourceFileController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/ResourceFileController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="211" column="124" lean-forward="false" selection-start-line="211" selection-start-column="124" selection-end-line="211" selection-end-column="124" />
-              <folding>
-                <element signature="e#1611#1612#0" expanded="true" />
-                <element signature="e#1661#1662#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FtpFileUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/utils/ftp/FtpFileUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="225" column="9" lean-forward="false" selection-start-line="225" selection-start-column="9" selection-end-line="225" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nameList.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/data/nameList.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -95,7 +100,6 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>LyExceptionEnum</find>
-      <find>class</find>
       <find>servlet</find>
       <find>test</find>
       <find>jedis</find>
@@ -108,11 +112,28 @@
       <find>regEx</find>
       <find>FtpUtil</find>
       <find>Ftp</find>
+      <find>listFiles</find>
+      <find>ftp</find>
+      <find>files</find>
+      <find>session</find>
+      <find>request</find>
+      <find>raffleActivePage</find>
+      <find>fas</find>
+      <find>redis</find>
+      <find>jedisConnectionFactory</find>
+      <find>isAllowedDuplicates</find>
+      <find>raffle_active_nam</find>
+      <find>raffleActiveNam</find>
+      <find>VO</find>
+      <find>selectByExample</find>
+      <find>class</find>
     </findStrings>
     <replaceStrings>
       <replace>DbankExceptionEnum</replace>
       <replace>FtpFileUtil</replace>
       <replace>FtpInfo</replace>
+      <replace>RaffleActivePage</replace>
+      <replace>DTO</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -132,57 +153,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-quartz/src/main/resources/env_p.properties" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-quartz/src/main/java/com/ms/credit/quartz/service/AutoJobDemoService.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-quartz/src/test/java/com/test/DemoTest.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-quartz/src/main/java/com/ms/credit/quartz/listener/QuartzListenner.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-quartz/src/main/java/com/ms/credit/quartzProvider.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-quartz/src/main/java/com/ms/credit/quartz/job/AutoJobDemo.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-quartz/src/main/resources/spring/applicationContext-quartz.xml" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/dbank-pusher/pom.xml" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/resources/spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/resources/spring/applicationContext-quartz.xml" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/utils/Properties.java" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/make/txtprint/registList.txt" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/ServiceTest.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/POITest.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/resources/spring/springmvc.xml" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/pom.xml" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/config/SnowFlakeConfig.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/RoleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/FileUtils.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/GetTime.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/generateData/Genarate.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/AddInBulkController.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/enums/DbankExceptionEnum.java" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/java/com/lottery/LotterySys.java" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/java/com/lottery/Demo.java" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/java/com/lottery/RandomThread.java" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/generateData/RandomValueUtil.java" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/generateData/GenarateUserList.java" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/resources/data/luckyperson.txt" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/java/com/lottery/sys/LotterySys.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/LuckyEmp.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/LuckyEmpVO.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/BatchController.java" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/webapp/WEB-INF/page/checkId.html" />
-        <option value="$PROJECT_DIR$/dbank-pusher/src/main/webapp/WEB-INF/page/happyBirthday.html" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/pom.xml" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/index.html" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/ResourceFileService.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/ResourceFileServiceImpl.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/ftp/FtpDownLoad.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/ftp/FTPUtil.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/info/FtpInfo.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/ftp/FtpFileUtil.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/redis/JedisClusterFactory.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/redis/RedisCacheTransfer.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/redis/SerializeUtil.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/redis/RedisCache.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/resources/config/redisconfig.properties" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/resources/config/redis.properties" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/resources/spring/applicationContext-redis.xml" />
         <option value="$PROJECT_DIR$/dbank-parent/dbank-base/pom.xml" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/redis/RedisService.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/RafflePageVo.java" />
+        <option value="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/ModuleExample.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/raffleDetailDao.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/RaffleDetail.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/raffleActivePageDao.xml" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleActivePage.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleActivePageDao.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DTO/RaffleDetailVO.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleActivePageExample.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/page/list.html" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/page/list.html" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/LocalBeanUtils.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/Stu.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/ObjectUtils.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/LocalObjectUtils.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/BeanTest.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DTO/RaffleActivePageDTO.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/RaffleDetailVO.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/RaffleActivePageVO.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/page/add.html" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DTO/RaffleDetailDTO.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/RaffleActivePageService.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleDetailExample.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/RaffleDetailDao.xml" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/RaffleActivePageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/RaffleActivePageController.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/utils/ftp/FTPUtil.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleActiveWinnersExample.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DTO/RaffleActiveWinnerDTO.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/redis/RaffleActiveWinnerService.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/RaffleActiveWinnerService.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleActiveWinnersDao.java" />
+        <option value="$PROJECT_DIR$/dbank-generator/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleDetailDao.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleActiveWinnerDao.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/RaffleActiveWinnerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/test/java/com/ms/credit/GenerateWinnerList.java" />
+        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/RaffleActiveWinnerDao.xml" />
         <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/ResourceFileController.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/utils/ftp/FtpFileUtil.java" />
       </list>
     </option>
   </component>
@@ -273,7 +294,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,187 +306,27 @@
             <path>
               <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
               <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dbank-pusher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
               <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-base" type="462c0819:PsiDirectoryNode" />
+              <item name="dbank-pusher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
               <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-base" type="462c0819:PsiDirectoryNode" />
+              <item name="dbank-pusher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ms" type="462c0819:PsiDirectoryNode" />
-              <item name="credit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ms" type="462c0819:PsiDirectoryNode" />
-              <item name="credit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ms" type="462c0819:PsiDirectoryNode" />
-              <item name="credit" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ms" type="462c0819:PsiDirectoryNode" />
-              <item name="credit" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="ftp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbank" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dbank-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -478,23 +340,26 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-web\src\main\webapp\WEB-INF\make\xlsprint" />
-      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-manager\src\main\resources\config" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-dao\src\main\resources\com\ms\credit\dao" />
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-core\src\main\java\com\ms\credit\pojo\DO" />
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-web\src\main\webapp\WEB-INF\page" />
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-core\src\main\java\com\ms\credit\pojo\DTO" />
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-core\src\main\java\com\ms\credit\pojo\VO" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ms.credit.dao" />
+      <recent name="com.ms.credit.pojo.DTO" />
+      <recent name="com.ms.credit.pojo.VO" />
       <recent name="com.ms.credit.utils.ftp" />
       <recent name="com.ms.generateData" />
-      <recent name="com.test" />
-      <recent name="com.ms.credit" />
-      <recent name="com.ms.credit.utils.constants" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-web\src\main\resources\data" />
-      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-web\src\main\webapp\WEB-INF\make\txtprint" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-web\src\main\webapp" />
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-manager\src\main\resources" />
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-manager\src\main\resources\config" />
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-dao\src\main\resources\com\ms\credit\dao" />
       <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-web\src\main\webapp\WEB-INF\make\xlsprint" />
-      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-pusher\src\main\resources\spring" />
-      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-pusher\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -517,101 +382,6 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="Genarate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ms.generateData.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ms.generateData.Genarate" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="dbank-pusher" />
-      <envs />
-    </configuration>
-    <configuration name="GenarateUserList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ms.generateData.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ms.generateData.GenarateUserList" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="dbank-pusher" />
-      <envs />
-    </configuration>
-    <configuration name="LotterySys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.lottery.sys.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.lottery.sys.LotterySys" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="dbank-pusher" />
-      <envs />
-    </configuration>
-    <configuration name="RandomValueUtil (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ms.generateData.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ms.generateData.RandomValueUtil" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="dbank-pusher" />
-      <envs />
-    </configuration>
-    <configuration name="RandomValueUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ms.credit.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ms.credit.utils.RandomValueUtil" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="dbank-base" />
-      <envs />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -625,6 +395,131 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="BeanTest.isEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ms.credit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dbank-web" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ms.credit" />
+      <option name="MAIN_CLASS_NAME" value="com.ms.credit.BeanTest" />
+      <option name="METHOD_NAME" value="isEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="GenerateWinnerList.generateList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ms.credit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dbank-manager" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ms.credit" />
+      <option name="MAIN_CLASS_NAME" value="com.ms.credit.GenerateWinnerList" />
+      <option name="METHOD_NAME" value="generateList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Length.arrLen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ms.credit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dbank-web" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ms.credit" />
+      <option name="MAIN_CLASS_NAME" value="com.ms.credit.Length" />
+      <option name="METHOD_NAME" value="arrLen" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Length.removeIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ms.credit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dbank-web" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ms.credit" />
+      <option name="MAIN_CLASS_NAME" value="com.ms.credit.Length" />
+      <option name="METHOD_NAME" value="removeIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="POITest.utilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ms.credit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dbank-web" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ms.credit" />
+      <option name="MAIN_CLASS_NAME" value="com.ms.credit.POITest" />
+      <option name="METHOD_NAME" value="utilTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -693,7 +588,6 @@
       <listeners />
     </configuration>
     <configuration name="dbbank" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.27" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
-      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -807,19 +701,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.dbbank" />
-      <item index="1" class="java.lang.String" itemvalue="Application.RandomValueUtil" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Genarate" />
-      <item index="3" class="java.lang.String" itemvalue="Application.LotterySys" />
-      <item index="4" class="java.lang.String" itemvalue="Application.RandomValueUtil (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Application.GenarateUserList" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Length.arrLen" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.POITest.utilTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Length.removeIndex" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BeanTest.isEmpty" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.GenerateWinnerList.generateList" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.LotterySys" />
-        <item index="1" class="java.lang.String" itemvalue="Application.GenarateUserList" />
-        <item index="2" class="java.lang.String" itemvalue="Application.RandomValueUtil (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Genarate" />
-        <item index="4" class="java.lang.String" itemvalue="Application.RandomValueUtil" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.GenerateWinnerList.generateList" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BeanTest.isEmpty" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Length.removeIndex" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.POITest.utilTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Length.arrLen" />
       </list>
     </recent_temporary>
   </component>
@@ -879,6 +773,28 @@
       <workItem from="1575334222382" duration="4403000" />
       <workItem from="1575365047098" duration="2863000" />
       <workItem from="1575368037948" duration="1956000" />
+      <workItem from="1575421640095" duration="21686000" />
+      <workItem from="1575594357514" duration="1470000" />
+      <workItem from="1575599531984" duration="9737000" />
+      <workItem from="1575716191125" duration="1252000" />
+      <workItem from="1575870191487" duration="3885000" />
+      <workItem from="1575939616463" duration="6076000" />
+      <workItem from="1576025986497" duration="4073000" />
+      <workItem from="1576113128697" duration="1811000" />
+      <workItem from="1576198967823" duration="6250000" />
+      <workItem from="1576224595108" duration="4299000" />
+      <workItem from="1576318015695" duration="8207000" />
+      <workItem from="1576458742812" duration="3931000" />
+      <workItem from="1576462858806" duration="858000" />
+      <workItem from="1576464245344" duration="3122000" />
+      <workItem from="1576475497783" duration="1363000" />
+      <workItem from="1576477219387" duration="8921000" />
+      <workItem from="1576486204124" duration="746000" />
+      <workItem from="1576486979649" duration="724000" />
+      <workItem from="1576487732857" duration="5345000" />
+      <workItem from="1576545914387" duration="21760000" />
+      <workItem from="1576631039003" duration="15391000" />
+      <workItem from="1576716854254" duration="20999000" />
     </task>
     <task id="LOCAL-00001" summary="1.删除Oracle数据源相关信息&#10;2.修改说明文件">
       <created>1572103453397</created>
@@ -954,39 +870,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Genarate_generateTxt - 2019.11.22 at 15h 42m 53s.xml">
-      <configuration name="Genarate.generateTxt" configurationId="JUnit" />
+    <history-entry file="BeanTest_isEmpty - 2019.12.18 at 10h 57m 22s.xml">
+      <configuration name="BeanTest.isEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Genarate_generateTxt - 2019.11.22 at 15h 43m 00s.xml">
-      <configuration name="Genarate.generateTxt" configurationId="JUnit" />
+    <history-entry file="BeanTest_isEmpty - 2019.12.18 at 10h 57m 41s.xml">
+      <configuration name="BeanTest.isEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Genarate_generateTxt - 2019.11.22 at 15h 49m 07s.xml">
-      <configuration name="Genarate.generateTxt" configurationId="JUnit" />
+    <history-entry file="BeanTest_isEmpty - 2019.12.18 at 10h 58m 01s.xml">
+      <configuration name="BeanTest.isEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Genarate_generateTxt - 2019.11.22 at 15h 49m 28s.xml">
-      <configuration name="Genarate.generateTxt" configurationId="JUnit" />
+    <history-entry file="BeanTest_isEmpty - 2019.12.18 at 11h 04m 54s.xml">
+      <configuration name="BeanTest.isEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GetTime_getFileName - 2019.11.29 at 10h 30m 49s.xml">
-      <configuration name="GetTime.getFileName" configurationId="JUnit" />
+    <history-entry file="BeanTest_isEmpty - 2019.12.18 at 11h 16m 09s.xml">
+      <configuration name="BeanTest.isEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GetTime_getFileName - 2019.11.29 at 10h 31m 10s.xml">
-      <configuration name="GetTime.getFileName" configurationId="JUnit" />
+    <history-entry file="BeanTest_isEmpty - 2019.12.18 at 11h 20m 37s.xml">
+      <configuration name="BeanTest.isEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GetTime_getFileName - 2019.11.29 at 10h 31m 34s.xml">
-      <configuration name="GetTime.getFileName" configurationId="JUnit" />
+    <history-entry file="BeanTest_isEmpty - 2019.12.18 at 11h 22m 09s.xml">
+      <configuration name="BeanTest.isEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GetTime_getFileName - 2019.11.29 at 10h 34m 10s.xml">
-      <configuration name="GetTime.getFileName" configurationId="JUnit" />
+    <history-entry file="BeanTest_isEmpty - 2019.12.18 at 12h 26m 32s.xml">
+      <configuration name="BeanTest.isEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GetTime_toUper - 2019.11.29 at 11h 22m 36s.xml">
-      <configuration name="GetTime.toUper" configurationId="JUnit" />
+    <history-entry file="BeanTest_isEmpty - 2019.12.18 at 13h 51m 17s.xml">
+      <configuration name="BeanTest.isEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="POITest_downLoad - 2019.11.28 at 14h 15m 22s.xml">
-      <configuration name="POITest.downLoad" configurationId="JUnit" />
+    <history-entry file="GenerateWinnerList_generateList - 2019.12.19 at 19h 02m 51s.xml">
+      <configuration name="GenerateWinnerList.generateList" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210785000" />
+    <option name="totallyTimeSpent" value="362691000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1002,49 +918,49 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4509346" sideWeight="0.5032189" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2885514" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15128756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2885514" sideWeight="0.50214595" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21566524" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2453271" sideWeight="0.4967811" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5151869" sideWeight="0.4967811" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45560747" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45560747" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5257009" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31425235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5257009" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33208156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4509346" sideWeight="0.5032189" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2885514" sideWeight="0.50214595" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15128756" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21566524" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1053,19 +969,19 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60864484" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39252338" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66004676" sideWeight="0.4967811" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45560747" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31425235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5257009" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.277897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2274678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1137,337 +1053,464 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="110" />
+      <option name="time" value="161" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/CurrentLineInfo.java">
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/RaffleActivePageVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="57" column="25" lean-forward="false" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-quartz/src/main/resources/data/20191129.txt" />
-    <entry file="file://$PROJECT_DIR$/dbank-pusher/src/main/resources/data/20191129.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_181/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="274" column="11" lean-forward="false" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-pusher/src/main/java/com/lottery/Demo.java" />
-    <entry file="file://$PROJECT_DIR$/dbank-pusher/src/main/java/com/lottery/RandomThread.java" />
-    <entry file="file://$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/generateData/Genarate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-910">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/RandomValueUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/generateData/RandomValueUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-261">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/luckyperson.txt" />
-    <entry file="file://$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/generateData/GenarateUserList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="28" column="54" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_181/src.zip!/java/awt/event/MouseAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="69" column="22" lean-forward="false" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-pusher/src/main/java/com/lottery/sys/LotterySys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="125" column="39" lean-forward="false" selection-start-line="125" selection-start-column="27" selection-end-line="125" selection-end-column="39" />
+        <state relative-caret-position="52">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1378#1386#0" expanded="true" />
-            <element signature="e#1445#1453#0" expanded="true" />
-            <element signature="e#8427#8428#0" expanded="true" />
-            <element signature="e#8459#8460#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/ModuleVO.java">
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/RaffleDetailVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="598">
+          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/UserVO.java">
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleDetailExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="382">
+          <caret line="913" column="57" lean-forward="false" selection-start-line="913" selection-start-column="57" selection-end-line="913" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-pusher/src/main/webapp/WEB-INF/page/checkId.html">
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/RaffleActivePageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+        <state relative-caret-position="546">
+          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-pusher/src/main/webapp/WEB-INF/page/happyBirthday.html">
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleActivePageExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="-52">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/LuckyEmpVO.java">
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/RaffleActivePageDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="1026">
+          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding>
+            <marker date="1576570064061" expanded="true" signature="3378:3517" ph="select from raffle_active_page" />
+            <marker date="1576570064061" expanded="true" signature="3600:3693" ph="delete from raffle_active_page... " />
+            <marker date="1576570064061" expanded="true" signature="3788:4592" ph="insert into raffle_active_page... " />
+            <marker date="1576570064061" expanded="true" signature="7336:8868" ph="update raffle_active_page... " />
+            <marker date="1576570064061" expanded="true" signature="8975:9793" ph="update raffle_active_page... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/ServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="-755">
+          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/pom.xml">
+    <entry file="file://$PROJECT_DIR$/dbank-generator/src/main/resources/com/ms/credit/dao/RaffleDetailDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="-5053">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1576743297755" expanded="true" signature="3101:3235" ph="select from raffle_detail" />
+            <marker date="1576743297755" expanded="true" signature="3318:3406" ph="delete from raffle_detail... " />
+            <marker date="1576743297755" expanded="true" signature="3497:4145" ph="insert into raffle_detail... " />
+            <marker date="1576743297755" expanded="true" signature="6461:7710" ph="update raffle_detail... " />
+            <marker date="1576743297755" expanded="true" signature="7813:8475" ph="update raffle_detail... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/RaffleDetailDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="225" column="9" lean-forward="true" selection-start-line="225" selection-start-column="9" selection-end-line="225" selection-end-column="9" />
+          <folding>
+            <marker date="1576743419012" expanded="true" signature="3101:3235" ph="select from raffle_detail" />
+            <marker date="1576743419012" expanded="true" signature="3318:3406" ph="delete from raffle_detail... " />
+            <marker date="1576743419012" expanded="true" signature="3497:4145" ph="insert into raffle_detail... " />
+            <marker date="1576743419012" expanded="true" signature="6461:7710" ph="update raffle_detail... " />
+            <marker date="1576743419012" expanded="true" signature="7813:8475" ph="update raffle_detail... " />
+            <marker date="1576743419012" expanded="true" signature="8554:8638" ph="DELETE FROM raffle_detail... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/ContextController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="72" column="16" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+        <state relative-caret-position="2392">
+          <caret line="117" column="24" lean-forward="false" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="572">
+          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="122" column="24" lean-forward="true" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/index.html" />
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="511">
+          <caret line="158" column="51" lean-forward="true" selection-start-line="158" selection-start-column="51" selection-end-line="158" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/pom.xml">
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/utils/ftp/FTPUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-261">
-          <caret line="257" column="25" lean-forward="false" selection-start-line="257" selection-start-column="25" selection-end-line="257" selection-end-column="25" />
+        <state relative-caret-position="9204">
+          <caret line="379" column="1" lean-forward="true" selection-start-line="379" selection-start-column="1" selection-end-line="379" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-pusher/src/main/resources/data/empList_20191129.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="81" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="99" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-pusher/src/main/resources/data/luckyperson.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/make/txtprint/registList.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/ContextController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-962">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/enums/DbankExceptionEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.4.RELEASE/spring-core-4.2.4.RELEASE-sources.jar!/org/springframework/util/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="82" column="26" lean-forward="false" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/LocalFileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/Module.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-598">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/ftp/FtpDownLoad.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar!/org/apache/commons/io/FileUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_181/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="712" column="25" lean-forward="false" selection-start-line="712" selection-start-column="25" selection-end-line="712" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/ResourceFileServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2427">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/spring/applicationContext-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="83" column="11" lean-forward="false" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/ftp/FTPUtil.java" />
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/ftp/FtpFileUtil.java" />
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-base/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/info/FtpInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/ResourceFileService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="260">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleActiveWinnersExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+        <state relative-caret-position="382">
+          <caret line="976" column="57" lean-forward="false" selection-start-line="976" selection-start-column="57" selection-end-line="976" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleActiveWinners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/redis/RedisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/RaffleActivePageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="56" column="70" lean-forward="true" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleActivePageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/RaffleActiveWinnersDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleActiveWinner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-104">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleActiveWinnerExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleActiveWinnersDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/RaffleDetailDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-generator/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="74" column="117" lean-forward="false" selection-start-line="74" selection-start-column="117" selection-end-line="74" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleDetailDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-generator/src/main/resources/com/ms/credit/dao/RaffleActiveWinnerDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1576747820571" expanded="true" signature="3214:3355" ph="select from raffle_active_winner" />
+            <marker date="1576747820571" expanded="true" signature="3438:3533" ph="delete from raffle_active_winner... " />
+            <marker date="1576747820571" expanded="true" signature="3630:4327" ph="insert into raffle_active_winner... " />
+            <marker date="1576747820571" expanded="true" signature="6806:8156" ph="update raffle_active_winner... " />
+            <marker date="1576747820571" expanded="true" signature="8265:8983" ph="update raffle_active_winner... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/RaffleActiveWinnersDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleActiveWinnerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/LuckyEmpVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DTO/RaffleActiveWinnerDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/ResourceFileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/BeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/GetTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/Length.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-503">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/MapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/POITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/ServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/Stu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/test/java/RandomTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#180#181#0" expanded="false" />
+            <element signature="e#255#256#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-pusher/src/test/java/com/test/DemoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="18" column="82" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-manager/src/test/java/com/ms/credit/GenerateWinnerList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="62" column="32" lean-forward="false" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/RaffleActiveWinnerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/RaffleActivePageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="83" column="14" lean-forward="false" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.4.RELEASE/spring-aop-4.2.4.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/RaffleActiveWinnerDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4751">
+          <caret line="233" column="64" lean-forward="true" selection-start-line="233" selection-start-column="64" selection-end-line="233" selection-end-column="64" />
+          <folding>
+            <marker date="1576753761473" expanded="true" signature="3214:3355" ph="select from raffle_active_winner" />
+            <marker date="1576753761473" expanded="true" signature="3438:3533" ph="delete from raffle_active_winner... " />
+            <marker date="1576753761473" expanded="true" signature="3630:4327" ph="insert into raffle_active_winner... " />
+            <marker date="1576753761473" expanded="true" signature="6806:8156" ph="update raffle_active_winner... " />
+            <marker date="1576753761473" expanded="true" signature="8265:8983" ph="update raffle_active_winner... " />
+            <marker date="1576753761473" expanded="true" signature="9082:9222" ph="select from raffle_active_winner" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9075">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1572318220987" expanded="true" signature="4023:4135" ph="select from pe_user" />
+            <marker date="1572318220987" expanded="true" signature="4220:4286" ph="delete from pe_user... " />
+            <marker date="1572318220987" expanded="true" signature="4369:5509" ph="insert into pe_user... " />
+            <marker date="1572318220987" expanded="true" signature="9587:11964" ph="update pe_user... " />
+            <marker date="1572318220987" expanded="true" signature="12059:13248" ph="update pe_user... " />
+            <marker date="1572318220987" expanded="true" signature="13334:13384" ph="SELECT COUNT... pe_user" />
+            <marker date="1572318220987" expanded="true" signature="13457:13503" ph="DELETE FROM pe_role_user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/RaffleActiveWinnerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="56" column="44" lean-forward="false" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/ResourceFileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="211" column="124" lean-forward="false" selection-start-line="211" selection-start-column="124" selection-end-line="211" selection-end-column="124" />
-          <folding>
-            <element signature="e#1611#1612#0" expanded="true" />
-            <element signature="e#1661#1662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/data/nameList.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/utils/ftp/FtpFileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="225" column="9" lean-forward="false" selection-start-line="225" selection-start-column="9" selection-end-line="225" selection-end-column="9" />
+        <state relative-caret-position="1507">
+          <caret line="135" column="77" lean-forward="false" selection-start-line="135" selection-start-column="77" selection-end-line="135" selection-end-column="77" />
           <folding />
         </state>
       </provider>

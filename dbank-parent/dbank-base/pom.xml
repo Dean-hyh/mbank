@@ -9,7 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.com.cmbcc.ceditcard</groupId>
     <artifactId>dbank-base</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>

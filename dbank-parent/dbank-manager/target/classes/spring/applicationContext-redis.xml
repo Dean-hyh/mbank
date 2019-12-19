@@ -1,0 +1,39 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:redis.properties" ignore-unresolvable="true"/>
+
+    <!--构建连接池配置信息-->
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <!--设置最大连接数-->
+        <property name="maxTotal" value="20"></property>
+        <!--设置获取连接的最大等待时间-->
+        <property name="maxWaitMillis" value="2000"></property>
+        <!--开启获取连接时可用性校验，保证拿到的连接都是可用的-->
+        <property name="testOnBorrow" value="true"></property>
+    </bean>
+
+    <!--构建Spring-data-redis连接工厂，其实就是连接池-->
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+        <constructor-arg index="0" ref="jedisPoolConfig"></constructor-arg>
+        <!--设置IP-->
+        <property name="hostName" value="127.0.0.1"></property>
+        <!--设置端口-->
+        <property name="port" value="6379"></property>
+        <!--设置是否使用连接池-->
+        <property name="usePool" value="true"></property>
+        <!--设置密码默认是没有密码-->
+        <property name="password" value="yuanhui"></property>
+    </bean>
+
+
+    <!-- String类型的RedisTemplate模板 -->
+    <bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+        <constructor-arg index="0" ref="jedisConnectionFactory"/>
+    </bean>
+</beans>

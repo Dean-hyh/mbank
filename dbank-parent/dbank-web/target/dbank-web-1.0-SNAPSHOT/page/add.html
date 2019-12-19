@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>抽奖活动添加页面</title>
+</head>
+<body>
+<div>
+    <h4>重要提示</h4>
+    推荐<a href="/resourceFile/downloadTemplate/0" style="color: blue">下载模板文件</a>，填写后上传
+</div>
+<hr/>
+<div>
+    <form action="/raffleActive/addRaffleActive" method="post" enctype="multipart/form-data">
+        <div>
+            <!--名单上传-->
+            上传名单：<input type="file" name="files"/><br/><br/>
+        </div>
+        <hr/>
+        <!--是否允许重复中奖-->
+        <input name="isAllowedDuplicates" type="checkbox" value="false"/>排除已中奖的人<span
+            style="font-size: 0.3cm;color: red">(禁止重复中奖)</span><br/><br/>
+        <input name="isAllowedDuplicates" type="hidden" value="true"/>
+
+        奖品名次 ：<input type="text" name="raffleDetailList[0].awardsName" placeholder="奖品等级"/>&nbsp;
+        奖品名额 ：<input type="text" name="raffleDetailList[0].prizeQuota" placeholder="抽奖名额"/>&nbsp;
+        奖品批次 ：<input type="text" name="raffleDetailList[0].betch" placeholder="抽奖批次"/>&nbsp;
+        奖品名称 ：<input type="text" name="raffleDetailList[0].prizeName" placeholder="奖品"/> &nbsp;
+        抽奖顺序 ：
+        <select id="rank1" name="raffleDetailList[0].raffleRank">
+            <option>‐请选择‐</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br/><br/>
+        奖品名次 ：<input type="text" name="raffleDetailList[1].awardsName" placeholder="奖品等级"/>&nbsp;
+        奖品名额 ：<input type="text" name="raffleDetailList[1].prizeQuota" placeholder="抽奖名额"/>&nbsp;
+        奖品批次 ：<input type="text" name="raffleDetailList[1].betch" placeholder="抽奖批次"/>&nbsp;
+        奖品名称 ：<input type="text" name="raffleDetailList[1].prizeName" placeholder="奖品"/> &nbsp;
+        抽奖顺序 ：
+        <select id="rank2" name="raffleDetailList[1].raffleRank">
+            <option>‐请选择‐</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br/><br/>
+        奖品名次 ：<input type="text" name="raffleDetailList[2].awardsName" placeholder="奖品等级"/>&nbsp;
+        奖品名额 ：<input type="text" name="raffleDetailList[2].prizeQuota" placeholder="抽奖名额"/>&nbsp;
+        奖品批次 ：<input type="text" name="raffleDetailList[2].betch" placeholder="抽奖批次"/>&nbsp;
+        奖品名称 ：<input type="text" name="raffleDetailList[2].prizeName" placeholder="奖品"/> &nbsp;
+        抽奖顺序 ：
+        <select id="rank3" name="raffleDetailList[2].raffleRank">
+            <option>‐请选择‐</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <hr/>
+        <!--背景图片上传-->
+        <div>
+            活动标题：<input type="text" name="raffleActiveName" placeholder="请输入活动标题"/><br>
+            <p>
+                背景图片：<input id="mys" type="file" name="files" onchange="previewWithObject()"/><br/>
+                <img id="myimg" src="" width="160px" height="100px" style="padding-left:80px;padding-top: 2px" alt=""/>
+            </p>
+        </div>
+        <input type="submit" value="上传"/>
+        <input type="reset" value="重置"/>
+    </form>
+</div>
+</body>
+
+<script>
+    //图片
+    function previewWithObject() {
+        var read = new FileReader();
+        read.readAsDataURL(event.target.files[0]);
+        read.onload = function (event) {
+            myimg.src = event.target.result;
+        }
+    }
+</script>
+</html>

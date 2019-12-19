@@ -59,13 +59,13 @@ public class ResourceFileServiceImpl implements ResourceFileService {
             String suffix = LocalFileUtils.getExtensionName(file);
             if (SUFFIX_ES_EXCEL.contains(fileContentType)) {
                 //用户上传的为excel文件，使用poi插件读取
-                Workbook workbook = new XSSFWorkbook(file.getInputStream());
+                Workbook workbook = new XSSFWorkbook(in);
                 Sheet sheet = workbook.getSheetAt(0);
                 /*开始读取数据(跳过表头)*/
                 String userTag;
                 Integer totalRowNum = sheet.getLastRowNum();
-                logger.info("数据总行数：{}",totalRowNum);
-                for (int i = 0; i <= sheet.getLastRowNum(); i++) {
+                logger.info("数据总行数：{}",totalRowNum-1);
+                for (int i = 1; i <= sheet.getLastRowNum(); i++) {
                     //获取到行
                     Row row = sheet.getRow(i);
                     if (row == null) {
@@ -116,6 +116,7 @@ public class ResourceFileServiceImpl implements ResourceFileService {
             //解析异常
             throw new DbankException(DbankExceptionEnum.MULTIMEDIA_FILE_PARSING_FAILED);
         }
+        logger.info("成功上传" + result.size() + "条数据");
         return result;
     }
 }

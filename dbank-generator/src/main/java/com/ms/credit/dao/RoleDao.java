@@ -1,7 +1,7 @@
 package com.ms.credit.dao;
 
-import com.ms.credit.pojo.Role;
-import com.ms.credit.pojo.RoleExample;
+import com.ms.credit.pojo.DO.Role;
+import com.ms.credit.pojo.DO.RoleExample;
 import java.util.List;
 
 public interface RoleDao {

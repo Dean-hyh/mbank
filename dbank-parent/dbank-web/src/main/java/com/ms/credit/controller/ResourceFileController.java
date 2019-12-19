@@ -3,11 +3,16 @@ package com.ms.credit.controller;
 import com.ms.credit.BaseController;
 import com.ms.credit.enums.DbankExceptionEnum;
 import com.ms.credit.exception.DbankException;
+import com.ms.credit.pojo.DO.RaffleActiveWinner;
+import com.ms.credit.pojo.DTO.RaffleActiveWinnerDTO;
 import com.ms.credit.pojo.VO.LuckyEmpVO;
 import com.ms.credit.pojo.info.FtpInfo;
+import com.ms.credit.service.RaffleActiveWinnerService;
 import com.ms.credit.service.ResourceFileService;
 import com.ms.credit.utils.CurrentLineInfo;
+import com.ms.credit.utils.ftp.FTPUtil;
 import com.ms.credit.utils.ftp.FtpFileUtil;
+import org.apache.ibatis.annotations.Param;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Row;
@@ -25,7 +30,6 @@ import java.io.*;
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -41,6 +45,9 @@ public class ResourceFileController extends BaseController {
 
     @Autowired
     private ResourceFileService resourceFileService;
+
+    @Autowired
+    private RaffleActiveWinnerService raffleActiveWinnerService;
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -61,7 +68,7 @@ public class ResourceFileController extends BaseController {
      * @return 下载结果
      */
     @RequestMapping(value = "/downloadTemplate/{tempId}", method = RequestMethod.GET)
-    public ResponseEntity<Void> downloadFileModel(@PathVariable("fileId") Integer fileId) {
+    public ResponseEntity<Void> downloadFileModel(@PathVariable("tempId") Integer fileId) {
         try {
             String path;
             if (fileId == 0) {
@@ -110,20 +117,8 @@ public class ResourceFileController extends BaseController {
      * @return
      */
     @RequestMapping(value = "/downloadFile", method = RequestMethod.GET)
-    public ResponseEntity<Void> downloadFile() throws FileNotFoundException {
-        //TODO 真实数据需从数据库或缓存中查询
-        LuckyEmpVO le1 = new LuckyEmpVO("APP活动1", "1", "特等奖", "周星驰", new Date(), "5");
-        LuckyEmpVO le2 = new LuckyEmpVO("APP活动2", "2", "一等奖", "陈小春", new Date(), "5");
-        LuckyEmpVO le3 = new LuckyEmpVO("APP活动3", "3", "二等奖", "古天乐", new Date(), "5");
-        LuckyEmpVO le4 = new LuckyEmpVO("APP活动4", "4", "三等奖", "刘德华", new Date(), "5");
-        LuckyEmpVO le5 = new LuckyEmpVO("APP活动5", "5", "三等奖", "谢霆锋", new Date(), "5");
-        List<LuckyEmpVO> luckyEmpVOList = new ArrayList<>();
-        luckyEmpVOList.add(le1);
-        luckyEmpVOList.add(le2);
-        luckyEmpVOList.add(le3);
-        luckyEmpVOList.add(le4);
-        luckyEmpVOList.add(le5);
-
+    public ResponseEntity<Void> downloadFile(@Param("raffleAcriveId") Long raffleAcriveId) throws FileNotFoundException {
+        List<RaffleActiveWinnerDTO> winnerDTOList = raffleActiveWinnerService.downloadWinnerListByRaffleActiveId(raffleAcriveId);
         try {
             /*读取模板*/
             String path = session.getServletContext().getRealPath("WEB-INF/make/xlsprint/LUCKYRMP.xlsx");
@@ -138,8 +133,7 @@ public class ResourceFileController extends BaseController {
 
             //第一行（标题--合并的单元格）-------------------------
             Row bigTitleRow = sheet.getRow(0);
-            //TODO 拼接活动名称--设置后管可配置
-            String activityName = "专宠礼包";
+            String activityName = winnerDTOList.get(0).getRaffleActiveName();
             bigTitleRow.getCell(1).setCellValue(activityName + "抽奖活动中奖名单");
 
             //第二行（表头字段）-------------------------
@@ -157,34 +151,36 @@ public class ResourceFileController extends BaseController {
             }
             int rowIndex = 2;
             Cell cell = null;
-            for (LuckyEmpVO luckyEmpVO : luckyEmpVOList) {
+            Integer seriaNo = 0;
+            for (RaffleActiveWinnerDTO winnerDTO : winnerDTOList) {
+                seriaNo+=1;
                 Row row = sheet.createRow(rowIndex);
                 row.setHeightInPoints(16);
 
                 /*序号*/
                 cell = row.createCell(1);
                 cell.setCellStyle(cellStyles[0]);
-                cell.setCellValue(luckyEmpVO.getSeriaNo());
+                cell.setCellValue(seriaNo);
 
                 /*中奖名次*/
                 cell = row.createCell(2);
                 cell.setCellStyle(cellStyles[1]);
-                cell.setCellValue(luckyEmpVO.getGrade());
+                cell.setCellValue(winnerDTO.getAwardsName());
 
                 /*中奖人*/
                 cell = row.createCell(3);
                 cell.setCellStyle(cellStyles[2]);
-                cell.setCellValue(luckyEmpVO.getEmpName());
+                cell.setCellValue(winnerDTO.getCustName());
 
                 /*抽奖日期*/
                 cell = row.createCell(4);
                 cell.setCellStyle(cellStyles[3]);
-                cell.setCellValue(new SimpleDateFormat("yyyy-MM-dd").format(luckyEmpVO.getAwardDate()));
+                cell.setCellValue(new SimpleDateFormat("yyyy-MM-dd").format(winnerDTO.getRaffleActiveTime()));
 
                 /*奖品内容*/
                 cell = row.createCell(5);
                 cell.setCellStyle(cellStyles[4]);
-                cell.setCellValue(luckyEmpVO.getPrize());
+                cell.setCellValue(winnerDTO.getPrizeName());
 
                 rowIndex++;
             }
@@ -192,7 +188,8 @@ public class ResourceFileController extends BaseController {
             /*输出流*/
             ServletOutputStream outputStream = response.getOutputStream();
             /*添加响应文件头-1.打开方式（附件形式attachment，页面打开inline）/2.文件类型（mime类型）*/
-            response.setHeader("Content-Disposition", "attachment; filename=" + URLEncoder.encode(activityName + "活动中奖名单.xlsx", "UTF-8"));
+            //response.setHeader("Content-Disposition", "attachment; filename=" + URLEncoder.encode(activityName + "活动中奖名单.xlsx", "UTF-8"));
+            response.setHeader("Content-Disposition", "inline; filename=" + URLEncoder.encode(activityName + "活动中奖名单.xlsx", "UTF-8"));
             workbook.write(outputStream);
         } catch (Exception e) {
             logger.error("名单下载异常：", e);
@@ -201,8 +198,14 @@ public class ResourceFileController extends BaseController {
         return ResponseEntity.ok().build();
     }
 
-    @RequestMapping(value = "/uploadFileFromFtp/{fileName}",method = RequestMethod.POST)
-    public ResponseEntity<List<String>> uploadFileFromFtp(@PathVariable("fileName") String fileName){
+    /**
+     * 上传文件到ftp
+     *
+     * @param fileName
+     * @return
+     */
+    @RequestMapping(value = "/uploadFileFromFtp/{fileName}", method = RequestMethod.POST)
+    public ResponseEntity<List<String>> uploadFileFromFtp(@PathVariable("fileName") String fileName) {
         FtpInfo ftpInfo = new FtpInfo();
         ftpInfo.setHost("192.168.230.129");
         ftpInfo.setPort(60021);
@@ -210,7 +213,7 @@ public class ResourceFileController extends BaseController {
         ftpInfo.setPassword("hz13554");
         ftpInfo.setRemoteDir("/data/files/");
         String path = "D:\\idea\\ideaSpace_dynamicDbbank\\dbank\\dbank-parent\\dbank-web\\src\\main\\webapp\\WEB-INF\\data\\";
-        String newFileName = fileName+".txt";
+        String newFileName = fileName + ".txt";
         try {
             boolean downfile = FtpFileUtil.downfile(ftpInfo, path, newFileName);
         } catch (Exception e) {
@@ -218,6 +221,40 @@ public class ResourceFileController extends BaseController {
             throw new DbankException(DbankExceptionEnum.FILE_CONTENT_IS_EMPTY);
         }
         List<String> userList = new ArrayList<>();
+        return ResponseEntity.ok(userList);
+    }
+
+
+    /**
+     * 从ftp下载文件
+     *
+     * @param fileName
+     * @return
+     */
+    @RequestMapping(value = "/ftpownload/{fileName}", method = RequestMethod.GET)
+    public ResponseEntity<List<String>> ftpownload(@PathVariable("fileName") String fileName) {
+        FTPUtil ftpUtil = new FTPUtil();
+        ftpUtil.setConfig("192.168.230.129", 60021, "test", "hz13554");
+        ftpUtil.setRemoteDir("/data/files/");
+        String path = "D:\\idea\\ideaSpace_dynamicDbbank\\dbank\\dbank-parent\\dbank-web\\src\\main\\webapp\\WEB-INF\\data\\";
+        ftpUtil.setLocalPath(path);
+        List<File> fileList = ftpUtil.download(fileName + ".txt");
+        List<String> userList = new ArrayList<>();
+        for (File file : fileList) {
+            try {
+                BufferedReader br = new BufferedReader(new FileReader(file.getName()));
+                String str = null;
+                if ((str = br.readLine()) != null) {
+                    userList.add(str);
+                }
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException ie) {
+                ie.printStackTrace();
+            }
+
+        }
+        ftpUtil.closeConnect();
         return ResponseEntity.ok(userList);
     }
 }

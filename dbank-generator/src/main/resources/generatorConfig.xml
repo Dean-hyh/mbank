@@ -20,7 +20,7 @@
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/saas"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/db_master_w"
                         userId="root"
                         password="hz13554">
         </jdbcConnection>
@@ -32,7 +32,7 @@
         <!--实体类  映射文件  mapper接口-->
 
         <!-- targetProject:生成 POJO 类的位置 -->
-        <javaModelGenerator targetPackage="com.ms.credit.pojo" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.ms.credit.pojo.DO" targetProject="./src/main/java">
             <!-- enableSubPackages:是否让schema 作为包的后缀 -->
             <property name="enableSubPackages" value="true" />
             <!-- 从数据库返回的值被清理前后的空格 -->
@@ -52,7 +52,7 @@
 
 
         <!-- 指定数据库表 -->
-        <table  tableName="ss_module" domainObjectName="Module" mapperName="ModuleDao"
+       <!-- <table  tableName="ss_module" domainObjectName="Module" mapperName="ModuleDao"
                 enableCountByExample="false" enableUpdateByExample="false"
                 enableDeleteByExample="false" enableSelectByExample="true"/>
 
@@ -61,6 +61,18 @@
                 enableDeleteByExample="false" enableSelectByExample="true"/>
 
         <table  tableName="pe_user" domainObjectName="User" mapperName="UserDao"
+                enableCountByExample="false" enableUpdateByExample="false"
+                enableDeleteByExample="false" enableSelectByExample="true"/>-->
+
+        <!--<table  tableName="raffle_active_page" domainObjectName="RaffleActivePage" mapperName="RaffleActivePageDao"
+                enableCountByExample="false" enableUpdateByExample="false"
+                enableDeleteByExample="false" enableSelectByExample="true"/>-->
+
+       <!-- <table  tableName="raffle_detail" domainObjectName="RaffleDetail" mapperName="RaffleDetailDao"
+                enableCountByExample="false" enableUpdateByExample="false"
+                enableDeleteByExample="false" enableSelectByExample="true"/>-->
+
+        <table  tableName="raffle_active_winner" domainObjectName="RaffleActiveWinner" mapperName="RaffleActiveWinnerDao"
                 enableCountByExample="false" enableUpdateByExample="false"
                 enableDeleteByExample="false" enableSelectByExample="true"/>
     </context>

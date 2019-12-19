@@ -22,6 +22,8 @@ public class BaseController {
 
     protected String deptId;
 
+    protected String username;
+
     /**
      * @param request
      * @param response
@@ -34,5 +36,6 @@ public class BaseController {
         this.response = response;
         this.session = session;
         this.deptId = "100";
+        this.username = "yuanh";
     }
 }
