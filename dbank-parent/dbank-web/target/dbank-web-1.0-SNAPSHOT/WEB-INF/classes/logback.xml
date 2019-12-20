@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<configuration debug="false">
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
 
     <!--上下文名称：应用号_实例号-->
-    <contextName>${weblogic.Name}</contextName>
+    <contextName>${project_Name}</contextName>
     <!--使用maven profile替代loghome-->
     <property name="logHome" value="/home/logs/${CONTEXT_NAME}/ssm_${CONTEXT_NAME}" scope="context"/>
 
@@ -25,7 +25,7 @@
             <onMismatch>DENY </onMismatch>
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>/export/data/logs/debug.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <FileNamePattern>/dbank-logs/data/logs/debug/debug.%d{yyyy-MM-dd}.log</FileNamePattern>
             <MaxHistory>30</MaxHistory>
         </rollingPolicy>
         <encoder>
@@ -43,7 +43,7 @@
             <onMismatch>DENY </onMismatch>
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>/export/data/logs/info.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <FileNamePattern>/dbank-logs/data/logs/info/info.%d{yyyy-MM-dd}.log</FileNamePattern>
             <MaxHistory>30</MaxHistory>
         </rollingPolicy>
         <encoder>
@@ -61,7 +61,7 @@
             <onMismatch>DENY </onMismatch>
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>/export/data/logs/error.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <FileNamePattern>/dbank-logs/data/logs/error/error.%d{yyyy-MM-dd}.log</FileNamePattern>
             <MaxHistory>30</MaxHistory>
         </rollingPolicy>
         <encoder>

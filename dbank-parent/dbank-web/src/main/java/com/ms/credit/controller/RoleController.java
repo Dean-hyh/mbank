@@ -4,6 +4,8 @@ import com.alibaba.fastjson.JSON;
 import com.ms.credit.BaseController;
 import com.ms.credit.pojo.VO.RoleVO;
 import com.ms.credit.service.RoleService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,6 +32,12 @@ public class RoleController extends BaseController {
     @Autowired
     private RoleService contextService;
 
+    private final Logger logger = LoggerFactory.getLogger(getClass());
+
+    /**
+     * 查询角色列表
+     * @return
+     */
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public ResponseEntity<Map<String, Object>> queryRoleList() {
         Map<String, Object> map = contextService.queryRoleList();
@@ -65,6 +73,19 @@ public class RoleController extends BaseController {
         map.put("header", header);
 
         HttpSession session = request.getSession();
+
+        Map<String, Object> hashMap = new HashMap<>();
+        String method = request.getMethod().toString();
+        String remoteHost = request.getRemoteHost();
+        String URI = request.getRequestURI();
+        String remo = request.getRemoteAddr().toString();
+        hashMap.put("method",method);
+        hashMap.put("remoteHost",remoteHost);
+        hashMap.put("URI",URI);
+        hashMap.put("remo",remo);
+        map.put("hashMap",hashMap);
+
+
         return ResponseEntity.ok(map);
     }
 
