@@ -45,7 +45,10 @@ public enum DbankExceptionEnum {
     STOCK_NOT_ENOUGH_ERROR(500,"库存不足，无法下单"),
 
     USER_NOT_FOUND(500,"用户不存在"),
-    USER_HAS_NONE_ROLE(500,"用户角色为空");
+    USER_HAS_NONE_ROLE(500,"用户角色为空"),
+
+    /*数据库主从复制，读写分离相关*/
+    GET_DATASOURCE_IDENTIFICATION_FAILED(500,"数据源标识获取失败");
 
     private int status;
     private String message;

@@ -13,10 +13,18 @@ public class CurrentLineInfo {
 
     /**
      * 获取当前时间
-     * @return
+     * @return 2019-12-23 14:40:40
      */
     public static String getTime(){
         return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+    }
+
+    /**
+     * 获取当前线程名称
+     * @return threadName
+     */
+    public static String getThreadName(){
+        return Thread.currentThread().getName();
     }
 
     /**
@@ -56,7 +64,8 @@ public class CurrentLineInfo {
      * @return  xx.xx.xx.xx\xxxx\45
      */
     public static String getFileAddress(){
-        return  CurrentLineInfo.getTime()+" "+
+        return  CurrentLineInfo.getTime()+"  "+
+                Thread.currentThread().getName()+"   "+
                 Thread.currentThread().getStackTrace()[originStackIndex].getClassName()+"."+
                 Thread.currentThread().getStackTrace()[originStackIndex].getMethodName()+" "+"第"+
                 Thread.currentThread().getStackTrace()[originStackIndex].getLineNumber()+"行";

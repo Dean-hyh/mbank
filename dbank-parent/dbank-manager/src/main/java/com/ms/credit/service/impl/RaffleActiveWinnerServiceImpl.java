@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Dean
@@ -60,5 +61,19 @@ public class RaffleActiveWinnerServiceImpl implements RaffleActiveWinnerService 
             logger.error(e.getMessage());
             throw new DbankException(DbankExceptionEnum.DATA_TRANSFER_ERROR);
         }
+    }
+
+    /**
+     * 测试
+     * @return
+     */
+    @Override
+    public List<Map<String, Object>> queryTest(Map params) {
+        return raffleActiveWinnersDao.queryTest(params);
+    }
+
+    @Override
+    public Map<String, Object> queryTest1(Map<String, Object> params) {
+        return raffleActiveWinnersDao.queryTest1(params);
     }
 }

@@ -18,6 +18,7 @@ public class DataSourceContextHolder {
     public static void setDataSource(String dbType) {
         Assert.notNull(dbType, "DataSourceType cannot be null");
         THREAD_DATA_SOURCE.set(dbType);
+        log.info("ThreadLocal中设置数据源为：" + dbType);
     }
 
     public static String getDataSource() {

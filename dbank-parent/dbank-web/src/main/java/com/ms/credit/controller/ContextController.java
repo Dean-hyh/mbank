@@ -1,5 +1,8 @@
 package com.ms.credit.controller;
 
+import com.ms.credit.BaseController;
+import com.ms.credit.utils.CurrentLineInfo;
+import com.ms.credit.utils.JsonUtils;
 import com.ms.framework.Context;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +19,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/context")
-public class ContextController {
+public class ContextController extends BaseController{
     @RequestMapping(value = "/test", method = RequestMethod.PUT)
     public ResponseEntity<Map> getMap(Context context) {
         Map<String, Object> reData = new HashMap<>();
@@ -27,5 +30,11 @@ public class ContextController {
             reData.put("三方用户",isThirdLogin);
         }
         return ResponseEntity.ok(reData);
+    }
+
+    @RequestMapping(value = "/getCurrentThread",method = RequestMethod.GET)
+    public ResponseEntity<String> getCurrentThread(){
+        String currentThread = CurrentLineInfo.getFileAddress();
+        return ResponseEntity.ok(currentThread);
     }
 }

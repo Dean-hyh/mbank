@@ -3,9 +3,7 @@ package com.ms.credit.controller;
 import com.ms.credit.BaseController;
 import com.ms.credit.enums.DbankExceptionEnum;
 import com.ms.credit.exception.DbankException;
-import com.ms.credit.pojo.DO.RaffleActiveWinner;
 import com.ms.credit.pojo.DTO.RaffleActiveWinnerDTO;
-import com.ms.credit.pojo.VO.LuckyEmpVO;
 import com.ms.credit.pojo.info.FtpInfo;
 import com.ms.credit.service.RaffleActiveWinnerService;
 import com.ms.credit.service.ResourceFileService;
@@ -30,7 +28,6 @@ import java.io.*;
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -231,7 +228,7 @@ public class ResourceFileController extends BaseController {
      * @param fileName
      * @return
      */
-    @RequestMapping(value = "/ftpownload/{fileName}", method = RequestMethod.GET)
+    @RequestMapping(value = "/ftpdownload/{fileName}", method = RequestMethod.GET)
     public ResponseEntity<List<String>> ftpownload(@PathVariable("fileName") String fileName) {
         FTPUtil ftpUtil = new FTPUtil();
         ftpUtil.setConfig("192.168.230.129", 60021, "test", "hz13554");

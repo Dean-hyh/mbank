@@ -9,10 +9,9 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.util.StringUtils;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author Dean
@@ -61,5 +60,34 @@ public class GenerateWinnerList {
         }
         raffleActiveWinnerService.insertWinner(winnerList);
         System.out.println("执行完毕");
+    }
+
+
+    @Test
+    public void queryTest(){
+        Map<String, Object> params = new HashMap<>();
+        params.put("winnerId",120761727992712806L);
+        //params.put("activityId",1207578808466411520L);
+        List<Map<String, Object>> maps = raffleActiveWinnerService.queryTest(params);
+        for (Map<String, Object> map : maps) {
+            map.put("hou","1342345234532452======");
+            System.out.println(map);
+        }
+    }
+
+    @Test
+    public void queryTest1(){
+        Map<String, Object> params = new HashMap<>();
+        System.out.println("=++++++=" + params);
+        params.put("winnerId",1207617279927128064L);
+        Map<String, Object> map = raffleActiveWinnerService.queryTest1(params);
+        if(StringUtils.isEmpty(map)){
+            System.out.println("没查到相关数据");
+            return;
+        }
+        map.put("yuanhui","hahahahaha");
+        System.out.println(map);
+        System.out.println("===="+map.get("hei"));
+
     }
 }

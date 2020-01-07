@@ -1,80 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ms.credit.dao.RaffleActiveWinnerDao">
-  <resultMap id="BaseResultMap" type="com.ms.credit.pojo.DO.RaffleActiveWinner">
-    <id column="active_winner_id" jdbcType="BIGINT" property="activeWinnerId" />
-    <result column="raffle_active_id" jdbcType="BIGINT" property="raffleActiveId" />
-    <result column="raffle_detail_id" jdbcType="BIGINT" property="raffleDetailId" />
-    <result column="cust_no" jdbcType="VARCHAR" property="custNo" />
-    <result column="cust_name" jdbcType="VARCHAR" property="custName" />
-    <result column="cust_tel" jdbcType="VARCHAR" property="custTel" />
-    <result column="cust_id" jdbcType="VARCHAR" property="custId" />
-    <result column="cust_desc" jdbcType="VARCHAR" property="custDesc" />
-    <result column="raffle_active_name" jdbcType="VARCHAR" property="raffleActiveName" />
-    <result column="awards_name" jdbcType="VARCHAR" property="awardsName" />
-    <result column="prize_name" jdbcType="VARCHAR" property="prizeName" />
-    <result column="raffle_active_time" jdbcType="TIMESTAMP" property="raffleActiveTime" />
-    <result column="status" jdbcType="INTEGER" property="status" />
-  </resultMap>
-  <sql id="Example_Where_Clause">
-    <where>
-      <foreach collection="oredCriteria" item="criteria" separator="or">
-        <if test="criteria.valid">
-          <trim prefix="(" prefixOverrides="and" suffix=")">
-            <foreach collection="criteria.criteria" item="criterion">
-              <choose>
-                <when test="criterion.noValue">
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue">
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue">
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue">
-                  and ${criterion.condition}
-                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
+    <resultMap id="BaseResultMap" type="com.ms.credit.pojo.DO.RaffleActiveWinner">
+        <id column="active_winner_id" jdbcType="BIGINT" property="activeWinnerId"/>
+        <result column="raffle_active_id" jdbcType="BIGINT" property="raffleActiveId"/>
+        <result column="raffle_detail_id" jdbcType="BIGINT" property="raffleDetailId"/>
+        <result column="cust_no" jdbcType="VARCHAR" property="custNo"/>
+        <result column="cust_name" jdbcType="VARCHAR" property="custName"/>
+        <result column="cust_tel" jdbcType="VARCHAR" property="custTel"/>
+        <result column="cust_id" jdbcType="VARCHAR" property="custId"/>
+        <result column="cust_desc" jdbcType="VARCHAR" property="custDesc"/>
+        <result column="raffle_active_name" jdbcType="VARCHAR" property="raffleActiveName"/>
+        <result column="awards_name" jdbcType="VARCHAR" property="awardsName"/>
+        <result column="prize_name" jdbcType="VARCHAR" property="prizeName"/>
+        <result column="raffle_active_time" jdbcType="TIMESTAMP" property="raffleActiveTime"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+    </resultMap>
+    <sql id="Example_Where_Clause">
+        <where>
+            <foreach collection="oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="("
+                                             separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
             </foreach>
-          </trim>
-        </if>
-      </foreach>
-    </where>
-  </sql>
-  <sql id="Base_Column_List">
+        </where>
+    </sql>
+    <sql id="Base_Column_List">
     active_winner_id, raffle_active_id, raffle_detail_id, cust_no, cust_name, cust_tel, 
     cust_id, cust_desc, raffle_active_name, awards_name, prize_name, raffle_active_time, 
     status
   </sql>
-  <select id="selectByExample" parameterType="com.ms.credit.pojo.DO.RaffleActiveWinnerExample" resultMap="BaseResultMap">
-    select
-    <if test="distinct">
-      distinct
-    </if>
-    <include refid="Base_Column_List" />
-    from raffle_active_winner
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-    <if test="orderByClause != null">
-      order by ${orderByClause}
-    </if>
-  </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from raffle_active_winner
-    where active_winner_id = #{activeWinnerId,jdbcType=BIGINT}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <select id="selectByExample" parameterType="com.ms.credit.pojo.DO.RaffleActiveWinnerExample"
+            resultMap="BaseResultMap">
+        select
+        <if test="distinct">
+            distinct
+        </if>
+        <include refid="Base_Column_List"/>
+        from raffle_active_winner
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
+    </select>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from raffle_active_winner
+        where active_winner_id = #{activeWinnerId,jdbcType=BIGINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from raffle_active_winner
     where active_winner_id = #{activeWinnerId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.ms.credit.pojo.DO.RaffleActiveWinner">
+    <insert id="insert" parameterType="com.ms.credit.pojo.DO.RaffleActiveWinner">
     insert into raffle_active_winner (active_winner_id, raffle_active_id, raffle_detail_id, 
       cust_no, cust_name, cust_tel, 
       cust_id, cust_desc, raffle_active_name, 
@@ -86,134 +88,134 @@
       #{awardsName,jdbcType=VARCHAR}, #{prizeName,jdbcType=VARCHAR}, #{raffleActiveTime,jdbcType=TIMESTAMP}, 
       #{status,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.ms.credit.pojo.DO.RaffleActiveWinner">
-    insert into raffle_active_winner
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="activeWinnerId != null">
-        active_winner_id,
-      </if>
-      <if test="raffleActiveId != null">
-        raffle_active_id,
-      </if>
-      <if test="raffleDetailId != null">
-        raffle_detail_id,
-      </if>
-      <if test="custNo != null">
-        cust_no,
-      </if>
-      <if test="custName != null">
-        cust_name,
-      </if>
-      <if test="custTel != null">
-        cust_tel,
-      </if>
-      <if test="custId != null">
-        cust_id,
-      </if>
-      <if test="custDesc != null">
-        cust_desc,
-      </if>
-      <if test="raffleActiveName != null">
-        raffle_active_name,
-      </if>
-      <if test="awardsName != null">
-        awards_name,
-      </if>
-      <if test="prizeName != null">
-        prize_name,
-      </if>
-      <if test="raffleActiveTime != null">
-        raffle_active_time,
-      </if>
-      <if test="status != null">
-        status,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="activeWinnerId != null">
-        #{activeWinnerId,jdbcType=BIGINT},
-      </if>
-      <if test="raffleActiveId != null">
-        #{raffleActiveId,jdbcType=BIGINT},
-      </if>
-      <if test="raffleDetailId != null">
-        #{raffleDetailId,jdbcType=BIGINT},
-      </if>
-      <if test="custNo != null">
-        #{custNo,jdbcType=VARCHAR},
-      </if>
-      <if test="custName != null">
-        #{custName,jdbcType=VARCHAR},
-      </if>
-      <if test="custTel != null">
-        #{custTel,jdbcType=VARCHAR},
-      </if>
-      <if test="custId != null">
-        #{custId,jdbcType=VARCHAR},
-      </if>
-      <if test="custDesc != null">
-        #{custDesc,jdbcType=VARCHAR},
-      </if>
-      <if test="raffleActiveName != null">
-        #{raffleActiveName,jdbcType=VARCHAR},
-      </if>
-      <if test="awardsName != null">
-        #{awardsName,jdbcType=VARCHAR},
-      </if>
-      <if test="prizeName != null">
-        #{prizeName,jdbcType=VARCHAR},
-      </if>
-      <if test="raffleActiveTime != null">
-        #{raffleActiveTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="status != null">
-        #{status,jdbcType=INTEGER},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.ms.credit.pojo.DO.RaffleActiveWinner">
-    update raffle_active_winner
-    <set>
-      <if test="raffleActiveId != null">
-        raffle_active_id = #{raffleActiveId,jdbcType=BIGINT},
-      </if>
-      <if test="raffleDetailId != null">
-        raffle_detail_id = #{raffleDetailId,jdbcType=BIGINT},
-      </if>
-      <if test="custNo != null">
-        cust_no = #{custNo,jdbcType=VARCHAR},
-      </if>
-      <if test="custName != null">
-        cust_name = #{custName,jdbcType=VARCHAR},
-      </if>
-      <if test="custTel != null">
-        cust_tel = #{custTel,jdbcType=VARCHAR},
-      </if>
-      <if test="custId != null">
-        cust_id = #{custId,jdbcType=VARCHAR},
-      </if>
-      <if test="custDesc != null">
-        cust_desc = #{custDesc,jdbcType=VARCHAR},
-      </if>
-      <if test="raffleActiveName != null">
-        raffle_active_name = #{raffleActiveName,jdbcType=VARCHAR},
-      </if>
-      <if test="awardsName != null">
-        awards_name = #{awardsName,jdbcType=VARCHAR},
-      </if>
-      <if test="prizeName != null">
-        prize_name = #{prizeName,jdbcType=VARCHAR},
-      </if>
-      <if test="raffleActiveTime != null">
-        raffle_active_time = #{raffleActiveTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="status != null">
-        status = #{status,jdbcType=INTEGER},
-      </if>
-    </set>
-    where active_winner_id = #{activeWinnerId,jdbcType=BIGINT}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.ms.credit.pojo.DO.RaffleActiveWinner">
+    <insert id="insertSelective" parameterType="com.ms.credit.pojo.DO.RaffleActiveWinner">
+        insert into raffle_active_winner
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="activeWinnerId != null">
+                active_winner_id,
+            </if>
+            <if test="raffleActiveId != null">
+                raffle_active_id,
+            </if>
+            <if test="raffleDetailId != null">
+                raffle_detail_id,
+            </if>
+            <if test="custNo != null">
+                cust_no,
+            </if>
+            <if test="custName != null">
+                cust_name,
+            </if>
+            <if test="custTel != null">
+                cust_tel,
+            </if>
+            <if test="custId != null">
+                cust_id,
+            </if>
+            <if test="custDesc != null">
+                cust_desc,
+            </if>
+            <if test="raffleActiveName != null">
+                raffle_active_name,
+            </if>
+            <if test="awardsName != null">
+                awards_name,
+            </if>
+            <if test="prizeName != null">
+                prize_name,
+            </if>
+            <if test="raffleActiveTime != null">
+                raffle_active_time,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="activeWinnerId != null">
+                #{activeWinnerId,jdbcType=BIGINT},
+            </if>
+            <if test="raffleActiveId != null">
+                #{raffleActiveId,jdbcType=BIGINT},
+            </if>
+            <if test="raffleDetailId != null">
+                #{raffleDetailId,jdbcType=BIGINT},
+            </if>
+            <if test="custNo != null">
+                #{custNo,jdbcType=VARCHAR},
+            </if>
+            <if test="custName != null">
+                #{custName,jdbcType=VARCHAR},
+            </if>
+            <if test="custTel != null">
+                #{custTel,jdbcType=VARCHAR},
+            </if>
+            <if test="custId != null">
+                #{custId,jdbcType=VARCHAR},
+            </if>
+            <if test="custDesc != null">
+                #{custDesc,jdbcType=VARCHAR},
+            </if>
+            <if test="raffleActiveName != null">
+                #{raffleActiveName,jdbcType=VARCHAR},
+            </if>
+            <if test="awardsName != null">
+                #{awardsName,jdbcType=VARCHAR},
+            </if>
+            <if test="prizeName != null">
+                #{prizeName,jdbcType=VARCHAR},
+            </if>
+            <if test="raffleActiveTime != null">
+                #{raffleActiveTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.ms.credit.pojo.DO.RaffleActiveWinner">
+        update raffle_active_winner
+        <set>
+            <if test="raffleActiveId != null">
+                raffle_active_id = #{raffleActiveId,jdbcType=BIGINT},
+            </if>
+            <if test="raffleDetailId != null">
+                raffle_detail_id = #{raffleDetailId,jdbcType=BIGINT},
+            </if>
+            <if test="custNo != null">
+                cust_no = #{custNo,jdbcType=VARCHAR},
+            </if>
+            <if test="custName != null">
+                cust_name = #{custName,jdbcType=VARCHAR},
+            </if>
+            <if test="custTel != null">
+                cust_tel = #{custTel,jdbcType=VARCHAR},
+            </if>
+            <if test="custId != null">
+                cust_id = #{custId,jdbcType=VARCHAR},
+            </if>
+            <if test="custDesc != null">
+                cust_desc = #{custDesc,jdbcType=VARCHAR},
+            </if>
+            <if test="raffleActiveName != null">
+                raffle_active_name = #{raffleActiveName,jdbcType=VARCHAR},
+            </if>
+            <if test="awardsName != null">
+                awards_name = #{awardsName,jdbcType=VARCHAR},
+            </if>
+            <if test="prizeName != null">
+                prize_name = #{prizeName,jdbcType=VARCHAR},
+            </if>
+            <if test="raffleActiveTime != null">
+                raffle_active_time = #{raffleActiveTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="status != null">
+                status = #{status,jdbcType=INTEGER},
+            </if>
+        </set>
+        where active_winner_id = #{activeWinnerId,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.ms.credit.pojo.DO.RaffleActiveWinner">
     update raffle_active_winner
     set raffle_active_id = #{raffleActiveId,jdbcType=BIGINT},
       raffle_detail_id = #{raffleDetailId,jdbcType=BIGINT},
@@ -230,11 +232,27 @@
     where active_winner_id = #{activeWinnerId,jdbcType=BIGINT}
   </update>
 
-  <!--查询中奖名单-->
-  <select id="selectByRaffleAcriveId" resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List" />
-    from raffle_active_winner
-    where raffle_active_id = #{raffleActiveId,jdbcType=BIGINT}
-  </select>
+    <!--查询中奖名单-->
+    <select id="selectByRaffleAcriveId" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from raffle_active_winner
+        where raffle_active_id = #{raffleActiveId,jdbcType=BIGINT}
+    </select>
+
+    <select id="queryTest" resultType="map">
+        SELECT cust_name,cust_tel from raffle_active_winner
+        <trim prefix="where" suffixOverrides="and">
+            <if test="winnerId != null and winnerId != ''">
+                active_winner_id = ${winnerId} and
+            </if>
+            <if test="activityId != null and activityId != ''">
+                raffle_active_id = ${activityId}
+            </if>
+        </trim>
+    </select>
+
+    <select id="queryTest1" resultType="map">
+        SELECT cust_name,cust_tel from raffle_active_winner WHERE active_winner_id = ${winnerId}
+    </select>
 </mapper>

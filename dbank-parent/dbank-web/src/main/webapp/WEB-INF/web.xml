@@ -5,13 +5,13 @@
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <!--加载配置-->
+    <!--加载配置==》定位配置文件-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath*:spring/applicationContext-*.xml</param-value>
     </context-param>
 
-    <!--监听上下文加载-->
+    <!--装载配置==》将配置文件内容加载到环境中-->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
@@ -56,5 +56,9 @@
         <filter-name>setCharacterEncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
 
 </web-app>
