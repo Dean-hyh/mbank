@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/dbank.iml" filepath="$PROJECT_DIR$/.idea/dbank.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dbank-parent/dbank-base/dbank-base.iml" filepath="$PROJECT_DIR$/dbank-parent/dbank-base/dbank-base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dbank-parent/dbank-core/dbank-core.iml" filepath="$PROJECT_DIR$/dbank-parent/dbank-core/dbank-core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dbank-parent/dbank-dao/dbank-dao.iml" filepath="$PROJECT_DIR$/dbank-parent/dbank-dao/dbank-dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dbank-generator/dbank-generator.iml" filepath="$PROJECT_DIR$/dbank-generator/dbank-generator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dbank-parent/dbank-manager/dbank-manager.iml" filepath="$PROJECT_DIR$/dbank-parent/dbank-manager/dbank-manager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dbank-parent/dbank-parent.iml" filepath="$PROJECT_DIR$/dbank-parent/dbank-parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dbank-pusher/dbank-pusher.iml" filepath="$PROJECT_DIR$/dbank-pusher/dbank-pusher.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dbank-parent/dbank-web/dbank-web.iml" filepath="$PROJECT_DIR$/dbank-parent/dbank-web/dbank-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dean.iml" filepath="$PROJECT_DIR$/.idea/dean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-base/dean-base.iml" filepath="$PROJECT_DIR$/dean-parent/dean-base/dean-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-core/dean-core.iml" filepath="$PROJECT_DIR$/dean-parent/dean-core/dean-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-dao/dean-dao.iml" filepath="$PROJECT_DIR$/dean-parent/dean-dao/dean-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dean-generator/dean-generator.iml" filepath="$PROJECT_DIR$/dean-generator/dean-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-manager/dean-manager.iml" filepath="$PROJECT_DIR$/dean-parent/dean-manager/dean-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-parent.iml" filepath="$PROJECT_DIR$/dean-parent/dean-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dean-pusher/dean-pusher.iml" filepath="$PROJECT_DIR$/dean-pusher/dean-pusher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-web/dean-web.iml" filepath="$PROJECT_DIR$/dean-parent/dean-web/dean-web.iml" />
     </modules>
   </component>
 </project>

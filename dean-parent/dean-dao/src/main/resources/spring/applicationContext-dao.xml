@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!-- 配置数据库注解aop开始 -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    <!--设置切面类-->
+    <bean id="dynamicDataSourceAspect" class="com.dean.demo.advise.DataSourceAspect"/>
+    <aop:config>
+        <!--织入-->
+        <aop:aspect id="dataSourceAspect" ref="dynamicDataSourceAspect">
+            <!--切点-->
+            <aop:pointcut id="dataSourceCutPoint" expression="execution(* com.dean.demo.dao.*.*(..))"/>
+            <aop:before pointcut-ref="dataSourceCutPoint" method="before"/>
+            <aop:after pointcut-ref="dataSourceCutPoint" method="after"/>
+        </aop:aspect>
+    </aop:config>
+    <!-- 配置数据库注解aop结束 -->
+
+    <!--数据源-->
+    <!--引入数据库配置文件-->
+    <!--<context:property-placeholder location="classpath:jdbc.properties"/>-->
+
+    <!--数据库配置 -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+                <!--<value>file:D:\LoadBalance\tomcat3\webapps</value>-->
+            </list>
+        </property>
+        <!--加上此属性可以配置多个peoperties文件-->
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+    </bean>
+
+    <!--MySQL 读库-->
+    <bean id="slavedataSource"
+          class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${slave.driver}"/>
+        <property name="url" value="${slave.url}"/>
+        <property name="username" value="${slave.username}"/>
+        <property name="password" value="${slave.password}"/>
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="${initialSize}" />
+        <property name="minIdle" value="${minIdle}" />
+        <property name="maxActive" value="${maxActive}" />
+        <!-- 配置获取连接等待超时的时间 -->
+        <property name="maxWait" value="${maxWait}" />
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="${timeBetweenEvictionRunsMillis}" />
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="${minEvictableIdleTimeMillis}" />
+        <property name="validationQuery" value="${validationQuery}" />
+        <property name="testWhileIdle" value="${testWhileIdle}" />
+        <property name="testOnBorrow" value="${testOnBorrow}" />
+        <property name="testOnReturn" value="${testOnReturn}" />
+        <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+        <property name="poolPreparedStatements" value="${poolPreparedStatements}" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="${maxPoolPreparedStatementPerConnectionSize}" />
+        <!-- 配置监控统计拦截的filters，去掉后监控界面sql无法统计 -->
+        <property name="filters" value="${filters}" />
+    </bean>
+
+    <!--MySQL 写库-->
+    <bean id="masterdataSource"
+          class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${master.driver}"/>
+        <property name="url" value="${master.url}"/>
+        <property name="username" value="${master.username}"/>
+        <property name="password" value="${master.password}"/>
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="${initialSize}" />
+        <property name="minIdle" value="${minIdle}" />
+        <property name="maxActive" value="${maxActive}" />
+        <!-- 配置获取连接等待超时的时间 -->
+        <property name="maxWait" value="${maxWait}" />
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="${timeBetweenEvictionRunsMillis}" />
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="${minEvictableIdleTimeMillis}" />
+        <property name="validationQuery" value="${validationQuery}" />
+        <property name="testWhileIdle" value="${testWhileIdle}" />
+        <property name="testOnBorrow" value="${testOnBorrow}" />
+        <property name="testOnReturn" value="${testOnReturn}" />
+        <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+        <property name="poolPreparedStatements" value="${poolPreparedStatements}" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="${maxPoolPreparedStatementPerConnectionSize}" />
+        <!-- 配置监控统计拦截的filters，去掉后监控界面sql无法统计 -->
+        <property name="filters" value="${filters}" />
+    </bean>
+
+    <!--动态数据源配置1-->
+    <bean id="dataSource" class="com.dean.demo.datasource.DynamicDataSource">
+        <property name="targetDataSources">
+            <map key-type="java.lang.String">
+                <!-- 指定lookupKey和与之对应的数据源,使用哪个数据源由切换类决定 -->
+                <entry key="master" value-ref="masterdataSource"/>
+                <entry key="slave" value-ref="slavedataSource"/>
+            </map>
+        </property>
+        <!-- 指定默认的数据源 -->
+        <property name="defaultTargetDataSource" ref="masterdataSource"/>
+    </bean>
+
+    <!-- 配置SqlSessionFactoryBean -->
+    <bean id="sqlSessionFactoryOracle" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="typeAliasesPackage" value="com.dean.demo.pojo"/>
+    </bean>
+
+    <!--注册mybatis映射文件-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.dean.demo.dao"/>
+    </bean>
+
+</beans>
