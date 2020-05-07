@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--扫描注解-->
+    <context:component-scan base-package="com.dean.demo.service"/>
+
+    <!--引入IbmMQ配置文件-->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath*:ibmmq.properties</value>
+            </list>
+        </property>
+        <!--用于加载多个配置文件-->
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+    </bean>
+
+    <!--注解配置-->
+    <context:annotation-config />
+
+    <!-- WebSphere MQ Connection Factory -->
+    <bean id="ibmJmsConnectionFactory" class="com.ibm.mq.jms.MQQueueConnectionFactory">
+        <property name="hostName" value="${IMB.mq.mqHostUrl}"/>
+        <property name="port" value="${IMB.mq.mqPort}"/>
+        <property name="CCSID" value="${IMB.mq.CCSID}"/>
+        <property name="queueManager" value="${IMB.mq.mqManager}"/>
+        <property name="channel" value="${IMB.mq.mqChannel}"/>
+        <property name="transportType" value="1"/>
+    </bean>
+
+    <!-- 创建连接 -->
+    <bean id="connectionFactoryAdapter" class="org.springframework.jms.connection.UserCredentialsConnectionFactoryAdapter">
+        <property name="targetConnectionFactory" ref="ibmJmsConnectionFactory"/>
+        <property name="username" value="${IMB.mq.userName}"/>
+        <property name="password" value="${IMB.mq.password}"/>
+    </bean>
+
+    <!-- JMS Queue Connection Factory -->
+    <bean id="ibmQueueConnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+        <property name="targetConnectionFactory" ref="connectionFactoryAdapter"/>
+        <property name="sessionCacheSize" value="${IMB.mq.mqChannel.connectionFactory.sessionCacheSize}"/>
+        <property name="reconnectOnException" value="${IMB.mq.reconnection}"/>
+    </bean>
+
+    <bean id="ibmQueue" class="com.ibm.mq.jms.MQQueue">
+        <property name="baseQueueName" value="${IMB.mq.mqName}"/>
+    </bean>
+
+    <bean id="senderJmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="ibmQueueConnectionFactory"/>
+        <property name="defaultDestination" ref="ibmQueue"/>
+        <property name="pubSubDomain" value="false"/>
+    </bean>
+
+    <bean id="ibmMessageSender" class="com.dean.demo.service.ibmmq.MessageSenderImpl">
+    </bean>
+</beans>

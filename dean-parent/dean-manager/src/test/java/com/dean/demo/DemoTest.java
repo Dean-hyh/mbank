@@ -1,10 +1,13 @@
 package com.dean.demo;
 
+import com.dean.demo.utils.JsonUtils;
+import lombok.val;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.StringUtils;
 
-import java.util.Arrays;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**
  * @author Dean
@@ -37,5 +40,71 @@ public class DemoTest {
         System.out.println(str2.length());
         boolean empty = StringUtils.isEmpty(str2);
         System.out.println(empty);
+    }
+
+    @Test
+    public void demo3(){
+        Map<String,Object> reMap = new HashMap<>();
+        Map<String,Object> result = new HashMap<>();
+        List<Map<String,String>> list = new ArrayList<>();
+        Map<String,String> map1 = new HashMap<>();
+        Map<String,String> map2 = new HashMap<>();
+        map1.put("date","20200504");
+        map1.put("time","12110101");
+        map1.put("desc","折扣");
+        map1.put("value","10");
+        map1.put("serNo","1001");
+        list.add(map1);
+        map2.put("date","20200506");
+        map2.put("time","14180121");
+        map2.put("desc","支付");
+        map2.put("value","10");
+        map2.put("serNo","1002");
+        list.add(map2);
+        result.put("crdtNo","620522199102012804");
+        result.put("customerNo","620522199102012804");
+        result.put("dreamValuNo","20200428100100235");
+        result.put("list",list);
+        reMap.put("status",0);
+        reMap.put("msg","成功");
+        reMap.put("result",result);
+        String res = JsonUtils.toString(reMap);
+        System.out.println(res);
+        System.out.println("==================1");
+        Map<String,Object> respMap = JsonUtils.toMap(res, String.class, Object.class);
+        String status = String.valueOf(respMap.get("status"));
+        if(status.equals("0")){
+            Map result1 = (Map)respMap.get("result");
+            System.out.println(result1);
+            System.out.println("==================2");
+            Object list1 = result1.get("list");
+            System.out.println(JsonUtils.toString(list1));
+            System.out.println("==================3");
+            Object list2 = ((Map) respMap.get("result")).get("list");
+            System.out.println(list2);
+        }else{
+            System.out.println("查询失败");
+            System.out.println("errCode:["+status+"]");
+        }
+    }
+
+    @Test
+    public void test3(){
+        Map<String, Object> map = new HashMap<>();
+        map.put("he",1);
+       if(map.get("he")==null){
+           System.out.println("cuowu");
+       }
+       int he = (int)map.get("he");
+        System.out.println(he);
+    }
+
+    @Test
+    public void test4(){
+        final long l = System.currentTimeMillis();
+        Date date = new Date(l);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("HHmmssss");
+        final String format = dateFormat.format(date);
+        System.out.println(format);
     }
 }

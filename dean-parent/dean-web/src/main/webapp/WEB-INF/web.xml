@@ -11,6 +11,8 @@
         <param-value>
             classpath*:spring/applicationContext-redis.xml,<!--redis配置-->
             classpath*:spring/applicationContext-service.xml <!--service配置-->
+            classpath*:spring/applicationContext-ibmmqSender.xml <!--ibmMq 发送配置-->
+            classpath*:spring/applicationContext-ibmmqListener.xml <!--ibmMq 监听配置-->
         </param-value>
     </context-param>
 

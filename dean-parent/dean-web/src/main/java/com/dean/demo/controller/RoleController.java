@@ -109,4 +109,20 @@ public class RoleController extends BaseController {
         RoleVO role = contextService.queryRole(roleId);
         return ResponseEntity.ok(role);
     }
+
+    /**
+     * 依据用户Id查询用户角色
+     * @param request
+     * @return
+     * @throws IOException
+     */
+    @RequestMapping("/showFushu")
+    public ResponseEntity<Map<String,String>> showFushu(HttpServletRequest request) throws IOException {
+        Map<String, String> map = new HashMap<>();
+        map.put("数字1","1");
+        map.put("数字2","2");
+        map.put("数字3","-100");
+        map.put("数字4","-10.0");
+        return ResponseEntity.ok(map);
+    }
 }
