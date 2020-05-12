@@ -1,7 +1,12 @@
 package com.dean.demo.service.ibmmq;
 
+import com.dean.demo.utils.JsonUtils;
 import com.ibm.mq.*;
 import org.springframework.stereotype.Service;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Dean
@@ -9,7 +14,7 @@ import org.springframework.stereotype.Service;
  * @date 2020/5/3 12:15
  */
 @Service
-public class MqDemo {
+public class MqService {
 
     //队列信息
     private static MQQueueManager qMgr;
@@ -33,7 +38,7 @@ public class MqDemo {
         qMgr = new MQQueueManager(MQ_MANAGER);
     }
 
-    public static void sendMsg(String msgStr) {
+    public static void sendMsg(String msgStr) throws Exception {
         int openOptions = MQC.MQOO_INPUT_AS_Q_DEF | MQC.MQOO_OUTPUT | MQC.MQOO_INQUIRE;
         MQQueue queue = null;
         try {
@@ -47,23 +52,11 @@ public class MqDemo {
             msg.writeString(msgStr);
             MQPutMessageOptions pmo = new MQPutMessageOptions();
             msg.expiry = -1; // 设置消息用不过期
+            int i = 1/0;
+            System.out.println("======0======");
             queue.put(msg, pmo);// 将消息放入队列
-        }catch (MQException ex) {
-            System.out.println("An IBM MQ Error occurred : Completion Code " + ex.completionCode
-                    + " Reason Code " + ex.reasonCode);
-            ex.printStackTrace();
-            for (Throwable t = ex.getCause(); t != null; t = t.getCause()) {
-                System.out.println("... Caused by ");
-                t.printStackTrace();
-            }
-
-        } catch (java.io.IOException ex) {
-            ex.printStackTrace();
-            System.out.println("An IOException occurred whilst writing to the message buffer: " + ex);
-        } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } finally {
+        }finally {
+            System.out.println("======0000======");
             if (queue != null) {
                 try {
                     queue.close();
@@ -112,6 +105,38 @@ public class MqDemo {
             connect();
             sendMsg(msg);
         }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) {
+        Map<String,Object> map = new HashMap<>();
+        map.put("date","20200504");
+        map.put("time","12110101");
+        map.put("desc","折扣");
+        map.put("value","10");
+        map.put("serNo","1001");
+        final String msg = JsonUtils.toString(map);
+        try {
+            System.out.println("--------1--------");
+            connect();
+            System.out.println("--------2--------");
+            sendMsg(msg);
+            System.out.println("--------3--------");
+            receiveMsg();
+        }catch (MQException e){
+            System.out.println("MQ数据入队失败--compCode：[" + e.completionCode + "] ，reasonCode：[" + e.reasonCode+"]");
+            e.printStackTrace();
+            for (Throwable t = e.getCause(); t != null; t = t.getCause()) {
+                System.out.println("... Caused by：");
+                t.printStackTrace();
+            }
+        }catch(IOException e){
+            System.out.println("写入消息缓冲区时发生IOException: " + e);
+            e.printStackTrace();
+        }catch (Exception e){
+            System.out.println("--------系统异常--------");
+            System.out.println(JsonUtils.toMap(msg,String.class,Object.class));
             e.printStackTrace();
         }
     }

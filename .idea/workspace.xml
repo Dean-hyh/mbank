@@ -7,285 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00d50398-bfb4-4eaa-95d3-4e01c8200634" name="Default" comment="2020/01/07 -主从复制，读写分离实现">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/dean_pusher_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/dean_pusher_war_exploded.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/dean_web_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/dean_web_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dbank_pusher_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dbank_pusher_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dbank_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dbank_web_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbank.iml" afterPath="$PROJECT_DIR$/.idea/dean.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dbank_pusher_war.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dbank_pusher_war_exploded.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dbank_web_war.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dbank_web_war_exploded.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dean_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dean_web_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/.gitignore" afterPath="$PROJECT_DIR$/dean-generator/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/dbank-generator.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/pom.xml" afterPath="$PROJECT_DIR$/dean-generator/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/ModuleDao.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/dao/ModuleDao.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/RaffleActivePageDao.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/dao/RaffleActivePageDao.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/RaffleActiveWinnerDao.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/dao/RaffleActiveWinnerDao.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/RaffleDetailDao.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/dao/RaffleDetailDao.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/RoleDao.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/dao/RoleDao.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/dao/UserDao.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/dao/UserDao.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/Module.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/Module.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/ModuleExample.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/ModuleExample.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/RaffleActivePage.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DO/RaffleActivePage.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/RaffleActivePageExample.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RaffleActivePageExample.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/RaffleActiveWinner.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DO/RaffleActiveWinner.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/RaffleActiveWinnerExample.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DO/RaffleActiveWinnerExample.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/RaffleDetail.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DO/RaffleDetail.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/RaffleDetailExample.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RaffleDetailExample.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/Role.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/Role.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/RoleExample.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RoleExample.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/User.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DO/User.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/java/com/ms/credit/pojo/DO/UserExample.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DO/UserExample.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/resources/com/ms/credit/dao/ModuleDao.xml" afterPath="$PROJECT_DIR$/dean-generator/src/main/resources/com/dean/demo/dao/ModuleDao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/resources/com/ms/credit/dao/RaffleActivePageDao.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/com/dean/demo/dao/RaffleActivePageDao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/resources/com/ms/credit/dao/RaffleActiveWinnerDao.xml" afterPath="$PROJECT_DIR$/dean-generator/src/main/resources/com/dean/demo/dao/RaffleActiveWinnerDao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/resources/com/ms/credit/dao/RaffleDetailDao.xml" afterPath="$PROJECT_DIR$/dean-generator/src/main/resources/com/dean/demo/dao/RaffleDetailDao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/resources/com/ms/credit/dao/RoleDao.xml" afterPath="$PROJECT_DIR$/dean-generator/src/main/resources/com/dean/demo/dao/RoleDao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/resources/com/ms/credit/dao/UserDao.xml" afterPath="$PROJECT_DIR$/dean-generator/src/main/resources/com/dean/demo/dao/UserDao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-generator/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/dean-generator/src/main/resources/generatorConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.gitignore" afterPath="$PROJECT_DIR$/dean-parent/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/artifacts/mbank_web_war.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/artifacts/mbank_web_war.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/artifacts/mbank_web_war_exploded.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/artifacts/mbank_web_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/compiler.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__com_alibaba_druid_1_0_9.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__com_alibaba_druid_1_0_9.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__com_alibaba_dubbo_2_8_4.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__com_alibaba_dubbo_2_8_4.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__com_alibaba_fastjson_1_2_28.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__com_alibaba_fastjson_1_2_28.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__com_github_miemiedev_mybatis_paginator_1_2_15.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__com_github_miemiedev_mybatis_paginator_1_2_15.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__com_github_sgroschupf_zkclient_0_1.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__com_github_sgroschupf_zkclient_0_1.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0_1_0.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__javassist_javassist_3_11_0_GA.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__javassist_javassist_3_11_0_GA.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__jline_jline_0_9_94.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__junit_junit_4_9.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__junit_junit_4_9.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_32.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_32.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_7.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_7.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_csource_fastdfs_fastdfs_1_2.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_csource_fastdfs_fastdfs_1_2.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_7.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_7.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_mybatis_mybatis_3_2_8.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_mybatis_mybatis_3_2_8.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_2.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_2.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_22.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_22.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_22.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_22.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_aspects_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_aspects_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_jms_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_jms_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_messaging_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_messaging_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_test_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_test_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_tx_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_tx_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/misc.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/modules.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/uiDesigner.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/.idea/vcs.xml" afterPath="$PROJECT_DIR$/dean-parent/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/README.MD" afterPath="$PROJECT_DIR$/dean-parent/README.MD" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/.gitignore" afterPath="$PROJECT_DIR$/dean-parent/dean-base/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/dbank-base.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-base/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/constants/BaseUserId.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/constants/BaseUserId.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/enums/DbankExceptionEnum.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/enums/DbankExceptionEnum.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/exception/DbankException.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/exception/DbankException.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/results/DbankExceptionResult.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/results/DbankExceptionResult.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/BeanHelper.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/BeanHelper.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/BeanMapUtils.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/BeanMapUtils.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/CookieUtils.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/CookieUtils.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/CurrentLineInfo.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/CurrentLineInfo.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/JsonUtils.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/JsonUtils.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/LocalFileUtils.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/LocalFileUtils.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/LocalObjectUtils.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/LocalObjectUtils.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/MoneyConvertUtil.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/MoneyConvertUtil.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/RandomValueUtil.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/RandomValueUtil.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/RegexUtils.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/RegexUtils.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/SnowFlake.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/SnowFlake.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/utils/constants/RegexPatterns.java" afterPath="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/constants/RegexPatterns.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/.gitignore" afterPath="$PROJECT_DIR$/dean-parent/dean-core/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/dbank-core.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-core/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/Module.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DO/Module.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/ModuleExample.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DO/ModuleExample.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleActivePage.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RaffleActivePage.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleActivePageExample.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DO/RaffleActivePageExample.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleActiveWinner.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RaffleActiveWinner.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleActiveWinnerExample.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RaffleActiveWinnerExample.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleDetail.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RaffleDetail.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RaffleDetailExample.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DO/RaffleDetailExample.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/Role.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DO/Role.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/RoleExample.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DO/RoleExample.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/User.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/User.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DO/UserExample.java" afterPath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/UserExample.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DTO/RaffleActivePageDTO.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DTO/RaffleActivePageDTO.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DTO/RaffleActiveWinnerDTO.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DTO/RaffleActiveWinnerDTO.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/DTO/RaffleDetailDTO.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/DTO/RaffleDetailDTO.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/LuckyEmpVO.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/VO/LuckyEmpVO.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/ModuleVO.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/VO/ModuleVO.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/RaffleActivePageVO.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/VO/RaffleActivePageVO.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/RaffleDetailVO.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/VO/RaffleDetailVO.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/RoleVO.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/VO/RoleVO.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/VO/UserVO.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/VO/UserVO.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/pojo/info/FtpInfo.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/pojo/info/FtpInfo.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/result/ErrorMsg.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/result/ErrorMsg.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/credit/result/Result.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/result/Result.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/framework/AbstractContext.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/framework/ConfigurableContext.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/framework/Context.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/framework/ContextFilter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/framework/ContextSon.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/framework/ContextStore.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/framework/HierarchicalContext.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/framework/ListableContext.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/test/java/ContextTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/test/java/RandomTest.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/test/java/RandomTest.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-core/src/test/java/Time.java" afterPath="$PROJECT_DIR$/dean-parent/dean-core/src/test/java/Time.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/.gitignore" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/dbank-dao.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/advise/DataSourceAspect.java" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/advise/DataSourceAspect.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/ModuleDao.java" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/dao/ModuleDao.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleActivePageDao.java" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/dao/RaffleActivePageDao.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleActiveWinnerDao.java" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/dao/RaffleActiveWinnerDao.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleDetailDao.java" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/dao/RaffleDetailDao.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RoleDao.java" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/dao/RoleDao.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/UserDao.java" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/dao/UserDao.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/datasource/DataSource.java" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/datasource/DataSource.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/datasource/DataSourceContextHolder.java" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/datasource/DataSourceContextHolder.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/datasource/DynamicDataSource.java" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/datasource/DynamicDataSource.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/datasource/readme.md" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/datasource/readme.md" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/ModuleDao.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/com/dean/demo/dao/ModuleDao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/RaffleActivePageDao.xml" afterPath="$PROJECT_DIR$/dean-generator/src/main/resources/com/dean/demo/dao/RaffleActivePageDao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/RaffleActiveWinnerDao.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/com/dean/demo/dao/RaffleActiveWinnerDao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/RaffleDetailDao.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/com/dean/demo/dao/RaffleDetailDao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/RoleDao.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/com/dean/demo/dao/RoleDao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/UserDao.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/com/dean/demo/dao/UserDao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/jdbc.properties" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/spring/applicationContext-dao.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/spring/applicationContext-dao.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/.gitignore" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/dbank-manager.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/RaffleActivePageService.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/RaffleActivePageService.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/RaffleActiveWinnerService.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/RaffleActiveWinnerService.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/ResourceFileService.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ResourceFileService.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/RoleService.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/RoleService.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/UserService.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/config/SnowFlakeConfig.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/config/SnowFlakeConfig.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/config/SnowFlakeProperties.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/config/SnowFlakeProperties.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/config/readme.md" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/config/readme.md" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/RaffleActivePageServiceImpl.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/RaffleActivePageServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/RaffleActiveWinnerServiceImpl.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/RaffleActiveWinnerServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/ResourceFileServiceImpl.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/ResourceFileServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/RoleServiceImpl.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/RoleServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/UserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/redis/RedisService.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/redis/RedisService.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/resources/config/SnowFlake.properties" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/config/SnowFlake.properties" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/log4j.properties" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/resources/redis.properties" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/redis.properties" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/resources/spring/applicationContext-redis.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/spring/applicationContext-redis.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/resources/spring/applicationContext-service.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/spring/applicationContext-service.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/test/java/com/ms/credit/DemoTest.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/test/java/com/dean/demo/DemoTest.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-manager/src/test/java/com/ms/credit/GenerateWinnerList.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/test/java/com/dean/demo/GenerateWinnerList.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-parent.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/.gitignore" afterPath="$PROJECT_DIR$/dean-parent/dean-web/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/dbank-web.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/BaseController.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/BaseController.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/advise/BaseExceptionAdvice.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/advise/BaseExceptionAdvice.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/ContextController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/RaffleActivePageController.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/RaffleActivePageController.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/ResourceFileController.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/ResourceFileController.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/RoleController.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/RoleController.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/TestController.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/TestController.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/UserController.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/utils/ftp/FTPUtil.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/utils/ftp/FTPUtil.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/utils/ftp/FtpFileUtil.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/utils/ftp/FtpFileUtil.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/resources/jasperreports_extension.properties" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/resources/jasperreports_extension.properties" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/resources/logback.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/resources/spring/applicationContext-shiro.xml.bak" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/resources/spring/applicationContext-shiro.xml.bak" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/resources/spring/springmvc.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/resources/spring/springmvc.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/resources/stsong/fonts.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/resources/stsong/fonts.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/resources/stsong/stsong.TTF" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/resources/stsong/stsong.TTF" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/data/nameList.txt" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/WEB-INF/data/nameList.txt" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/img/27e93244-4a2a-45e3-beeb-eb95624b023d_495.jpg" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/WEB-INF/img/27e93244-4a2a-45e3-beeb-eb95624b023d_495.jpg" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/img/5d8a8a0d-ecbb-4e3d-8ff2-251783dc8450_495.jpg" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/WEB-INF/img/5d8a8a0d-ecbb-4e3d-8ff2-251783dc8450_495.jpg" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/img/e7b70241-a5e2-4749-8b13-891e28abcbdc_495.jpg" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/WEB-INF/img/e7b70241-a5e2-4749-8b13-891e28abcbdc_495.jpg" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/make/txtprint/registList.txt" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/WEB-INF/make/txtprint/registList.txt" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/make/xlsprint/LUCKYRMP.xlsx" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/WEB-INF/make/xlsprint/LUCKYRMP.xlsx" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/make/xlsprint/registForm.xlsx" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/WEB-INF/make/xlsprint/registForm.xlsx" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/index.html" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/page/add.html" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/page/add.html" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/page/checkId.html" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/page/checkId.html" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/page/list.html" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/page/list.html" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/BeanTest.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/BeanTest.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/GetTime.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/GetTime.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/Length.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/Length.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/MapTest.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/MapTest.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/POITest.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/POITest.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/ServiceTest.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/ServiceTest.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/Stu.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/Stu.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-parent/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/.gitignore" afterPath="$PROJECT_DIR$/dean-pusher/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/dbank-pusher.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/pom.xml" afterPath="$PROJECT_DIR$/dean-pusher/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/lottery/sys/LotterySys.java" afterPath="$PROJECT_DIR$/dean-pusher/src/main/java/com/lottery/sys/LotterySys.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/credit/quartz/job/AutoJobDemo.java" afterPath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/job/AutoJobDemo.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/credit/quartz/listener/QuartzListenner.java" afterPath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/listener/QuartzListenner.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/credit/quartz/monitor/IMonitorJob.java" afterPath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/monitor/IMonitorJob.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/credit/quartz/service/AutoJobDemoService.java" afterPath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/service/AutoJobDemoService.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/credit/quartz/service/CommTaskService.java" afterPath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/service/CommTaskService.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/credit/quartzProvider.java" afterPath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartzProvider.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/generateData/Genarate.java" afterPath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/generateData/Genarate.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/generateData/GenarateUserList.java" afterPath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/generateData/GenarateUserList.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/generateData/RandomValueUtil.java" afterPath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/generateData/RandomValueUtil.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/java/com/ms/utils/Properties.java" afterPath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/utils/Properties.java" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/resources/data/20191122.txt" afterPath="$PROJECT_DIR$/dean-pusher/src/main/resources/data/20191122.txt" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/resources/data/20191125.txt" afterPath="$PROJECT_DIR$/dean-pusher/src/main/resources/data/20191125.txt" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/resources/data/20191129.txt" afterPath="$PROJECT_DIR$/dean-pusher/src/main/resources/data/20191129.txt" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/resources/data/empList_20191129.txt" afterPath="$PROJECT_DIR$/dean-pusher/src/main/resources/data/empList_20191129.txt" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/resources/data/luckyperson.txt" afterPath="$PROJECT_DIR$/dean-pusher/src/main/resources/data/luckyperson.txt" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/resources/env_p.properties" afterPath="$PROJECT_DIR$/dean-pusher/src/main/resources/env_p.properties" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/resources/spring/applicationContext-quartz.xml" afterPath="$PROJECT_DIR$/dean-pusher/src/main/resources/spring/applicationContext-quartz.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/resources/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/dean-pusher/src/main/resources/spring/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/webapp/WEB-INF/page/checkId.html" afterPath="$PROJECT_DIR$/dean-pusher/src/main/webapp/WEB-INF/page/checkId.html" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/webapp/WEB-INF/page/happyBirthday.html" afterPath="$PROJECT_DIR$/dean-pusher/src/main/webapp/WEB-INF/page/happyBirthday.html" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/dean-pusher/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/dbank-pusher/src/test/java/com/test/DemoTest.java" afterPath="$PROJECT_DIR$/dean-pusher/src/test/java/com/test/DemoTest.java" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/IbmMqSendService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MqDemo.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MqService.java" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/TextMessageListener.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/TextMessageListener.java" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/DreamPageServiceImpl.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/DreamPageServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/DreamPageController.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/DreamPageController.java" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/BeanTest.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/BeanTest.java" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/pom.xml" />
     </list>
-    <ignored path="$PROJECT_DIR$/dbank-generator/target/" />
-    <ignored path="$PROJECT_DIR$/dbank-parent/target/" />
-    <ignored path="$PROJECT_DIR$/dbank-parent/dbank-base/target/" />
-    <ignored path="$PROJECT_DIR$/dbank-parent/dbank-dao/target/" />
-    <ignored path="$PROJECT_DIR$/dbank-parent/dbank-core/target/" />
-    <ignored path="$PROJECT_DIR$/dbank-parent/dbank-web/target/" />
-    <ignored path="$PROJECT_DIR$/dbank-parent/dbank-manager/target/" />
-    <ignored path="$PROJECT_DIR$/dbank-parent/mbank-quartz/target/" />
-    <ignored path="$PROJECT_DIR$/dbank-parent/dbank-quartz/target/" />
-    <ignored path="$PROJECT_DIR$/dbank-pusher/target/" />
     <ignored path="$PROJECT_DIR$/dean-generator/target/" />
     <ignored path="$PROJECT_DIR$/dean-parent/dean-web/target/" />
     <ignored path="$PROJECT_DIR$/dean-parent/dean-dao/target/" />
@@ -306,18 +41,74 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/mbank$dbbank.coverage" NAME="dbbank Coverage Results" MODIFIED="1576231404923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/dean$BeanTest_jsonTest.coverage" NAME="BeanTest.jsonTest Coverage Results" MODIFIED="1589171512843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dean.demo.*</FILTER>
+    </SUITE>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="mbank" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/index.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="MqService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MqService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="2704">
+              <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DreamPageController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/DreamPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DreamPageServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/DreamPageServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DreamResultParseUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/utils/DreamResultParseUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2340">
+              <caret line="97" column="38" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DreamPageEnum.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/enums/DreamPageEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="24" />
+              <folding>
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#534#535#0" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#679#680#0" expanded="true" />
+                <element signature="e#729#730#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -329,21 +120,13 @@
       <list>
         <option value="Interface" />
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>LyExceptionEnum</find>
-      <find>servlet</find>
-      <find>test</find>
-      <find>jedis</find>
-      <find>quartz</find>
-      <find>fiel</find>
-      <find>snowFlake</find>
-      <find>.txt</find>
       <find>fun</find>
       <find>func</find>
       <find>regEx</find>
@@ -366,6 +149,14 @@
       <find>class</find>
       <find>host</find>
       <find>dbank</find>
+      <find>connector</find>
+      <find>annotations</find>
+      <find>redisTemplate</find>
+      <find>jms</find>
+      <find>KEY_PREFIX</find>
+      <find>json</find>
+      <find>2385</find>
+      <find>2538</find>
     </findStrings>
     <replaceStrings>
       <replace>DbankExceptionEnum</replace>
@@ -392,43 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/page/test.jsp" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/pom.xml" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/getParam.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/GetParam.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/tree.js" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/tree.html" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/RaffleActiveWinnerService.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/RaffleActiveWinnerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/ms/credit/dao/RaffleActiveWinnerDao.xml" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/test/java/com/ms/credit/GenerateWinnerList.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleActivePageDao.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleActiveWinnerDao.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/dao/RaffleDetailDao.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/enums/DbankExceptionEnum.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/datasource/DynamicDataSource.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/datasource/DataSourceContextHolder.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-base/.gitignore" />
-        <option value="$PROJECT_DIR$/dbank-generator/.gitignore" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-core/.gitignore" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/.gitignore" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/.gitignore" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/.gitignore" />
-        <option value="$PROJECT_DIR$/dbank-parent/.gitignore" />
-        <option value="$PROJECT_DIR$/dbank-pusher/.gitignore" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/BeanTest.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/ms/credit/service/impl/RaffleActivePageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/resources/spring/applicationContext-service.xml" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/java/com/ms/credit/advise/DataSourceAspect.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/spring/applicationContext-dao.xml" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-base/src/main/java/com/ms/credit/constants/BaseUserId.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/Length.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/POITest.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/ResourceFileController.java" />
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/ms/credit/controller/ContextController.java" />
         <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/test/java/com/ms/credit/ServiceTest.java" />
         <option value="$PROJECT_DIR$/dbank-parent/dbank-dao/src/main/resources/com/dean/credit/dao/ModuleDao.xml" />
@@ -436,13 +190,50 @@
         <option value="$PROJECT_DIR$/dbank-parent/dbank-manager/src/main/java/com/dean/demo/service/RoleService.java" />
         <option value="$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/dean/demo/controller/ContextController.java" />
         <option value="$PROJECT_DIR$/dean-pusher/pom.xml" />
-        <option value="$PROJECT_DIR$/dean-parent/pom.xml" />
         <option value="$PROJECT_DIR$/dean-parent/dean-web/pom.xml" />
         <option value="$PROJECT_DIR$/dean-parent/dean-manager/pom.xml" />
         <option value="$PROJECT_DIR$/dean-parent/dean-dao/pom.xml" />
         <option value="$PROJECT_DIR$/dean-parent/dean-core/pom.xml" />
         <option value="$PROJECT_DIR$/dean-parent/dean-base/pom.xml" />
         <option value="$PROJECT_DIR$/dean-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/RoleController.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/page/list.html" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/DreamPage.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/Dizhi.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/spring/demo.xml" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/ibmmq.properties" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/test/java/com/dean/demo/DemoTest.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/DemoTestController.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/spring/applicationContext-ibmmq.xml" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/page/dddd.html" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/IbmMqService.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/JmsProducer.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/IbmMqSendService.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/MessageSender.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/spring/applicationContext-ibmmqSender.xml" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/MessageSenderImpl.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/MessageListener.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/spring/applicationContext-ibmmqListener.xml" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/TextMessageListener.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MessageSenderImpl.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MqDemo.java" />
+        <option value="$PROJECT_DIR$/dean-parent/.gitignore" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/RaffleActivePageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/TextMessageListener.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MqService.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/enums/DreamPageEnum.java" />
+        <option value="$PROJECT_DIR$/dean-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/constants/DreamPageConstans.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/utils/DreamResultParseUtil.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/utils/DreamResultParseUtil.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/DreamPageService.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/DreamPageController.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/BeanTest.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/exception/DbankException.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/DreamPageServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -481,7 +272,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="450" />
     <option name="y" value="23" />
     <option name="width" value="1233" />
@@ -533,6 +324,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -549,6 +343,185 @@
               <item name="dean" type="b2602c69:ProjectViewProjectNode" />
               <item name="dean" type="462c0819:PsiDirectoryNode" />
               <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
               <item name="dean-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -573,7 +546,7 @@
               <item name="dean-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dean" type="b2602c69:ProjectViewProjectNode" />
@@ -582,23 +555,69 @@
               <item name="dean-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="dean-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dean" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.29212454" />
@@ -607,26 +626,26 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dean-pusher/pom.xml" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dean\dean-parent\dean-manager\src\main\resources\spring" />
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dean\dean-parent\dean-web\src\main\webapp\WEB-INF\img" />
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-base" />
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-core" />
+      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dean.demo.service" />
+      <recent name="com.ms.credit.dao" />
+      <recent name="com.ms.credit.pojo.DTO" />
+      <recent name="com.ms.credit.pojo.VO" />
+      <recent name="com.ms.credit.utils.ftp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-manager\src\main\resources" />
       <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-web\src\main\webapp" />
       <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-manager\src\main\resources\config" />
       <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-dao\src\main\resources\com\ms\credit\dao" />
       <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-web\src\main\webapp\WEB-INF\make\xlsprint" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ms.credit.dao" />
-      <recent name="com.ms.credit.pojo.DTO" />
-      <recent name="com.ms.credit.pojo.VO" />
-      <recent name="com.ms.credit.utils.ftp" />
-      <recent name="com.ms.generateData" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-base" />
-      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-core" />
-      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-dao" />
-      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-manager" />
-      <recent name="D:\idea\ideaSpace_dynamicDbbank\dbank\dbank-parent\dbank-web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -649,14 +668,14 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="ResourceFileController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MqService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.dean.demo.controller.*" />
+          <option name="PATTERN" value="com.dean.demo.service.ibmmq.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.dean.demo.controller.ResourceFileController" />
+      <option name="MAIN_CLASS_NAME" value="com.dean.demo.service.ibmmq.MqService" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -665,7 +684,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="dbank-web" />
+      <module name="dean-manager" />
       <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -682,19 +701,19 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="POITest.getPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeanTest.dTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.dean.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="dbank-web" />
+      <module name="dean-web" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.dean.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.dean.demo.POITest" />
-      <option name="METHOD_NAME" value="getPath" />
+      <option name="MAIN_CLASS_NAME" value="com.dean.demo.BeanTest" />
+      <option name="METHOD_NAME" value="dTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -707,19 +726,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ServiceTest.plusI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeanTest.dateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.dean.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="dbank-web" />
+      <module name="dean-web" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.dean.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.dean.demo.ServiceTest" />
-      <option name="METHOD_NAME" value="plusI" />
+      <option name="MAIN_CLASS_NAME" value="com.dean.demo.BeanTest" />
+      <option name="METHOD_NAME" value="dateTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -732,19 +751,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ServiceTest.serviceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeanTest.jsonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.dean.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="dbank-web" />
+      <module name="dean-web" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.dean.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.dean.demo.ServiceTest" />
-      <option name="METHOD_NAME" value="serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.dean.demo.BeanTest" />
+      <option name="METHOD_NAME" value="jsonTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -766,6 +785,31 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="com.dean.demo.service.impl in dean-manager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dean.demo.service.ibmmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="dean-manager" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.dean.demo.service.impl" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -935,19 +979,21 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.dean" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ResourceFileController" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.POITest.getPath" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ServiceTest.plusI" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ServiceTest.serviceTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.com.dean.demo.service.impl in dean-manager" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MqService" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BeanTest.dateTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BeanTest.jsonTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.BeanTest.dTest" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ServiceTest.serviceTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ServiceTest.plusI" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ResourceFileController" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.POITest.getPath" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BeanTest.jsonTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BeanTest.dTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BeanTest.dateTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MqService" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.com.dean.demo.service.impl in dean-manager" />
       </list>
     </recent_temporary>
   </component>
@@ -1066,7 +1112,27 @@
       <workItem from="1579568558224" duration="2064000" />
       <workItem from="1587263185786" duration="851000" />
       <workItem from="1587264110274" duration="1221000" />
-      <workItem from="1587265356115" duration="751000" />
+      <workItem from="1587265356115" duration="2851000" />
+      <workItem from="1587636992882" duration="624000" />
+      <workItem from="1587960447468" duration="3974000" />
+      <workItem from="1588256352021" duration="7242000" />
+      <workItem from="1588321058909" duration="1331000" />
+      <workItem from="1588410040361" duration="3465000" />
+      <workItem from="1588478412259" duration="12566000" />
+      <workItem from="1588520913163" duration="2271000" />
+      <workItem from="1588523238014" duration="502000" />
+      <workItem from="1588523767632" duration="778000" />
+      <workItem from="1588562579142" duration="180000" />
+      <workItem from="1588562785735" duration="15251000" />
+      <workItem from="1588645666146" duration="18499000" />
+      <workItem from="1588732880715" duration="15652000" />
+      <workItem from="1588817538865" duration="6440000" />
+      <workItem from="1588904594407" duration="3594000" />
+      <workItem from="1588991004865" duration="8985000" />
+      <workItem from="1589094988107" duration="9985000" />
+      <workItem from="1589159674772" duration="4226000" />
+      <workItem from="1589170735772" duration="14448000" />
+      <workItem from="1589263884346" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="1.删除Oracle数据源相关信息&#10;2.修改说明文件">
       <created>1572103453397</created>
@@ -1152,43 +1218,50 @@
       <option name="project" value="LOCAL" />
       <updated>1578386880494</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2020/04/20 -Rename Project">
+      <created>1587266277262</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1587266277262</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BeanTest_isNull - 2020.01.09 at 15h 17m 34s.xml">
-      <configuration name="BeanTest.isNull" configurationId="JUnit" />
+    <history-entry file="BeanTest_dTest - 2020.05.11 at 16h 12m 59s.xml">
+      <configuration name="BeanTest.dTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanTest_isNull - 2020.01.09 at 15h 18m 59s.xml">
-      <configuration name="BeanTest.isNull" configurationId="JUnit" />
+    <history-entry file="BeanTest_dTest - 2020.05.11 at 16h 13m 09s.xml">
+      <configuration name="BeanTest.dTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanTest_isNull - 2020.01.09 at 15h 19m 20s.xml">
-      <configuration name="BeanTest.isNull" configurationId="JUnit" />
+    <history-entry file="BeanTest_dTest - 2020.05.11 at 16h 13m 38s.xml">
+      <configuration name="BeanTest.dTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanTest_isNull - 2020.01.09 at 15h 19m 37s.xml">
-      <configuration name="BeanTest.isNull" configurationId="JUnit" />
+    <history-entry file="BeanTest_dTest - 2020.05.11 at 16h 13m 49s.xml">
+      <configuration name="BeanTest.dTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GenerateWinnerList_queryTest1 - 2020.01.02 at 17h 43m 59s.xml">
-      <configuration name="GenerateWinnerList.queryTest1" configurationId="JUnit" />
+    <history-entry file="BeanTest_dTest - 2020.05.11 at 16h 16m 29s.xml">
+      <configuration name="BeanTest.dTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Length_myTest - 2020.01.14 at 17h 58m 06s.xml">
-      <configuration name="Length.myTest" configurationId="JUnit" />
+    <history-entry file="BeanTest_jsonTest - 2020.05.11 at 18h 37m 02s.xml">
+      <configuration name="BeanTest.jsonTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Length_myTest - 2020.01.14 at 17h 58m 21s.xml">
-      <configuration name="Length.myTest" configurationId="JUnit" />
+    <history-entry file="BeanTest_jsonTest - 2020.05.11 at 18h 37m 18s.xml">
+      <configuration name="BeanTest.jsonTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="POITest_getPath - 2020.01.15 at 17h 45m 24s.xml">
-      <configuration name="POITest.getPath" configurationId="JUnit" />
+    <history-entry file="BeanTest_jsonTest - 2020.05.11 at 18h 37m 38s.xml">
+      <configuration name="BeanTest.jsonTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceTest_plusI - 2020.01.20 at 15h 05m 41s.xml">
-      <configuration name="ServiceTest.plusI" configurationId="JUnit" />
+    <history-entry file="BeanTest_jsonTest - 2020.05.11 at 18h 38m 02s.xml">
+      <configuration name="BeanTest.jsonTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceTest_serviceTest - 2020.01.20 at 15h 25m 06s.xml">
-      <configuration name="ServiceTest.serviceTest" configurationId="JUnit" />
+    <history-entry file="BeanTest_jsonTest - 2020.05.11 at 18h 42m 55s.xml">
+      <configuration name="BeanTest.jsonTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="493441000" />
+    <option name="totallyTimeSpent" value="625632000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1200,7 +1273,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4502924" sideWeight="0.5032189" order="7" side_tool="true" content_ui="tabs" />
@@ -1212,18 +1286,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.82807016" sideWeight="0.4967811" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33794695" sideWeight="0.4967811" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45497075" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5257009" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8269006" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5251462" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32410613" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2414163" sideWeight="0.49532712" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30740345" sideWeight="0.49532712" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1234,19 +1307,21 @@
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.28738317" sideWeight="0.50214595" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4544406" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865497" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756633" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4509346" sideWeight="0.5032189" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4502924" sideWeight="0.5032189" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2885514" sideWeight="0.50214595" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21566524" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.28738317" sideWeight="0.50214595" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15396996" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1255,25 +1330,25 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66004676" sideWeight="0.4967811" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29757786" sideWeight="0.4967811" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45560747" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4544406" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31425235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5257009" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7289504" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5251462" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2274678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26770386" sideWeight="0.49532712" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865497" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3390558" sideWeight="0.5046729" order="8" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1333,354 +1408,376 @@
     <MESSAGE value="2019/11/22 -更新2" />
     <MESSAGE value="2019/11/29 -添加上传文件接口" />
     <MESSAGE value="2019/12/20 -修改日志配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019/12/20 -修改日志配置" />
+    <MESSAGE value="2020/04/20 -Rename Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020/04/20 -Rename Project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="202" />
+      <option name="time" value="221" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/target/classes/com/ms/credit/dao/RaffleActivePageDao.xml" />
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-dao/target/classes/com/ms/credit/dao/RaffleActivePageDao.class" />
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/spring/applicationContext-redis.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/4.2.4.RELEASE/spring-jms-4.2.4.RELEASE-sources.jar!/org/springframework/jms/core/JmsOperations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="-34">
+          <caret line="132" column="9" lean-forward="false" selection-start-line="132" selection-start-column="9" selection-end-line="132" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/spring/applicationContext-service.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/4.2.4.RELEASE/spring-jms-4.2.4.RELEASE-sources.jar!/org/springframework/jms/core/JmsTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        <state relative-caret-position="278">
+          <caret line="567" column="16" lean-forward="false" selection-start-line="567" selection-start-column="16" selection-end-line="567" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/ibm/mq/com.ibm.mq.allclient/9.1.0.0/com.ibm.mq.allclient-9.1.0.0.jar!/com/ibm/mq/MQC.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/ibm/mq/com.ibm.mq.allclient/9.1.0.0/com.ibm.mq.allclient-9.1.0.0.jar!/com/ibm/mq/MQQueueManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/advise/DataSourceAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-658">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/TextMessageListener.java" />
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/RaffleActivePageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/ibmmq.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/spring/applicationContext-ibmmqSender.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1612">
+          <caret line="62" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/spring/applicationContext-ibmmqListener.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="35" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/IbmMqSendService.java" />
+    <entry file="file://$PROJECT_DIR$/dean-parent/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/listener/QuartzListenner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/service/AutoJobDemoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/advise/BaseExceptionAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/results/DbankExceptionResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="49" column="46" lean-forward="true" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/RaffleActivePageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-208">
-          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        <state relative-caret-position="256">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/advise/BaseExceptionAdvice.java">
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/test/java/com/dean/demo/DemoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="-752">
+          <caret line="56" column="23" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="56" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/advise/DataSourceAspect.java">
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="69" column="52" lean-forward="false" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+        <state relative-caret-position="-665">
+          <caret line="59" column="35" lean-forward="false" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/BaseController.java">
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/DDDemo.java" />
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/DEmoo.java" />
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/com/dean/demo/dao/RaffleActivePageDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/spring/applicationContext-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="44" column="53" lean-forward="false" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/Length.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/POITest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/ResourceFileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="255" column="5" lean-forward="false" selection-start-line="255" selection-start-column="5" selection-end-line="255" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/target/dbank-web-1.0-SNAPSHOT/WEB-INF/classes/jasperreports_extension.properties" />
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/constants/BaseUserId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/ServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/utils/constants/RegexPatterns.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/framework/HierarchicalContext.java" />
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/main/java/com/ms/framework/ListableContext.java" />
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-core/src/test/java/ContextTest.java" />
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/com/dean/demo/dao/ModuleDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbank-parent/dbank-web/src/main/java/com/dean/demo/controller/ContextController.java" />
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-pusher/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/page/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-218">
-          <caret line="27" column="95" lean-forward="false" selection-start-line="27" selection-start-column="95" selection-end-line="27" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/RaffleActivePageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-generator/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-generator/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="55" column="34" lean-forward="false" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/WEB-INF/data/nameList.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1380">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/resources/jasperreports_extension.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/redis.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/config/SnowFlake.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/config/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/config/SnowFlakeConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/config/SnowFlakeProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/datasource/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/result/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="546">
+          <caret line="90" column="11" lean-forward="true" selection-start-line="77" selection-start-column="2" selection-end-line="90" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/result/ErrorMsg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="132">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/page/list.html">
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-core/src/main/java/com/dean/demo/result/Result.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="85" column="42" lean-forward="false" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+        <state relative-caret-position="470">
+          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/RaffleActivePageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/enums/DbankExceptionEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/TextMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MessageSenderImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/ibm/mq/com.ibm.mq.allclient/9.1.0.0/com.ibm.mq.allclient-9.1.0.0.jar!/com/ibm/mq/MQException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11938">
+          <caret line="1018" column="41" lean-forward="false" selection-start-line="1018" selection-start-column="34" selection-end-line="1018" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/MessageSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/index.html">
+    <entry file="jar://D:/Java/jdk1.8.0_181/src.zip!/java/text/Format.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-386">
+          <caret line="155" column="24" lean-forward="false" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.4/json-lib-2.4.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="288" column="42" lean-forward="false" selection-start-line="288" selection-start-column="42" selection-end-line="288" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.9/junit-4.9-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/enums/DreamPageEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/GetTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/Dizhi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MqService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2704">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/constants/BaseUserId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/DreamPageService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <caret line="10" column="69" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/constants/DreamPageConstans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/BeanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/src/main/java/com/dean/demo/exception/DbankException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/DreamPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_181/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="52" column="11" lean-forward="false" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/utils/DreamResultParseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="97" column="38" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/impl/DreamPageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1691,7 +1788,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>dbank-web:war</last-edited>
+          <last-edited>dean-pusher:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

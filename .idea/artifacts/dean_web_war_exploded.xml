@@ -82,6 +82,15 @@
           <element id="library" level="project" name="Maven: com.github.virtuald:curvesapi:1.05" />
           <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml-schemas:4.0.1" />
           <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:3.0.2" />
+          <element id="library" level="project" name="Maven: net.sf.json-lib:json-lib:jdk15:2.4" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.0" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.5" />
+          <element id="library" level="project" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" />
+          <element id="library" level="project" name="Maven: com.ibm.mq:com.ibm.mq.allclient:9.1.0.0" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.59" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.59" />
+          <element id="library" level="project" name="Maven: javax.jms:javax.jms-api:2.0.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">

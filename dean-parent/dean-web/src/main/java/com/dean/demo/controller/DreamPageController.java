@@ -4,19 +4,15 @@ import com.dean.demo.enums.DbankExceptionEnum;
 import com.dean.demo.exception.DbankException;
 import com.dean.demo.service.DreamPageService;
 import com.dean.demo.service.MessageSender;
-import com.dean.demo.service.ibmmq.IbmMqSendService;
-import com.dean.demo.service.ibmmq.MqDemo;
+import com.dean.demo.service.ibmmq.MqService;
 import com.dean.demo.utils.JsonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.jms.core.JmsTemplate;
-import org.springframework.jms.core.MessageCreator;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.jms.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -60,9 +56,10 @@ public class DreamPageController {
         String result = JsonUtils.toString(respMap);
         try {
             System.out.println("changeDreamTaskStatus放入队列的消息："+result);
-            MqDemo.sendMessageToMq(result);
+            MqService.sendMessageToMq(result);
         }catch (Exception e){
             e.printStackTrace();
+            System.out.println("Controller层捕捉到了异常");
             throw new DbankException(DbankExceptionEnum.INVALID_PARAM_ERROR);
         }
         return ResponseEntity.ok(respMap);

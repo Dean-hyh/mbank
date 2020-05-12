@@ -15,7 +15,7 @@ public class TextMessageListener implements MessageListener {
         try {
             TextMessage msg = (TextMessage) message;
             String msgStr = msg.getText();
-            System.out.println("队列收到的消息:" + msgStr);
+            System.out.println("队列收到的消息: \n" + msgStr);
         } catch (Exception e) {
             e.printStackTrace();
         }

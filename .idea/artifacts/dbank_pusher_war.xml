@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="dbank-pusher:war">
-    <output-path>$PROJECT_DIR$/dbank-pusher/target</output-path>
-    <root id="archive" name="dbank-pusher-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="dbank-pusher:war exploded" />
-    </root>
-  </artifact>
-</component>
