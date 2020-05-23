@@ -1,5 +1,7 @@
 package com.dean.demo.service.ibmmq;
 
+import com.dean.demo.enums.DbankExceptionEnum;
+import com.dean.demo.exception.DbankException;
 import com.dean.demo.utils.JsonUtils;
 import com.ibm.mq.*;
 import org.springframework.stereotype.Service;
@@ -52,7 +54,7 @@ public class MqService {
             msg.writeString(msgStr);
             MQPutMessageOptions pmo = new MQPutMessageOptions();
             msg.expiry = -1; // 设置消息用不过期
-            int i = 1/0;
+            //int i = 1/0;
             System.out.println("======0======");
             queue.put(msg, pmo);// 将消息放入队列
         }finally {
@@ -100,12 +102,21 @@ public class MqService {
         }
     }
 
-    public static void sendMessageToMq(String msg){
-        try {
-            connect();
-            sendMsg(msg);
-        }catch (Exception e){
-            e.printStackTrace();
+    public static void sendMessageToMq(String msg,int count) throws Exception{
+        if(count>0){
+            System.out.println("第" + count + "次");
+            try {
+                connect();
+                sendMsg(msg);
+            }catch (MQException e){
+                count--;
+                sendMessageToMq(msg,count);
+               if(count==0) {
+                   throw new MQException(e.getMessage(), "", e.reasonCode, e.completionCode);
+               }
+            }catch (Exception e){
+                throw new DbankException(DbankExceptionEnum.FILE_CONTENT_IS_EMPTY);
+            }
         }
     }
 
@@ -118,12 +129,7 @@ public class MqService {
         map.put("serNo","1001");
         final String msg = JsonUtils.toString(map);
         try {
-            System.out.println("--------1--------");
-            connect();
-            System.out.println("--------2--------");
-            sendMsg(msg);
-            System.out.println("--------3--------");
-            receiveMsg();
+            sendMessageToMq(msg,3);
         }catch (MQException e){
             System.out.println("MQ数据入队失败--compCode：[" + e.completionCode + "] ，reasonCode：[" + e.reasonCode+"]");
             e.printStackTrace();

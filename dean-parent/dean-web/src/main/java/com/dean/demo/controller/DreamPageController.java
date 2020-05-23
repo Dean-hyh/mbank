@@ -41,6 +41,16 @@ public class DreamPageController {
         return ResponseEntity.ok(respMap);
     }
 
+    @RequestMapping(value = "/queryRecordListByPageV2",method = RequestMethod.GET)
+    public ResponseEntity<Map<String,Object>> queryRecordListByPageV2(@RequestParam Map<String,String> params){
+        Map<String, Object> respMap = new HashMap<>();
+        Map<String,Object> recordList = dreamPageService.queryRecordListByPageV2(params);
+        respMap.put("recordList",recordList);
+        respMap.put("STATUS","1");
+        respMap.put("MSG","成功");
+        return ResponseEntity.ok(respMap);
+    }
+
     /**
      * 修改任务状态队列测试-传统方式
      * @return
@@ -56,7 +66,7 @@ public class DreamPageController {
         String result = JsonUtils.toString(respMap);
         try {
             System.out.println("changeDreamTaskStatus放入队列的消息："+result);
-            MqService.sendMessageToMq(result);
+            MqService.sendMessageToMq(result,3);
         }catch (Exception e){
             e.printStackTrace();
             System.out.println("Controller层捕捉到了异常");

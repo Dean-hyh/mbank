@@ -5,8 +5,8 @@ package com.dean.demo.constants;
  * @version 1.0 2020/5/11
  */
 public abstract class DreamPageConstans {
-    public static final String SUCC_TAGS = "0";
-    public static final String ERR_TAGS = "1";
+    public static final String SUCC_TAGS = "200";
+    public static final String ERR_TAGS = "5--";
     public static final String repeat_request = "1030";
     public static final int err_status = 1;
     public static final int succ_status = 0;

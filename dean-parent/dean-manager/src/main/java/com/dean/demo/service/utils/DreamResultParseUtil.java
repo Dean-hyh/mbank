@@ -90,6 +90,62 @@ public class DreamResultParseUtil {
     }
 
     /**
+     * 获取结果中的List
+     * @param resource
+     * @return
+     * @throws ParseException
+     */
+    public static Map<String,Object> getMap(Object resource) throws ParseException {
+        List<Map<String,Object>> recordList = new ArrayList<>();
+        Map<String,Object> reMap = new HashMap<>();
+        JSONObject jsonObject = JSONObject.fromObject(resource);
+        if (jsonObject.containsKey("result")) {
+            JSONArray resultList = jsonObject.getJSONArray("result");
+                for (Object map : resultList) {
+                    JSONObject jsonMap = JSONObject.fromObject(map);
+                    Map<String, Object> map1 = new HashMap<>();
+                    if (jsonMap.containsKey("tx_date")) {
+                        String dateStr = jsonMap.getString("tx_date");
+                        Date parse = new SimpleDateFormat("yyyyMMdd").parse(dateStr);
+                        String formatDate = new SimpleDateFormat("yyyy/MM/dd").format(parse);
+                        map1.put("date", formatDate);
+                    }
+                    if (jsonMap.containsKey("tx_time")) {
+                        String timeStr = jsonMap.getString("tx_time");
+                        map1.put("time", timeStr);
+                    }
+                    if (jsonMap.containsKey("tx_sep_no")) {
+                        String dateStr = jsonMap.getString("tx_sep_no");
+                        map1.put("transNo", dateStr);
+                    }
+                    if (jsonMap.containsKey("dream_val")) {
+                        String dateStr = jsonMap.getString("dream_val");
+                        map1.put("dreamvalue", dateStr);
+                    }
+                    if (jsonMap.containsKey("tx_desc")) {
+                        String dateStr = jsonMap.getString("tx_desc");
+                        map1.put("transDesc", dateStr);
+                    }
+                    if (jsonMap.containsKey("flow_no")) {
+                        String dateStr = jsonMap.getString("flow_no");
+                        map1.put("flowNo", dateStr);
+                    }
+                    recordList.add(map1);
+                }
+        }
+
+        reMap.put("recordList",recordList);
+        if (jsonObject.containsKey("resultStatistics")) {
+            JSONObject resultStatistics = jsonObject.getJSONObject("resultStatistics");
+            if(resultStatistics.containsKey("totalSize")){
+                String totalSize = resultStatistics.getString("totalSize");
+                reMap.put("totalSize",totalSize);
+            }
+        }
+        return reMap;
+    }
+
+    /**
      * 获取异常信息
      * @param resource
      * @return

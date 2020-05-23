@@ -9,4 +9,6 @@ import java.util.Map; /**
 public interface DreamPageService {
 
     List<Map<String,Object>> queryRecordListByPage(Map<String, String> params);
+
+    Map<String,Object> queryRecordListByPageV2(Map<String, String> params);
 }

@@ -16,7 +16,7 @@ public class MessageSenderImpl implements MessageSender {
     @Resource(name="senderJmsTemplate")
     private JmsTemplate jmsTemplate;
     /**
-     * 这里为什么要用final呢？是下面那个createTextMessage方法要求的...
+     * createTextMessage方法要求参数必须由final修饰
      */
     @Override
     public void sendMessage(final String message) {
