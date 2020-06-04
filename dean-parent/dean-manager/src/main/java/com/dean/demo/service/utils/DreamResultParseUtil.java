@@ -19,16 +19,16 @@ public class DreamResultParseUtil {
 
     private static final Logger logger = LoggerFactory.getLogger(DreamResultParseUtil.class);
 
-    private static final Map<Integer,String> codeMap = new HashMap<>();
+    private static final Map<String,String> codeMap = new HashMap<>();
 
     static {
-        codeMap.put(0,"成功");
-        codeMap.put(-1,"失败");
-        codeMap.put(1001,"查询梦想值客户不存在");
-        codeMap.put(1002,"缺少必要参数");
-        codeMap.put(1010,"梦想账号类型错误");
-        codeMap.put(1020,"梦想值不足，扣减失败");
-        codeMap.put(1030,"已处理完成，请不要重复提请求");
+        codeMap.put("0","成功");
+        codeMap.put("-1","失败");
+        codeMap.put("1001","查询梦想值客户不存在");
+        codeMap.put("1002","缺少必要参数");
+        codeMap.put("1010","梦想账号类型错误");
+        codeMap.put("1020","梦想值不足，扣减失败");
+        codeMap.put("1030","已处理完成，请不要重复提请求");
     }
 
     /**
@@ -154,9 +154,8 @@ public class DreamResultParseUtil {
     public static String getCodeAndMsg(Object resource) throws ParseException {
         JSONObject jsonObject = JSONObject.fromObject(resource);
         if(jsonObject.containsKey("status")){
-            int status = jsonObject.getInt("status");
-            String statusMsg = codeMap.get(status);
-            return status+ "："+ statusMsg;
+            String status = jsonObject.getString("status");
+            return status;
         }
         return null;
     }

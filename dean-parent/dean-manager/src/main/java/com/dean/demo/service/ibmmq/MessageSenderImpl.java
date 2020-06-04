@@ -10,6 +10,11 @@ import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.Session;
 
+/**
+ * @author Dean
+ * @version 1.0
+ * @date 2019/12/16 13:47
+ */
 @Component("ibmMessageSender")
 public class MessageSenderImpl implements MessageSender {
 

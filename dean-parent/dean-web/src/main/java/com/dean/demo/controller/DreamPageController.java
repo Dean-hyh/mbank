@@ -90,8 +90,10 @@ public class DreamPageController {
         String result = JsonUtils.toString(respMap);
         try {
             System.out.println("changeStatus放入队列的消息："+result);
+            System.out.println("start======" + System.currentTimeMillis());
             messageSender.sendMessage(result);
         }catch (Exception e){
+            System.out.println("start======" + System.currentTimeMillis());
             e.printStackTrace();
             throw new DbankException(DbankExceptionEnum.INVALID_PARAM_ERROR);
         }
