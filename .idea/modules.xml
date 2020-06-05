@@ -4,11 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/dean.iml" filepath="$PROJECT_DIR$/.idea/dean.iml" />
       <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-base/dean-base.iml" filepath="$PROJECT_DIR$/dean-parent/dean-base/dean-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-controller/dean-controller.iml" filepath="$PROJECT_DIR$/dean-parent/dean-controller/dean-controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-core/dean-core.iml" filepath="$PROJECT_DIR$/dean-parent/dean-core/dean-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-dao/dean-dao.iml" filepath="$PROJECT_DIR$/dean-parent/dean-dao/dean-dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-manager/dean-manager.iml" filepath="$PROJECT_DIR$/dean-parent/dean-manager/dean-manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-parent.iml" filepath="$PROJECT_DIR$/dean-parent/dean-parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-web/dean-web.iml" filepath="$PROJECT_DIR$/dean-parent/dean-web/dean-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dean-parent/dean-service/dean-service.iml" filepath="$PROJECT_DIR$/dean-parent/dean-service/dean-service.iml" />
     </modules>
   </component>
 </project>

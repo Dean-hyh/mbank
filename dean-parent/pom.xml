@@ -11,8 +11,8 @@
         <module>dean-core</module>
         <module>dean-base</module>
         <module>dean-dao</module>
-        <module>dean-web</module>
-        <module>dean-manager</module>
+        <module>dean-controller</module>
+        <module>dean-service</module>
     </modules>
     <packaging>pom</packaging>
 

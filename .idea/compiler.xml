@@ -6,35 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dbank-generator" />
-        <module name="dbank-pusher" />
         <module name="dean-base" />
+        <module name="dean-controller" />
         <module name="dean-core" />
         <module name="dean-dao" />
-        <module name="dean-manager" />
-        <module name="dean-web" />
-        <module name="mbank-quartz" />
+        <module name="dean-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="dbank-base" target="1.8" />
-      <module name="dbank-core" target="1.8" />
-      <module name="dbank-dao" target="1.8" />
-      <module name="dbank-generator" target="1.5" />
-      <module name="dbank-manager" target="1.8" />
-      <module name="dbank-parent" target="1.8" />
-      <module name="dbank-pusher" target="1.8" />
-      <module name="dbank-quartz" target="1.8" />
-      <module name="dbank-web" target="1.8" />
       <module name="dean-base" target="1.8" />
+      <module name="dean-controller" target="1.8" />
       <module name="dean-core" target="1.8" />
       <module name="dean-dao" target="1.8" />
-      <module name="dean-generator" target="1.5" />
-      <module name="dean-manager" target="1.8" />
       <module name="dean-parent" target="1.8" />
-      <module name="dean-pusher" target="1.8" />
-      <module name="dean-web" target="1.8" />
-      <module name="mbank-quartz" target="1.8" />
+      <module name="dean-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

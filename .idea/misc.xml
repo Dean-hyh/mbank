@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/dean-parent/dean-web" />
-    <file type="web" url="file://$PROJECT_DIR$/dean-pusher" />
+    <file type="web" url="file://$PROJECT_DIR$/dean-parent/dean-controller" />
   </component>
   <component name="Kotlin2JsCompilerArguments">
     <option name="sourceMapEmbedSources" />
@@ -11,20 +10,9 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/dbank-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/dbank-generator/pom.xml" />
-        <option value="$PROJECT_DIR$/../dbank-pusher/pom.xml" />
-        <option value="$PROJECT_DIR$/dbank-pusher/pom.xml" />
-        <option value="$PROJECT_DIR$/dean-generator/pom.xml" />
         <option value="$PROJECT_DIR$/dean-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/dean-pusher/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/dbank-parent/dbank-quartz/pom.xml" />
-      </set>
-    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
