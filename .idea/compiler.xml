@@ -11,9 +11,7 @@
         <module name="dean-base" />
         <module name="dean-core" />
         <module name="dean-dao" />
-        <module name="dean-generator" />
         <module name="dean-manager" />
-        <module name="dean-pusher" />
         <module name="dean-web" />
         <module name="mbank-quartz" />
       </profile>

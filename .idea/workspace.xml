@@ -7,22 +7,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00d50398-bfb4-4eaa-95d3-4e01c8200634" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dean_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dean_web_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_mq_com_ibm_mq_allclient_9_1_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_jms_javax_jms_api_2_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_59.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_59.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_28.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dean-parent/dean-base/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-base/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dean-parent/dean-core/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-core/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dean-parent/dean-dao/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dean-parent/dean-manager/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MessageSenderImpl.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MessageSenderImpl.java" />
-      <change beforePath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MqService.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MqService.java" />
-      <change beforePath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/utils/DreamResultParseUtil.java" afterPath="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/utils/DreamResultParseUtil.java" />
-      <change beforePath="$PROJECT_DIR$/dean-parent/dean-web/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/dean-web/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/DreamPageController.java" afterPath="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/DreamPageController.java" />
-      <change beforePath="$PROJECT_DIR$/dean-parent/pom.xml" afterPath="$PROJECT_DIR$/dean-parent/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/pom.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/dao/ModuleDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/dao/RaffleActivePageDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/dao/RaffleActiveWinnerDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/dao/RaffleDetailDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/dao/RoleDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/dao/UserDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/Module.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/ModuleExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RaffleActivePage.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RaffleActivePageExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RaffleActiveWinner.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RaffleActiveWinnerExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RaffleDetail.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RaffleDetailExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/Role.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/RoleExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/User.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/java/com/dean/demo/pojo/DO/UserExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/resources/com/dean/demo/dao/ModuleDao.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/resources/com/dean/demo/dao/RaffleActivePageDao.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/resources/com/dean/demo/dao/RaffleActiveWinnerDao.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/resources/com/dean/demo/dao/RaffleDetailDao.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/resources/com/dean/demo/dao/RoleDao.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/resources/com/dean/demo/dao/UserDao.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-generator/src/main/resources/generatorConfig.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/pom.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/job/AutoJobDemo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/listener/QuartzListenner.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/monitor/IMonitorJob.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/service/AutoJobDemoService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/service/CommTaskService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartzProvider.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/generateData/Genarate.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/generateData/GenarateUserList.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/generateData/RandomValueUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/utils/Properties.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/java/com/lottery/sys/LotterySys.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/resources/data/20191122.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/resources/data/20191125.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/resources/data/20191129.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/resources/data/empList_20191129.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/resources/data/luckyperson.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/resources/env_p.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/resources/spring/applicationContext-quartz.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/resources/spring/applicationContext.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/webapp/WEB-INF/page/checkId.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/webapp/WEB-INF/page/happyBirthday.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/main/webapp/WEB-INF/web.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dean-pusher/src/test/java/com/test/DemoTest.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/dean-generator/target/" />
     <ignored path="$PROJECT_DIR$/dean-parent/dean-web/target/" />
@@ -52,42 +97,7 @@
     <favorites_list name="mbank" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DreamPageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/DreamPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1378">
-              <caret line="68" column="29" lean-forward="false" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MqService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MqService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="285" column="5" lean-forward="true" selection-start-line="285" selection-start-column="5" selection-end-line="285" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#9866#9867#0" expanded="true" />
-                <element signature="e#9946#9947#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DreamResultParseUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/utils/DreamResultParseUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3900">
-              <caret line="157" column="26" lean-forward="false" selection-start-line="157" selection-start-column="26" selection-end-line="157" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -158,10 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dean-generator/pom.xml" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/RoleController.java" />
-        <option value="$PROJECT_DIR$/dean-parent/dean-web/src/main/webapp/page/list.html" />
         <option value="$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/DreamPage.java" />
         <option value="$PROJECT_DIR$/dean-parent/dean-web/src/test/java/com/dean/demo/Dizhi.java" />
         <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/resources/spring/applicationContext-service.xml" />
@@ -209,6 +215,10 @@
         <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/utils/DreamResultParseUtil.java" />
         <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/monitor/TestChn.java" />
         <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MqService.java" />
+        <option value="$PROJECT_DIR$/dean-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/utils/HttpRequestUtil.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/utils/SendPost.java" />
+        <option value="$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/utils/SendPostReqDemo.java" />
       </list>
     </option>
   </component>
@@ -302,9 +312,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -317,186 +328,10 @@
               <item name="dean" type="462c0819:PsiDirectoryNode" />
               <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="monitor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="dean-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dean" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -545,7 +380,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MqService">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -572,6 +407,25 @@
       <module name="dean-manager" />
       <envs />
     </configuration>
+    <configuration name="HttpRequestUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dean.demo.service.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dean.demo.service.utils.HttpRequestUtil" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="dean-manager" />
+      <envs />
+    </configuration>
     <configuration name="MqService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -580,6 +434,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.dean.demo.service.ibmmq.MqService" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="dean-manager" />
+      <envs />
+    </configuration>
+    <configuration name="SendPostReqDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dean.demo.service.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.dean.demo.service.utils.SendPostReqDemo" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -623,56 +496,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="BeanTest.jsonTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.dean.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="dean-web" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.dean.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.dean.demo.BeanTest" />
-      <option name="METHOD_NAME" value="jsonTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="BeanTest.time" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.dean.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="dean-web" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.dean.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.dean.demo.BeanTest" />
-      <option name="METHOD_NAME" value="time" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -855,18 +678,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.dean" />
       <item index="1" class="java.lang.String" itemvalue="Application.MqService" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BeanTest.jsonTest1" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BeanTest.time" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TimeoutTest" />
-      <item index="5" class="java.lang.String" itemvalue="Application.FutureTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TimeoutTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.FutureTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.HttpRequestUtil" />
+      <item index="5" class="java.lang.String" itemvalue="Application.SendPostReqDemo" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MqService" />
-        <item index="1" class="java.lang.String" itemvalue="Application.FutureTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TimeoutTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BeanTest.time" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BeanTest.jsonTest1" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SendPostReqDemo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.HttpRequestUtil" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MqService" />
+        <item index="3" class="java.lang.String" itemvalue="Application.FutureTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TimeoutTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1023,7 +846,8 @@
       <workItem from="1590973519248" duration="20736000" />
       <workItem from="1591059874835" duration="4409000" />
       <workItem from="1591154556101" duration="3482000" />
-      <workItem from="1591237730581" duration="1315000" />
+      <workItem from="1591237730581" duration="1570000" />
+      <workItem from="1591330439527" duration="5265000" />
     </task>
     <task id="LOCAL-00001" summary="1.删除Oracle数据源相关信息&#10;2.修改说明文件">
       <created>1572103453397</created>
@@ -1123,7 +947,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590219615611</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="2020/06/24 -604更新">
+      <created>1591269609039</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1591269609039</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1159,7 +990,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="726355000" />
+    <option name="totallyTimeSpent" value="731875000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1185,15 +1016,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3171857" sideWeight="0.4967811" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4544406" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5251462" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24682814" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9492503" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1389485" sideWeight="0.49532712" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23122318" sideWeight="0.49532712" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1204,7 +1036,6 @@
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.28738317" sideWeight="0.50214595" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4544406" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1308,7 +1139,8 @@
     <MESSAGE value="2019/12/20 -修改日志配置" />
     <MESSAGE value="2020/04/20 -Rename Project" />
     <MESSAGE value="2020/05/23 -523更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/05/23 -523更新" />
+    <MESSAGE value="2020/06/24 -604更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020/06/24 -604更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1320,71 +1152,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-base/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_181/src.zip!/java/lang/Long.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/ibm/mq/com.ibm.mq.allclient/9.1.0.0/com.ibm.mq.allclient-9.1.0.0.jar!/com/ibm/mq/MQQueueManagerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="532" column="0" lean-forward="false" selection-start-line="532" selection-start-column="0" selection-end-line="532" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/ibm/mq/com.ibm.mq.allclient/9.1.0.0/com.ibm.mq.allclient-9.1.0.0.jar!/com/ibm/mq/StoredManagedConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/ibm/mq/com.ibm.mq.allclient/9.1.0.0/com.ibm.mq.allclient-9.1.0.0.jar!/com/ibm/mq/jmqi/remote/api/RemoteFAP.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="1160" column="0" lean-forward="false" selection-start-line="1160" selection-start-column="0" selection-end-line="1160" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/ibm/mq/com.ibm.mq.allclient/9.1.0.0/com.ibm.mq.allclient-9.1.0.0.jar!/com/ibm/mq/jmqi/remote/impl/RemoteConnectionPool.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -1602,14 +1369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dean-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="296" column="21" lean-forward="false" selection-start-line="296" selection-start-column="21" selection-end-line="296" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/TextMessageListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -1658,7 +1417,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dean-parent/dean-web/src/main/java/com/dean/demo/controller/DreamPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1378">
+        <state relative-caret-position="0">
           <caret line="68" column="29" lean-forward="false" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
           <folding />
         </state>
@@ -1667,13 +1426,95 @@
     <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/monitor/TestChn.java" />
     <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/ibmmq/MqService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="285" column="5" lean-forward="true" selection-start-line="285" selection-start-column="5" selection-end-line="285" selection-end-column="5" />
+        <state relative-caret-position="7046">
+          <caret line="285" column="5" lean-forward="false" selection-start-line="285" selection-start-column="5" selection-end-line="285" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9866#9867#0" expanded="true" />
-            <element signature="e#9946#9947#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#9866#9867#0" expanded="false" />
+            <element signature="e#9946#9947#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="296" column="21" lean-forward="false" selection-start-line="296" selection-start-column="21" selection-end-line="296" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-generator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-pusher/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6628">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/utils/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/service/AutoJobDemoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/service/CommTaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/monitor/IMonitorJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-pusher/src/main/java/com/dean/demo/quartz/job/AutoJobDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-manager/src/main/java/com/dean/demo/service/utils/SendPostReqDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="47" column="33" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
