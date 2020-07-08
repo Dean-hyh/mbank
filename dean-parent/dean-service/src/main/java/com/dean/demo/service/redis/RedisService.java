@@ -5,11 +5,11 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.Resource;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -96,6 +96,10 @@ public class RedisService {
      */
     public void expire(String key, Long seconds) {
         this.redisTemplate.expire(key, seconds, TimeUnit.SECONDS);
+    }
+
+    public static void main(String[] args){
+        System.out.println("BASE64解密：" + new String(Base64.decodeBase64("cnRkYzEyMzQ=")));
     }
 
 }

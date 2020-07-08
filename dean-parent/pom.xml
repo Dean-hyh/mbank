@@ -316,6 +316,8 @@
     </dependencies>
 
     <build>
+        <!--打包出来的jar包名称-->
+        <finalName>dean</finalName>
         <plugins>
             <!-- java编译插件 -->
             <plugin>
