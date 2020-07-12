@@ -4,11 +4,28 @@
     <!--上下文名称：应用号_实例号-->
     <contextName>${project_Name}</contextName>
     <!--使用maven profile替代loghome-->
-    <property name="logHome" value="/home/logs/${CONTEXT_NAME}/ssm_${CONTEXT_NAME}" scope="context"/>
+    <property name="logHome" value="/home/logs/dean/dean_ssm" scope="context"/>
 
     <!--JMX监控-->
     <jmxConfigurator/>
 
+    <!-- SQL监控日志 -->
+    <appender name="SQLMONITER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logHome}/%d{yyyy-MM-dd}/sql_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>50MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>
+                %n%d{yyyy-MM-dd HH:mm:ss.SSS} %X{localAddr} %X{localPort} %-5level %-4r %thread %X{productionMode} %X{method} %X{requestURIWithQueryString} %logger{35} %method %line - %m%n
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <!--控制台日志-->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>
@@ -17,57 +34,40 @@
         </encoder>
     </appender>
 
-    <!-- 时间滚动输出 level为 DEBUG 日志 -->
-    <appender name="file-debug" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <level>DEBUG</level>
-            <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY </onMismatch>
-        </filter>
+    <!--应用日志-->
+    <appender name="SIFT_FUNCTION_GROUP_OR_CHANNEL" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>/dbank-logs/data/logs/debug/debug.%d{yyyy-MM-dd}.log</FileNamePattern>
-            <MaxHistory>30</MaxHistory>
+            <fileNamePattern>${logHome}/%d{yyyy-MM-dd}/application_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>50MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
         <encoder>
-            <pattern>
-                <![CDATA[%n%d{yyyy-MM-dd HH:mm:ss.SSS} %X{localAddr} %X{localPort} %-5level %-4r %logger{36} - %msg%n]]>
-            </pattern>
+            <Pattern>
+                %n%d{yyyy-MM-dd HH:mm:ss.SSS} %X{localAddr} %X{localPort} %-5level %-4r %thread %X{productionMode} %X{method} %X{requestURIWithQueryString} %logger{35} %method %line - %m%n
+            </Pattern>
         </encoder>
     </appender>
 
-    <!-- 时间滚动输出 level为 INFO 日志 -->
-    <appender name="file-info" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <level>INFO</level>
+    <!-- 错误及警告日志 -->
+    <appender name="ERROR_WARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
             <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY </onMismatch>
+            <onMismatch>DENY</onMismatch>
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>/dbank-logs/data/logs/info/info.%d{yyyy-MM-dd}.log</FileNamePattern>
-            <MaxHistory>30</MaxHistory>
+            <fileNamePattern>${logHome}/%d{yyyy-MM-dd}/error_warn_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>50MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
         <encoder>
-            <pattern>
-                <![CDATA[%n%d{yyyy-MM-dd HH:mm:ss.SSS} %X{localAddr} %X{localPort} %-5level %-4r %logger{36} - %msg%n]]>
-            </pattern>
-        </encoder>
-    </appender>
-
-    <!-- 时间滚动输出 level为 INFO 日志 -->
-    <appender name="file-error" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <level>ERROR</level>
-            <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY </onMismatch>
-        </filter>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>/dbank-logs/data/logs/error/error.%d{yyyy-MM-dd}.log</FileNamePattern>
-            <MaxHistory>30</MaxHistory>
-        </rollingPolicy>
-        <encoder>
-            <pattern>
-                <![CDATA[%n%d{yyyy-MM-dd HH:mm:ss.SSS} %X{localAddr} %X{localPort} %-5level %-4r %logger{36} - %msg%n]]>
-            </pattern>
+            <Pattern>
+                %n%d{yyyy-MM-dd HH:mm:ss.SSS} %X{localAddr} %X{localPort} %-5level %-4r %thread %X{productionMode} %X{method} %X{requestURIWithQueryString} %logger{35} %method %line - %m%n
+            </Pattern>
         </encoder>
     </appender>
 
@@ -77,8 +77,8 @@
     <!-- 指定项目可输出的最低级别日志 -->
     <root level="INFO">
         <appender-ref ref="console" />
-        <appender-ref ref="file-debug" />
-        <appender-ref ref="file-info" />
-        <appender-ref ref="file-error" />
+        <appender-ref ref="ERROR_WARN" />
+        <appender-ref ref="SIFT_FUNCTION_GROUP_OR_CHANNEL" />
+        <appender-ref ref="SQLMONITER" />
     </root>
 </configuration>
