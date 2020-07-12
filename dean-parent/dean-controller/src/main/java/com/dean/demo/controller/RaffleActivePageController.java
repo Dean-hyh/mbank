@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -37,7 +39,7 @@ public class RaffleActivePageController extends BaseController {
      * 添加页面
      *
      * @param raffleActivePageDTO
-     * @return
+     * @return result
      */
     @RequestMapping(value = "/addRaffleActive", method = RequestMethod.POST)
     public ResponseEntity<Void> addRaffleActive(RaffleActivePageDTO raffleActivePageDTO) {
@@ -102,5 +104,17 @@ public class RaffleActivePageController extends BaseController {
         }
         raffleActivePageService.deleteRaffleActive(raffleActiveId);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(1);
+        list.add(4);
+        System.out.println(list);
+        Collections.sort(list);
+        System.out.println(list);
     }
 }
