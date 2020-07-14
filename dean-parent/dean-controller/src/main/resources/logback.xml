@@ -10,11 +10,14 @@
     <jmxConfigurator/>
 
     <!-- SQL监控日志 -->
-    <appender name="SQLMONITER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="SQL_MONITER" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${logHome}/%d{yyyy-MM-dd}/sql_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!--日志文件保留天数-->
+                <MaxHistory>10</MaxHistory>
+                <!--日志文件最大的大小-->
                 <maxFileSize>50MB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
@@ -26,12 +29,14 @@
     </appender>
 
     <!--控制台日志-->
-    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
             <pattern>
-                <![CDATA[%n%d{yyyy-MM-dd HH:mm:ss.SSS} %X{localAddr} %X{localPort} %-5level %-4r %logger{36} - %msg%n]]>
+                <![CDATA[
+                    %n%d{yyyy-MM-dd HH:mm:ss.SSS} %X{localAddr} %X{localPort} %-5level %-4r %logger{36} - %m%n
+                ]]>
             </pattern>
-        </encoder>
+        </layout>
     </appender>
 
     <!--应用日志-->
@@ -40,6 +45,9 @@
             <fileNamePattern>${logHome}/%d{yyyy-MM-dd}/application_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!--日志文件保留天数-->
+                <MaxHistory>10</MaxHistory>
+                <!--日志文件最大的大小-->
                 <maxFileSize>50MB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
@@ -54,13 +62,14 @@
     <appender name="ERROR_WARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>WARN</level>
-            <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY</onMismatch>
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${logHome}/%d{yyyy-MM-dd}/error_warn_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!--日志文件保留天数-->
+                <MaxHistory>10</MaxHistory>
+                <!--日志文件最大的大小-->
                 <maxFileSize>50MB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
@@ -74,11 +83,32 @@
     <!-- 很多人使用Mybatis的时候，控制台不能输出SQL语句，造成调试困难。只需要让DAO层的日志级别调整为DEBUG就可以了 -->
     <logger name="com.dean.demo.dao" level="DEBUG" />
 
+    <!--第三方logger级别的配置 begin-->
+    <logger name="java.sql">
+        <level value="INFO"/>
+    </logger>
+
+    <logger name="org.mybatis">
+        <level value="INFO"/>
+    </logger>
+
+    <logger name="sqlLog">
+        <level value="INFO"/>
+    </logger>
+
+    <logger name="org.apache">
+        <level value="ERROR"/>
+    </logger>
+
+    <logger name="org.springframework">
+        <level value="ERROR"/>
+    </logger>
+
     <!-- 指定项目可输出的最低级别日志 -->
     <root level="INFO">
-        <appender-ref ref="console" />
+        <appender-ref ref="CONSOLE" />
         <appender-ref ref="ERROR_WARN" />
+        <appender-ref ref="SQL_MONITER" />
         <appender-ref ref="SIFT_FUNCTION_GROUP_OR_CHANNEL" />
-        <appender-ref ref="SQLMONITER" />
     </root>
 </configuration>
