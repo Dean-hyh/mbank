@@ -98,5 +98,6 @@ public class DreamPageController {
             throw new DbankException(DbankExceptionEnum.INVALID_PARAM_ERROR);
         }
         return ResponseEntity.ok(respMap);
+
     }
 }
