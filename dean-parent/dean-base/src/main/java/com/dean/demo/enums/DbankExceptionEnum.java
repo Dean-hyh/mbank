@@ -48,8 +48,11 @@ public enum DbankExceptionEnum {
     USER_HAS_NONE_ROLE(500,"用户角色为空"),
 
     /*数据库主从复制，读写分离相关*/
-    GET_DATASOURCE_IDENTIFICATION_FAILED(500,"数据源标识获取失败");
+    GET_DATASOURCE_IDENTIFICATION_FAILED(500,"数据源标识获取失败"),
 
+    /*消息队列相关相关*/
+    MQ_MESSAGE_SEND_ERR(500,"MQ队列消息发送失败"),
+    ;
     private int status;
     private String message;
 

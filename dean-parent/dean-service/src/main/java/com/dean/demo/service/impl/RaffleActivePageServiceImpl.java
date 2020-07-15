@@ -244,17 +244,24 @@ public class RaffleActivePageServiceImpl implements RaffleActivePageService {
     public List<RaffleActivePageVO> getRaffleList() {
         RaffleActivePageExample pageExample = new RaffleActivePageExample();
         pageExample.setOrderByClause("create_time desc");
-        List<RaffleActivePage> rafflePageList = raffleActivePageDao.selectByExample(pageExample);
-        List<RaffleActivePageVO> raffleList = BeanHelper.copyWithCollection(rafflePageList, RaffleActivePageVO.class);
-        if(!CollectionUtils.isEmpty(rafflePageList)){
-            for (RaffleActivePageVO raffleActivePageVO : raffleList) {
-                RaffleDetailExample detailExample = new RaffleDetailExample();
-                detailExample.createCriteria().andRaffleActiveIdEqualTo(raffleActivePageVO.getRaffleActiveId());
-                List<RaffleDetail> raffleDetails = raffleDetailDao.selectByExample(detailExample);
-                List<RaffleDetailVO> detailVOList = BeanHelper.copyWithCollection(raffleDetails, RaffleDetailVO.class);
-                raffleActivePageVO.setRaffleDetailVoList(detailVOList);
+        List<RaffleActivePageVO> raffleList = null;
+        try {
+            List<RaffleActivePage> rafflePageList = raffleActivePageDao.selectByExample(pageExample);
+            raffleList = BeanHelper.copyWithCollection(rafflePageList, RaffleActivePageVO.class);
+            if(!CollectionUtils.isEmpty(raffleList)){
+                for (RaffleActivePageVO raffleActivePageVO : raffleList) {
+                    RaffleDetailExample detailExample = new RaffleDetailExample();
+                    detailExample.createCriteria().andRaffleActiveIdEqualTo(raffleActivePageVO.getRaffleActiveId());
+                    List<RaffleDetail> raffleDetails = raffleDetailDao.selectByExample(detailExample);
+                    List<RaffleDetailVO> detailVOList = BeanHelper.copyWithCollection(raffleDetails, RaffleDetailVO.class);
+                    raffleActivePageVO.setRaffleDetailVoList(detailVOList);
+                }
             }
+        } catch (Exception e) {
+            logger.error("活动列表查询失败{}",e);
+            throw new DbankException(DbankExceptionEnum.CATEGORY_NOT_FOUND);
         }
+
         return raffleList;
     }
 

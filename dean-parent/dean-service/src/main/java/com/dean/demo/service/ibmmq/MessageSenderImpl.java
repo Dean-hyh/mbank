@@ -28,7 +28,7 @@ public class MessageSenderImpl implements MessageSender {
         this.jmsTemplate.send(new MessageCreator() {
             @Override
             public Message createMessage(Session session) throws JMSException {
-                    return session.createTextMessage(message);
+                return session.createTextMessage(message);
             }
         });
     }

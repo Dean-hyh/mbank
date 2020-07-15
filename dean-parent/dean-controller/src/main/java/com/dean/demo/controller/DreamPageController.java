@@ -6,6 +6,8 @@ import com.dean.demo.service.DreamPageService;
 import com.dean.demo.service.MessageSender;
 import com.dean.demo.service.ibmmq.MqService;
 import com.dean.demo.utils.JsonUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +27,8 @@ import java.util.Map;
 @RestController
 @RequestMapping("/dreamPage")
 public class DreamPageController {
+    private final Logger logger = LoggerFactory.getLogger(getClass());
+
     @Autowired
     private DreamPageService dreamPageService;
 
@@ -55,7 +59,7 @@ public class DreamPageController {
      * 修改任务状态队列测试-传统方式
      * @return
      */
-    @RequestMapping(value = "/changeDreamTaskStatus",method = RequestMethod.GET)
+    @RequestMapping(value = "/changeDreamTaskStatus",method = RequestMethod.POST)
     public ResponseEntity<Map<String,Object>> changeDreamTaskStatus(){
         Map<String,Object> respMap = new HashMap<>();
         respMap.put("api_id","changeDreamTaskStatus");
@@ -64,14 +68,14 @@ public class DreamPageController {
         respMap.put("timestamp",System.currentTimeMillis());
         respMap.put("value",200);
         String result = JsonUtils.toString(respMap);
-        try {
-            System.out.println("changeDreamTaskStatus放入队列的消息："+result);
-            MqService.sendMessageToMq(result,3);
-        }catch (Exception e){
-            e.printStackTrace();
-            System.out.println("Controller层捕捉到了异常");
-            throw new DbankException(DbankExceptionEnum.INVALID_PARAM_ERROR);
-        }
+        logger.info("changeDreamTaskStatus放入队列的消息："+result);
+            boolean flag = MqService.sendMessageToMq(result,1);
+            if(flag){
+                logger.info("changeDreamTaskStatus消息发送成功："+result);
+            }else {
+                logger.error("任务消息发送失败");
+                throw new DbankException(DbankExceptionEnum.MQ_MESSAGE_SEND_ERR);
+            }
         return ResponseEntity.ok(respMap);
     }
 
@@ -79,7 +83,7 @@ public class DreamPageController {
      * 修改任务状态队列测试-jms+spring+ibmMq
      * @return
      */
-    @RequestMapping(value = "/changeStatus",method = RequestMethod.GET)
+    @RequestMapping(value = "/changeDreamTaskStatusV2",method = RequestMethod.POST)
     public ResponseEntity<Map<String,Object>> changeStatus(){
         Map<String,Object> respMap = new HashMap<>();
         respMap.put("api_id","changeStatus");
@@ -88,14 +92,17 @@ public class DreamPageController {
         respMap.put("timestamp",System.currentTimeMillis());
         respMap.put("value",200);
         String result = JsonUtils.toString(respMap);
+        logger.info("changeDreamTaskStatusV2放入队列的消息："+result);
         try {
-            System.out.println("changeStatus放入队列的消息："+result);
-            System.out.println("start======" + System.currentTimeMillis());
+            logger.debug("start======" + System.currentTimeMillis());
             messageSender.sendMessage(result);
+            logger.info("changeStatus消息发送成功："+result);
         }catch (Exception e){
-            System.out.println("start======" + System.currentTimeMillis());
+            logger.debug("start======" + System.currentTimeMillis());
+
             e.printStackTrace();
-            throw new DbankException(DbankExceptionEnum.INVALID_PARAM_ERROR);
+            logger.error("任务消息发送异常{}",e);
+            throw new DbankException(DbankExceptionEnum.MQ_MESSAGE_SEND_ERR);
         }
         return ResponseEntity.ok(respMap);
 

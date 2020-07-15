@@ -109,17 +109,19 @@ public class MqService {
         }
     }
 
-    public static void sendMessageToMq(String msg,int count) throws Exception{
-        if(count>0){
+    public static boolean sendMessageToMq(String msg,int count){
+        Boolean flag = false;
+        if(count<4){
             System.out.println("第" + count + "次");
             try {
                 connect();
                 sendMsg(msg);
+                flag = true;
             }catch (MQException e){
                 end = System.currentTimeMillis();
                 System.out.println("===MQException===" + end + "======");
                 System.out.println("第" + count + "次连接时间：" + (end-start)/1000 + "秒");
-                count--;
+                count++;
                 sendMessageToMq(msg,count);
                 e.printStackTrace();
             }catch (Exception e){
@@ -127,7 +129,9 @@ public class MqService {
             }
         }else {
             System.out.println("系统异常，数据入库");
+            return flag;
         }
+        return flag;
     }
 
     public static void sendMessageToMq(String msg,int count,boolean b) throws Exception{
