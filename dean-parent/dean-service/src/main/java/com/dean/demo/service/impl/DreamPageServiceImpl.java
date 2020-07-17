@@ -6,6 +6,10 @@ import com.dean.demo.enums.DreamPageEnum;
 import com.dean.demo.exception.DbankException;
 import com.dean.demo.service.DreamPageService;
 import com.dean.demo.service.utils.DreamResultParseUtil;
+import com.dean.demo.utils.JsonUtils;
+import org.apache.commons.collections.MapUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -19,6 +23,8 @@ import java.util.*;
  */
 @Service
 public class DreamPageServiceImpl implements DreamPageService {
+    private final Logger logger = LoggerFactory.getLogger(getClass());
+
     @Override
     public List<Map<String, Object>> queryRecordListByPage(Map<String, String> params) {
         List<Map<String,Object>> recordList = new ArrayList<>();
@@ -70,7 +76,7 @@ public class DreamPageServiceImpl implements DreamPageService {
             } catch (ParseException e) {
                 e.printStackTrace();
             }
-            System.out.println("获取梦想记录列表失败："+codeAndMsg);
+            logger.error("获取梦想记录列表失败：{}",codeAndMsg);
             throw new DbankException(DbankExceptionEnum.FILE_CONTENT_IS_EMPTY);
         }
         //与大数据联调前，前端交互测试数据========^^^^^^
@@ -132,9 +138,18 @@ public class DreamPageServiceImpl implements DreamPageService {
             } catch (ParseException e) {
                 e.printStackTrace();
             }
-            System.out.println("获取梦想记录列表失败："+codeAndMsg);
+            logger.error("获取梦想记录列表失败：{}",codeAndMsg);
             throw new DbankException(DbankExceptionEnum.FILE_CONTENT_IS_EMPTY);
         }
         return reMap;
+    }
+
+    @Override
+    public void increaseDreamValue(String msgStr) {
+        Map<String, String> mqReceiveMap = JsonUtils.toMap(msgStr, String.class, String.class);
+        if(MapUtils.isNotEmpty(mqReceiveMap)){
+            String taskId = mqReceiveMap.get("task_id");
+            logger.info("完成任务：" + taskId);
+        }
     }
 }
