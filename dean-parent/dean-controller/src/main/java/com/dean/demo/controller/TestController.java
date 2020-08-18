@@ -1,13 +1,12 @@
 package com.dean.demo.controller;
 
+import org.apache.ibatis.annotations.Param;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.lang.reflect.Array;
+import java.util.*;
 
 /**
  * @author Dean
@@ -53,5 +52,42 @@ public class TestController {
         objectMap.put("age",20);
         objectMap.put("gender","未知");
         return objectMap;
+    }
+
+    @RequestMapping(value = "/yuanTest",method = RequestMethod.POST)
+    public ResponseEntity<Void> test2(@RequestParam("spbhList") List<String> str,@RequestParam("checkLogin")String isLogin) {
+        System.out.println(str + isLogin);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+
+    public static void main(String[] args) {
+        String[] obj = new String[]{"1","2"};
+        Map<String, Object> map = new HashMap<>();
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        list.add("4");
+        map.put("a","a");
+        map.put("b",list);
+        map.put("o",obj);
+        Set<String> strings = map.keySet();
+        for (String string : strings) {
+            Object o = map.get(string);
+            if(o==null){
+                System.out.println("null");
+            }else if(o.getClass().isArray()){
+                System.out.println(o.toString());
+            } else if(o instanceof List){
+                System.out.println((List)o);
+            }else {
+                System.out.println(o);
+            }
+            System.out.println(o.getClass().isArray());
+        }
+
+
+        Double aDouble = Double.valueOf("66.666");
+        System.out.println(aDouble);
     }
 }

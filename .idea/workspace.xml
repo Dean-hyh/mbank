@@ -29,8 +29,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe9e30a8-e150-4421-a958-fc720428e8b1" name="Default" comment="7/16 添加日志记录">
+    <list default="true" id="fe9e30a8-e150-4421-a958-fc720428e8b1" name="Default" comment="7/16 清理重复依赖">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-controller/src/main/java/com/dean/demo/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dean-parent/dean-controller/src/main/java/com/dean/demo/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-controller/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dean-parent/dean-controller/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-controller/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dean-parent/dean-controller/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-controller/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dean-parent/dean-controller/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/datasource/DataSourceContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/java/com/dean/demo/datasource/DataSourceContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/spring/applicationContext-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources/spring/applicationContext-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dean-parent/dean-service/src/test/java/com/dean/demo/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dean-parent/dean-service/src/test/java/com/dean/demo/DemoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dean-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dean-parent/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +51,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -82,11 +92,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ideaSpace_SringBoot/cloud" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ideaSpace_SringBoot" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -106,13 +117,41 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="DDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dean.demo.DDemo" />
-      <module name="dean-controller" />
+    <configuration name="DemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dean.demo.DemoTest" />
+      <module name="dean-service" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dean.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SendPostReqDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dean.demo.service.utils.SendPostReqDemo" />
+      <module name="dean-service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dean.demo.service.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dean.demo.controller.TestController" />
+      <module name="dean-controller" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dean.demo.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,8 +165,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DDemo.zero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dean-controller" />
+    <configuration name="DemoTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dean-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dean.demo.*" />
@@ -135,8 +174,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.dean.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.dean.demo.DDemo" />
-      <option name="METHOD_NAME" value="zero" />
+      <option name="MAIN_CLASS_NAME" value="com.dean.demo.DemoTest" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -154,40 +193,6 @@
       <option name="PACKAGE_NAME" value="com.dean.demo" />
       <option name="MAIN_CLASS_NAME" value="com.dean.demo.RecursionTest" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecursionTest.dTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dean-controller" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dean.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dean.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.dean.demo.RecursionTest" />
-      <option name="METHOD_NAME" value="dTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecursionTest.reTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dean-controller" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dean.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dean.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.dean.demo.RecursionTest" />
-      <option name="METHOD_NAME" value="reTest" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -294,20 +299,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DDemo" />
-      <item itemvalue="JUnit.DDemo.zero" />
-      <item itemvalue="JUnit.RecursionTest.reTest" />
-      <item itemvalue="JUnit.RecursionTest.dTest" />
+      <item itemvalue="Application.SendPostReqDemo" />
+      <item itemvalue="Application.TestController" />
+      <item itemvalue="Application.DemoTest" />
       <item itemvalue="JUnit.RecursionTest" />
+      <item itemvalue="JUnit.DemoTest.test5" />
       <item itemvalue="Tomcat Server.dean" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DemoTest" />
+        <item itemvalue="JUnit.DemoTest.test5" />
+        <item itemvalue="Application.TestController" />
+        <item itemvalue="Application.SendPostReqDemo" />
         <item itemvalue="JUnit.RecursionTest" />
-        <item itemvalue="JUnit.RecursionTest.reTest" />
-        <item itemvalue="JUnit.RecursionTest.dTest" />
-        <item itemvalue="Application.DDemo" />
-        <item itemvalue="JUnit.DDemo.zero" />
       </list>
     </recent_temporary>
   </component>
@@ -361,7 +366,28 @@
       <workItem from="1594809979296" duration="592000" />
       <workItem from="1594861352286" duration="8914000" />
       <workItem from="1594947645992" duration="7592000" />
-      <workItem from="1594975967981" duration="1199000" />
+      <workItem from="1594975967981" duration="2761000" />
+      <workItem from="1595207914276" duration="6543000" />
+      <workItem from="1595238670834" duration="875000" />
+      <workItem from="1595301930028" duration="3422000" />
+      <workItem from="1595380005925" duration="5676000" />
+      <workItem from="1595466378191" duration="4218000" />
+      <workItem from="1595831410039" duration="2186000" />
+      <workItem from="1595900526352" duration="6675000" />
+      <workItem from="1596017173040" duration="384000" />
+      <workItem from="1596072233936" duration="13489000" />
+      <workItem from="1596157065543" duration="1543000" />
+      <workItem from="1596420240825" duration="3445000" />
+      <workItem from="1596507552488" duration="2677000" />
+      <workItem from="1596675759265" duration="4355000" />
+      <workItem from="1596791319734" duration="1264000" />
+      <workItem from="1597022523277" duration="4743000" />
+      <workItem from="1597106509067" duration="1318000" />
+      <workItem from="1597193725396" duration="794000" />
+      <workItem from="1597222773370" duration="2225000" />
+      <workItem from="1597284091981" duration="2425000" />
+      <workItem from="1597365378489" duration="7323000" />
+      <workItem from="1597711276344" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="6/5 更新v2">
       <created>1591348429358</created>
@@ -426,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594955311595</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="7/16 清理重复依赖">
+      <created>1594978305074</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1594978305074</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,13 +486,14 @@
     <MESSAGE value="7/14 测试push" />
     <MESSAGE value="7/15 添加日志记录" />
     <MESSAGE value="7/16 添加日志记录" />
-    <option name="LAST_COMMIT_MESSAGE" value="7/16 添加日志记录" />
+    <MESSAGE value="7/16 清理重复依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="7/16 清理重复依赖" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="660" y="282" key="#Notifications" timestamp="1594552112908">
+    <state x="660" y="282" key="#Notifications" timestamp="1595831481718">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="660" y="282" key="#Notifications/0.0.1549.840@0.0.1549.840" timestamp="1594552112908" />
+    <state x="660" y="282" key="#Notifications/0.0.1549.840@0.0.1549.840" timestamp="1595831481718" />
     <state x="482" y="155" key="#Servers" timestamp="1594546218069">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
@@ -468,18 +502,18 @@
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="552" y="297" key="#Tomcat_Server/0.0.1549.840@0.0.1549.840" timestamp="1594549407105" />
-    <state x="229" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594978173170">
+    <state x="229" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597053712206">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="229" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1549.840@0.0.1549.840" timestamp="1594978173170" />
+    <state x="229" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1549.840@0.0.1549.840" timestamp="1597053712206" />
     <state x="493" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594628178832">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="493" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1549.840@0.0.1549.840" timestamp="1594628178832" />
-    <state x="580" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1594965023181">
+    <state x="580" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1595906502956">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="580" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1549.840@0.0.1549.840" timestamp="1594965023181" />
+    <state x="580" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1549.840@0.0.1549.840" timestamp="1595906502956" />
     <state x="503" y="58" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1594552287052">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
@@ -488,74 +522,114 @@
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="534" y="287" width="481" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1549.840@0.0.1549.840" timestamp="1594700701001" />
-    <state x="555" y="161" key="FileChooserDialogImpl" timestamp="1594701068470">
+    <state width="389" height="466" key="DebuggerActiveHint" timestamp="1596508543191">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="555" y="161" key="FileChooserDialogImpl/0.0.1549.840@0.0.1549.840" timestamp="1594701068470" />
+    <state width="389" height="466" key="DebuggerActiveHint/0.0.1549.840@0.0.1549.840" timestamp="1596508543191" />
+    <state x="555" y="161" key="FileChooserDialogImpl" timestamp="1597200577884">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="555" y="161" key="FileChooserDialogImpl/0.0.1549.840@0.0.1549.840" timestamp="1597200577884" />
     <state x="386" y="107" key="GrepConsoleSettings" timestamp="1594796413585">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="386" y="107" key="GrepConsoleSettings/0.0.1549.840@0.0.1549.840" timestamp="1594796413585" />
-    <state width="1329" height="269" key="GridCell.Tab.0.bottom" timestamp="1594978154049">
+    <state width="1477" height="273" key="GridCell.Tab.-1.bottom" timestamp="1596078553380">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1329" height="269" key="GridCell.Tab.0.bottom/0.0.1549.840@0.0.1549.840" timestamp="1594978154049" />
-    <state width="1329" height="269" key="GridCell.Tab.0.center" timestamp="1594978154049">
+    <state width="1477" height="273" key="GridCell.Tab.-1.bottom/0.0.1549.840@0.0.1549.840" timestamp="1596078553380" />
+    <state width="1477" height="273" key="GridCell.Tab.-1.center" timestamp="1596078553380">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1329" height="269" key="GridCell.Tab.0.center/0.0.1549.840@0.0.1549.840" timestamp="1594978154049" />
-    <state width="1329" height="269" key="GridCell.Tab.0.left" timestamp="1594978154049">
+    <state width="1477" height="273" key="GridCell.Tab.-1.center/0.0.1549.840@0.0.1549.840" timestamp="1596078553380" />
+    <state width="1477" height="273" key="GridCell.Tab.-1.left" timestamp="1596078553380">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1329" height="269" key="GridCell.Tab.0.left/0.0.1549.840@0.0.1549.840" timestamp="1594978154049" />
-    <state width="1329" height="269" key="GridCell.Tab.0.right" timestamp="1594978154049">
+    <state width="1477" height="273" key="GridCell.Tab.-1.left/0.0.1549.840@0.0.1549.840" timestamp="1596078553380" />
+    <state width="1477" height="273" key="GridCell.Tab.-1.right" timestamp="1596078553380">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1329" height="269" key="GridCell.Tab.0.right/0.0.1549.840@0.0.1549.840" timestamp="1594978154049" />
-    <state width="1329" height="269" key="GridCell.Tab.1.bottom" timestamp="1594978154050">
+    <state width="1477" height="273" key="GridCell.Tab.-1.right/0.0.1549.840@0.0.1549.840" timestamp="1596078553380" />
+    <state width="1506" height="206" key="GridCell.Tab.0.bottom" timestamp="1597400560704">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1329" height="269" key="GridCell.Tab.1.bottom/0.0.1549.840@0.0.1549.840" timestamp="1594978154050" />
-    <state width="1329" height="269" key="GridCell.Tab.1.center" timestamp="1594978154049">
+    <state width="1506" height="206" key="GridCell.Tab.0.bottom/0.0.1549.840@0.0.1549.840" timestamp="1597400560704" />
+    <state width="1506" height="206" key="GridCell.Tab.0.center" timestamp="1597400560704">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1329" height="269" key="GridCell.Tab.1.center/0.0.1549.840@0.0.1549.840" timestamp="1594978154049" />
-    <state width="1329" height="269" key="GridCell.Tab.1.left" timestamp="1594978154049">
+    <state width="1506" height="206" key="GridCell.Tab.0.center/0.0.1549.840@0.0.1549.840" timestamp="1597400560704" />
+    <state width="1506" height="206" key="GridCell.Tab.0.left" timestamp="1597400560704">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1329" height="269" key="GridCell.Tab.1.left/0.0.1549.840@0.0.1549.840" timestamp="1594978154049" />
-    <state width="1329" height="269" key="GridCell.Tab.1.right" timestamp="1594978154049">
+    <state width="1506" height="206" key="GridCell.Tab.0.left/0.0.1549.840@0.0.1549.840" timestamp="1597400560704" />
+    <state width="1506" height="206" key="GridCell.Tab.0.right" timestamp="1597400560704">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1329" height="269" key="GridCell.Tab.1.right/0.0.1549.840@0.0.1549.840" timestamp="1594978154049" />
-    <state width="1329" height="269" key="GridCell.Tab.2.bottom" timestamp="1594978154050">
+    <state width="1506" height="206" key="GridCell.Tab.0.right/0.0.1549.840@0.0.1549.840" timestamp="1597400560704" />
+    <state width="1477" height="564" key="GridCell.Tab.1.bottom" timestamp="1596710233024">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1329" height="269" key="GridCell.Tab.2.bottom/0.0.1549.840@0.0.1549.840" timestamp="1594978154050" />
-    <state width="1329" height="269" key="GridCell.Tab.2.center" timestamp="1594978154050">
+    <state width="1477" height="564" key="GridCell.Tab.1.bottom/0.0.1549.840@0.0.1549.840" timestamp="1596710233024" />
+    <state width="1477" height="564" key="GridCell.Tab.1.center" timestamp="1596710233024">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1329" height="269" key="GridCell.Tab.2.center/0.0.1549.840@0.0.1549.840" timestamp="1594978154050" />
-    <state width="1329" height="269" key="GridCell.Tab.2.left" timestamp="1594978154050">
+    <state width="1477" height="564" key="GridCell.Tab.1.center/0.0.1549.840@0.0.1549.840" timestamp="1596710233024" />
+    <state width="1477" height="564" key="GridCell.Tab.1.left" timestamp="1596710233024">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1329" height="269" key="GridCell.Tab.2.left/0.0.1549.840@0.0.1549.840" timestamp="1594978154050" />
-    <state width="1329" height="269" key="GridCell.Tab.2.right" timestamp="1594978154050">
+    <state width="1477" height="564" key="GridCell.Tab.1.left/0.0.1549.840@0.0.1549.840" timestamp="1596710233024" />
+    <state width="1477" height="564" key="GridCell.Tab.1.right" timestamp="1596710233024">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1329" height="269" key="GridCell.Tab.2.right/0.0.1549.840@0.0.1549.840" timestamp="1594978154050" />
+    <state width="1477" height="564" key="GridCell.Tab.1.right/0.0.1549.840@0.0.1549.840" timestamp="1596710233024" />
+    <state width="1477" height="564" key="GridCell.Tab.2.bottom" timestamp="1596710233024">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="1477" height="564" key="GridCell.Tab.2.bottom/0.0.1549.840@0.0.1549.840" timestamp="1596710233024" />
+    <state width="1477" height="564" key="GridCell.Tab.2.center" timestamp="1596710233024">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="1477" height="564" key="GridCell.Tab.2.center/0.0.1549.840@0.0.1549.840" timestamp="1596710233024" />
+    <state width="1477" height="564" key="GridCell.Tab.2.left" timestamp="1596710233024">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="1477" height="564" key="GridCell.Tab.2.left/0.0.1549.840@0.0.1549.840" timestamp="1596710233024" />
+    <state width="1477" height="564" key="GridCell.Tab.2.right" timestamp="1596710233024">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="1477" height="564" key="GridCell.Tab.2.right/0.0.1549.840@0.0.1549.840" timestamp="1596710233024" />
+    <state width="1477" height="564" key="GridCell.Tab.3.bottom" timestamp="1596710233025">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="1477" height="564" key="GridCell.Tab.3.bottom/0.0.1549.840@0.0.1549.840" timestamp="1596710233025" />
+    <state width="1477" height="564" key="GridCell.Tab.3.center" timestamp="1596710233025">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="1477" height="564" key="GridCell.Tab.3.center/0.0.1549.840@0.0.1549.840" timestamp="1596710233025" />
+    <state width="1477" height="564" key="GridCell.Tab.3.left" timestamp="1596710233024">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="1477" height="564" key="GridCell.Tab.3.left/0.0.1549.840@0.0.1549.840" timestamp="1596710233024" />
+    <state width="1477" height="564" key="GridCell.Tab.3.right" timestamp="1596710233025">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="1477" height="564" key="GridCell.Tab.3.right/0.0.1549.840@0.0.1549.840" timestamp="1596710233025" />
     <state x="355" y="155" key="IDE.errors.dialog" timestamp="1594602460213">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="355" y="155" key="IDE.errors.dialog/0.0.1549.840@0.0.1549.840" timestamp="1594602460213" />
+    <state x="305" y="75" key="Maven.ArtifactSearchDialog" timestamp="1595234500123">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="305" y="75" key="Maven.ArtifactSearchDialog/0.0.1549.840@0.0.1549.840" timestamp="1595234500123" />
     <state x="319" y="0" key="SettingsEditor" timestamp="1594694591961">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="319" y="0" key="SettingsEditor/0.0.1549.840@0.0.1549.840" timestamp="1594694591961" />
-    <state x="367" y="153" key="Vcs.Push.Dialog.v2" timestamp="1594955315264">
+    <state x="367" y="153" key="Vcs.Push.Dialog.v2" timestamp="1594978308007">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="367" y="153" key="Vcs.Push.Dialog.v2/0.0.1549.840@0.0.1549.840" timestamp="1594955315264" />
+    <state x="367" y="153" key="Vcs.Push.Dialog.v2/0.0.1549.840@0.0.1549.840" timestamp="1594978308007" />
     <state x="580" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594694684754">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
@@ -564,9 +638,21 @@
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="326" y="149" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1549.840@0.0.1549.840" timestamp="1594878030198" />
-    <state x="437" y="161" width="672" height="678" key="search.everywhere.popup" timestamp="1594690964073">
+    <state x="472" y="18" width="604" height="804" key="find.popup" timestamp="1595398162078">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="437" y="161" width="672" height="678" key="search.everywhere.popup/0.0.1549.840@0.0.1549.840" timestamp="1594690964073" />
+    <state x="472" y="18" width="604" height="804" key="find.popup/0.0.1549.840@0.0.1549.840" timestamp="1595398162078" />
+    <state x="179" y="30" key="new project wizard" timestamp="1595493592956">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="179" y="30" key="new project wizard/0.0.1549.840@0.0.1549.840" timestamp="1595493592956" />
+    <state x="432" y="191" key="run.anything.popup" timestamp="1596092452854">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="432" y="191" key="run.anything.popup/0.0.1549.840@0.0.1549.840" timestamp="1596092452854" />
+    <state x="437" y="161" width="672" height="678" key="search.everywhere.popup" timestamp="1595398112482">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="437" y="161" width="672" height="678" key="search.everywhere.popup/0.0.1549.840@0.0.1549.840" timestamp="1595398112482" />
   </component>
 </project>

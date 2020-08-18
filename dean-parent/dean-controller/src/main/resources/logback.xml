@@ -33,7 +33,7 @@
         <layout class="ch.qos.logback.classic.PatternLayout">
             <pattern>
                 <![CDATA[
-                    %n%d{yyyy-MM-dd HH:mm:ss.SSS} %X{localAddr} %X{localPort} %-5level %-4r %logger{36} - %m%n
+                    %n%d{yyyy-MM-dd HH:mm:ss.SSS} %X{localAddr} %X{localPort} [IP=%X{remoteAddr},sid=%X{cookie.JSESSIONID}]%n %-5level %-4r %logger{36} - %m%n
                 ]]>
             </pattern>
         </layout>

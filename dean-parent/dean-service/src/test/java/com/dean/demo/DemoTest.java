@@ -107,4 +107,27 @@ public class DemoTest {
         final String format = dateFormat.format(date);
         System.out.println(format);
     }
+
+
+    @Test
+    public void test5(){
+        System.out.println(2068-1918);
+    }
+
+    public static void main(String[] args) {
+        String click_url = "www.baidu.com/wsv2?enstr=asjdacahaioshfaohsfoia";
+        String click_url2 = "www.baidu.com/wsv2?tpenstr=asjdacahaioshfaohsfoia";
+        String bizChannel="";
+        if(click_url.contains("bizChannel")){
+            bizChannel = click_url.substring(click_url.lastIndexOf("=")+1,click_url.length());
+            click_url=click_url.substring(0,click_url.indexOf("bizChannel")-1);
+        }else {
+            bizChannel = "ZY-CLQM1";
+        }
+        String lastChar = click_url.substring(click_url.length()-1);
+        if(!"/".equals(lastChar)){
+            click_url=click_url+"/";
+        }
+        System.out.println(bizChannel + "------" +click_url);
+    }
 }

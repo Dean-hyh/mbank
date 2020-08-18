@@ -33,7 +33,7 @@
                 <!--<value>file:D:\LoadBalance\tomcat3\webapps</value>-->
             </list>
         </property>
-        <!--加上此属性可以配置多个peoperties文件-->
+        <!--忽略不能解析的properties文件-->
         <property name="ignoreUnresolvablePlaceholders" value="true" />
     </bean>
 
