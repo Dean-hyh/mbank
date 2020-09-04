@@ -123,4 +123,9 @@ public class UserServiceImpl implements UserService {
         }
         return roleVoList;
     }
+
+    @Override
+    public List<String> selectUserListByDeptId(String deptId) {
+        return userDao.selectUserListByDeptId(deptId);
+    }
 }

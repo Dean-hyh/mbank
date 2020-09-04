@@ -130,4 +130,10 @@ public class DemoTest {
         }
         System.out.println(bizChannel + "------" +click_url);
     }
+
+    @Test
+    public void test6(){
+        String click_url2 = "www.baidu.com/wsv2?tpenstr=asjdacahaioshfaohsfoia&ccapp_channel=WX";
+        
+    }
 }

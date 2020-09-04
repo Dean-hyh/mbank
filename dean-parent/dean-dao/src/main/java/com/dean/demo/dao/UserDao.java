@@ -40,4 +40,7 @@ public interface UserDao {
      */
     @DataSource(value = "master")
     Boolean deleteRoleUser(String id);
+
+    @DataSource(value = "master")
+    List<String> selectUserListByDeptId(String deptId);
 }

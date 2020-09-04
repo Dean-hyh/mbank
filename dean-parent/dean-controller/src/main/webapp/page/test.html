@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+</head>
+<body>
+    <form action="/testCtrl/yuanTest" method="post" enctype="multipart/form-data">
+        <div id="org">
+            商编 ：<input type="text" name="spbhList" placeholder="商品编号"/>
+        </div>
+        <input type="button" value="继续添加" onclick="addInput()"/>&nbsp;|
+        <input type="button" value="移除新增" onclick="removeInput()"/>
+        <br/>
+        <select name="checkLogin">
+            <option value="1">是</option>
+            <option value="0">否</option>
+            <option value="">不限制</option>
+        </select>
+        <input type="submit" value="上传"/>
+        <input type="reset" value="重置"/>
+    </form>
+</body>
+</html>
+
+<script type="text/javascript">
+    function addInput(){
+        var input1 = document.createElement('input');
+        input1.setAttribute('id', 'newInput');
+        input1.setAttribute('type', 'text');
+        input1.setAttribute('name', 'spbhList');
+        input1.setAttribute('placeholder', '商品编号');
+        input1.setAttribute('style', '商品编号');
+
+        var btn1 = document.getElementById("org");
+        btn1.insertBefore(input1,null);
+    }
+
+    function removeInput(){
+        var input2 = document.getElementById('newInput');
+        input2.parentNode.removeChild(input2);
+    }
+</script>

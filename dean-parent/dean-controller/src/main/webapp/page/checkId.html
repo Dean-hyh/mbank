@@ -7,7 +7,11 @@
     <script>
         function checkId() {
             var code = document.getElementById("CardNo").value;
-            // alert(code);
+            var idType = document.getElementById("idType").value;
+            if(idType != "idCard"){
+                alert("请输入正确的证件类型！");
+                return ;
+            }
             //身份证号合法性验证
             //支持15位和18位身份证号
             //支持地址编码、出生日期、校验位验证
@@ -65,7 +69,7 @@
                     //加权因子
                     var factor = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2];
                     //校验位
-                    var parity = [1, 0, 'X', 9, 8, 7, 6, 5, 4, 3, 2];
+                    var parity = ["1", "0", 'X', "9", "8", "7", "6", "5", "4", "3", "2"];
                     var sum = 0;
                     var ai = 0;
                     var wi = 0;
@@ -74,6 +78,7 @@
                         wi = factor[i];
                         sum += ai * wi;
                     }
+                    //此处判断不合理
                     if (parity[sum % 11] !== code[17].toUpperCase()) {
                         row = false;
                         msg = "身份证号校验位错误";
@@ -91,7 +96,7 @@
     <tr>
         <td>证件类别:</td>
         <td>
-            <select>
+            <select id="idType">
                 <option name="certificate" value="idCard" selected>身份证</option>
                 <option name="certificate" value="passport">护照</option>
                 <option name="certificate" value="Hk">港澳通行证</option>
@@ -103,7 +108,7 @@
     <br/>
     <tr>
         <td>证件号码:</td>
-        <td><input id="CardNo" name="name" placeholder="请输入证件号码" fun="checkId(id)"></td>
+        <td><input id="CardNo" name="name" placeholder="请输入证件号码"></td>
     </tr>
     <br/>
     <input type="submit" name="提交" onclick="checkId()">

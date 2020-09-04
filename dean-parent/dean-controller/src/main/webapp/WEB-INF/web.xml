@@ -62,6 +62,20 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+    <!-- 跨域请求 -->
+    <filter>
+        <filter-name>SimpleCORSFilter</filter-name>
+        <filter-class>com.dean.demo.filter.SimpleCORSFilter</filter-class>
+        <init-param>
+            <param-name>IsCross</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>SimpleCORSFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
     <!--function参数过滤器-->
    <!-- <filter>
         <filter-name>functionFilter</filter-name>
@@ -76,4 +90,12 @@
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 
+    <servlet>
+        <servlet-name>testServlet</servlet-name>
+        <servlet-class>com.dean.demo.servlet.testServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>testServlet</servlet-name>
+        <url-pattern>/testServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

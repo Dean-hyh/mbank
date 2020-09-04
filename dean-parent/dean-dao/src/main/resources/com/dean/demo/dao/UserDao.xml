@@ -377,4 +377,8 @@
   <delete id="deleteRoleUser" parameterType="String">
      DELETE FROM pe_role_user where user_id = #{id}
   </delete>
+
+  <select id="selectUserListByDeptId" resultType="String">
+    select user_name from pe_user where dept_id = #{id}
+  </select>
 </mapper>

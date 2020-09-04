@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dean-controller:war">
+    <output-path>$PROJECT_DIR$/dean-parent/dean-controller/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>dean-controller</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="dean.war">
+      <element id="artifact" artifact-name="dean-controller:war exploded" />
+    </root>
+  </artifact>
+</component>

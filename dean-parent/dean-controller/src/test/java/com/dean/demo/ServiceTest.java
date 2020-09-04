@@ -1,11 +1,14 @@
 package com.dean.demo;
 
+import com.dean.demo.pojo.VO.UserVO;
 import com.dean.demo.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import java.util.List;
 
 /**
  * @author Dean
@@ -32,5 +35,21 @@ public class ServiceTest {
         int i = 1;
         int j = ++i + i++ + ++i + ++i + i++;
         System.out.println(i +"---" +j);
+    }
+
+    @Test
+    public void test1(){
+        //UserVO userVO = userService.queryUserById("002108e2-9a10-4510-9683-8d8fd1d374ef");
+        System.out.println("你好");
+
+    }
+
+    @Test
+    public void test2(){
+        List<String> strings = userService.selectUserListByDeptId("999");
+        if(strings.contains("12")){
+            System.out.println(true);
+        }
+        System.out.println("false");
     }
 }

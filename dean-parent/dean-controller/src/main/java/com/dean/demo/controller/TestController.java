@@ -1,12 +1,17 @@
 package com.dean.demo.controller;
 
-import org.apache.ibatis.annotations.Param;
+import cfca.sadk.cmbc.tools.CMBCDecryptKit;
+import cfca.sadk.cmbc.tools.DecryptKitException;
+import cmbc.cfca.util.Base64;
+import com.dean.demo.BaseController;
+import net.sf.json.JSONObject;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.lang.reflect.Array;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author Dean
@@ -15,7 +20,7 @@ import java.util.*;
  */
 @RestController
 @RequestMapping("/testCtrl")
-public class TestController {
+public class TestController extends BaseController {
 
     @RequestMapping(value = "/one/{num}", method = RequestMethod.GET)
     public ResponseEntity<Map<String, Object>> testCtrl(@PathVariable("num") Integer num) {
@@ -60,34 +65,72 @@ public class TestController {
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 
-    public static void main(String[] args) {
-        String[] obj = new String[]{"1","2"};
-        Map<String, Object> map = new HashMap<>();
-        List<String> list = new ArrayList<>();
-        list.add("1");
-        list.add("2");
-        list.add("3");
-        list.add("4");
-        map.put("a","a");
-        map.put("b",list);
-        map.put("o",obj);
-        Set<String> strings = map.keySet();
-        for (String string : strings) {
-            Object o = map.get(string);
-            if(o==null){
-                System.out.println("null");
-            }else if(o.getClass().isArray()){
-                System.out.println(o.toString());
-            } else if(o instanceof List){
-                System.out.println((List)o);
-            }else {
-                System.out.println(o);
+
+    @RequestMapping(value = "/encrypt",method = RequestMethod.POST)
+    public ResponseEntity<String> test3(@RequestParam(value="dreamOrderNo",required = false) String dreamOrderNo,
+                                        @RequestParam(value="transDesc",required = false) String transDesc,
+                                        @RequestParam(value="dreamValue",required = false) String dreamValue,
+                                        @RequestParam(value="transDate",required = false) String transDate,
+                                        @RequestParam(value="transTime",required = false) String transTime,
+                                        @RequestParam(value="taskId",required = false) String taskId){
+        HashMap<String, Object> params = new HashMap<>();
+        params.put("dreamOrderNo",dreamOrderNo);
+        params.put("transDesc",transDesc);
+        params.put("dreamValue",dreamValue);
+        params.put("transDate",transDate);
+        params.put("transTime",transTime);
+        params.put("taskId",taskId);
+        JSONObject json = JSONObject.fromObject(params);
+        String sourceData = json.toString();
+        String encryptStr="";
+        try {
+            String userPlainBase64Text = new String(Base64.encode(sourceData.getBytes()));
+            CMBCDecryptKit decryptKit = new CMBCDecryptKit();
+            // 私钥
+            String userPrivateFile = "D:\\idea\\ideaSpace_bank\\client\\client.sm2";
+            // 文件密码
+            String userPrivateFilePassword = "111111";
+            // 银行端证书
+            String cmbcPublicCertFile = "D:\\idea\\ideaSpace_bank\\bankc\\bank.cer";
+            int result = decryptKit.Initialize(userPrivateFile, userPrivateFilePassword, cmbcPublicCertFile);
+            System.out.println("init result:" + result);
+            if(result == 0){
+                // 调用工具类，返回签名加密结果
+                String userEnvelopebase64Message = decryptKit.SignAndEncryptMessage(userPlainBase64Text);
+                System.out.println("sign and encrypt message:" + userEnvelopebase64Message);
+                // 再对加密签名结果base64
+                byte[] base = Base64.encode(userEnvelopebase64Message.getBytes());
+                // 输出最终加密签名结果
+                System.out.println("-----------------------------");
+                encryptStr = new String(base);
             }
-            System.out.println(o.getClass().isArray());
+        } catch (DecryptKitException e) {
+            e.printStackTrace();
         }
+        return ResponseEntity.ok(encryptStr);
+    }
 
-
-        Double aDouble = Double.valueOf("66.666");
-        System.out.println(aDouble);
+    @RequestMapping(value = "/decrypt",method = RequestMethod.POST)
+    public ResponseEntity<String> test4(@RequestParam("resp") String encryStr) {
+        String decryptStr="";
+        try {
+            byte[] encryDecodeStr = Base64.decode(encryStr);
+            String cmbcEnvelopeBase64Text = new String(encryDecodeStr);
+            String userPrivateFile1 = "D:\\idea\\ideaSpace_bank\\client\\client.sm2";
+            String userPrivateFilePassword1 = "111111";
+            String cmbcPublicCertFile1 = "D:\\idea\\ideaSpace_bank\\bankc\\bank.cer";
+            CMBCDecryptKit decryptKit1 = new CMBCDecryptKit();
+            int result1 = decryptKit1.Initialize(userPrivateFile1, userPrivateFilePassword1, cmbcPublicCertFile1);
+            if(result1 == 0){
+                // 调用工具类，返回解密验签结果，base64格式
+                String userSourceBase64Text = decryptKit1.DecryptAndVerifyMessage(cmbcEnvelopeBase64Text);
+                // 最终解密后数据
+                decryptStr = new String(Base64.decode(userSourceBase64Text));
+                System.out.println(decryptStr);
+            }
+        } catch (DecryptKitException e) {
+            e.printStackTrace();
+        }
+        return ResponseEntity.ok(decryptStr);
     }
 }

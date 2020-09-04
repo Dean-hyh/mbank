@@ -25,4 +25,6 @@ public interface UserService {
     Boolean isExit(String id);
 
     List<RoleVO> queryRoleByUid(String id);
+
+    List<String> selectUserListByDeptId(String deptId);
 }
