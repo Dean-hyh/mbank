@@ -30,6 +30,7 @@
         <mybatis.paginator.version>1.2.15</mybatis.paginator.version>
         <mysql.version>5.1.32</mysql.version>
         <druid.version>1.0.9</druid.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
 
@@ -364,6 +365,14 @@
                     <include>**/*.conf</include>
                 </includes>
                 <filtering>false</filtering>
+            </resource>
+
+            <resource>
+                <directory>libs</directory>
+                <targetPath>dean-controller/src/main/resources/libs</targetPath>
+                <includes>
+                    <include>**/*.jar</include>
+                </includes>
             </resource>
         </resources>
     </build>

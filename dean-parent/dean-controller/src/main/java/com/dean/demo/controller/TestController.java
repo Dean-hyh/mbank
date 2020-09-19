@@ -1,10 +1,14 @@
 package com.dean.demo.controller;
 
 import com.dean.demo.BaseController;
+import com.dean.demo.enums.DbankExceptionEnum;
+import com.dean.demo.exception.DbankException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +19,7 @@ import java.util.Map;
  * @date 2019/11/21 17:13
  */
 @RestController
-@RequestMapping("/testCtrl")
+@RequestMapping("/thirdDream")
 public class TestController extends BaseController {
 
     @RequestMapping(value = "/one/{num}", method = RequestMethod.GET)
@@ -59,5 +63,32 @@ public class TestController extends BaseController {
     public ResponseEntity<Void> test2(@RequestParam("spbhList") List<String> str,@RequestParam("checkLogin")String isLogin) {
         System.out.println(str + isLogin);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+
+    private void printToFile(String date,String orderNo) {
+        FileOutputStream o = null;
+        String path="D:\\idea\\ideaSpace_bank\\bank\\src\\main\\resources\\file\\";
+        String filename=date+"_subOrder.txt";
+        System.out.println(filename);
+        byte[] buff;
+        try{
+            File file = new File(path+filename);
+            if(!file.exists()){
+                file.createNewFile();
+            }
+            buff=orderNo.getBytes();
+            o=new FileOutputStream(file,true);
+            o.write(buff);
+            o.write("\r\n".getBytes());
+            o.flush();
+            o.close();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @RequestMapping(value = "/test6",method = RequestMethod.GET)
+    public ResponseEntity<Void> test6(){
+        throw new DbankException(DbankExceptionEnum.INVALID_PARAM_ERROR);
     }
 }

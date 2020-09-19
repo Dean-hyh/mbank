@@ -2,5 +2,13 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="NO_ENCODING">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dean-parent/dean-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dean-parent/dean-controller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dean-parent/dean-controller/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dean-parent/dean-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dean-parent/dean-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dean-parent/dean-dao/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dean-parent/dean-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dean-parent/dean-service/src/main/resources" charset="UTF-8" />
   </component>
 </project>

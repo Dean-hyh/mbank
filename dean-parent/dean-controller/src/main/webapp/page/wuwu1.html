@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <title>Document</title>
+    <style>
+        input {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+<button id="btn1">查询</button>
+<div>
+    <input type="text" id="tz">
+    <button id="btn2">调增</button>
+</div>
+<div>
+    <input type="hidden" id="tj1" placeholder="商户调减交易订单号">
+    <input type="text" id="tj2" placeholder="交易描述"><br>
+    <input type="text" id="tj3" placeholder="减扣梦想值">
+    <input type="hidden" id="tj4" placeholder="交易日期">
+    <input type="hidden" id="tj5" placeholder="交易时间：HHmmssSSS">
+    <button id="btn3">调减</button>
+</div>
+
+<div>
+    <input type="text" id="cz">
+    <button id="btn4">查证</button>
+</div>
+
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/vsconsolelog.js"></script>
+<script>
+    btn1.onclick = function () {
+        Fw.Fun0({param1: "AAAAAA"},function(data){
+            console.log('查询成功');
+            console.log(data);
+        },function(err){
+            console.log(err)
+        });
+
+    };
+    btn2.onclick = function () {
+        var par = {
+            taskId: document.getElementById('tz').value
+        };
+        comm(par,2);
+
+    };
+    btn3.onclick = function () {
+        var par = {
+            dreamOrderNo: document.getElementById('tj1').value,
+            transDesc: document.getElementById('tj2').value,
+            dreamValue: document.getElementById('tj3').value,
+            transDate: document.getElementById('tj4').value,
+            transTime: document.getElementById('tj5').value
+        };
+        console.log(par);
+        comm(par,3);
+
+    };
+    btn4.onclick = function () {
+        var par = {
+            dreamOrderNo: document.getElementById('cz').value
+        };
+        comm(par,4);
+
+    };
+    function ajaxC(url,datatype,type,data,success,failure){
+        $.ajax({
+            //请求方式
+            type: type,
+            //请求的媒体类型
+            contentType: "application/json;charset=UTF-8",
+            //请求地址
+            url: url,
+            dataType: datatype,//回传的不为json
+            //jsonpCallback: 'demo',
+            //数据，json字符串
+            data: JSON.stringify(data),
+            //请求成功
+            success:success,
+            //请求失败，包含具体的错误信息
+            error:failure
+        });
+    }
+
+    function comm(param,flag) {
+        ajaxC("http://172.203.144.94:8082/thirdDream/demo",'text',"POST",param,function (result) {
+            console.log(result);
+            if(flag == 2){
+                Fw.Fun1({param1: "AAAAAA",params:result},function(data){
+                    console.log('调增成功');
+                    console.log(data);
+                },function (err) {
+                    console.log('调增失败');
+                    console.log(err);
+                });
+
+
+            }else if(flag == 3){
+                Fw.Fun2({param1: "AAAAAA",params:result},function(data){
+                    console.log('调减成功');
+                    console.log(data);
+                    var ruseltData1 = {
+                        "resp": data.respData
+                    };
+                    if(data.STATUS == 1){
+                        ajaxC("http://172.203.144.94:8082/thirdDream/demo",'json',"POST",ruseltData1,function (result){
+                            console.log(result);
+                        });
+                    }
+                },function (err) {
+                    console.log('调减失败');
+                    console.log(err);
+                });
+            }else if(flag == 4){
+                Fw.Fun3({param1: "AAAAAA",params:result},function(data){
+                    console.log('查证成功');
+                    console.log(data);
+                    var ruseltData2 = {
+                        "resp": data.respData
+                    };
+                    if(data.STATUS == 1){
+                        ajaxC("http://172.203.144.94:8082/thirdDream/demo",'json',"POST",ruseltData2,function (result){
+                            console.log(result);
+                        });
+                    }
+                },function(err){
+                    console.log('查证失败')
+                    console.log(err)
+                });
+            }
+
+        },function (e) {
+            console.log(e.status);
+            console.log(e.responseText);
+        })
+    }
+</script>
+
+</body>
+</html>

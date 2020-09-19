@@ -89,13 +89,4 @@
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
-
-    <servlet>
-        <servlet-name>testServlet</servlet-name>
-        <servlet-class>com.dean.demo.servlet.testServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>testServlet</servlet-name>
-        <url-pattern>/testServlet</url-pattern>
-    </servlet-mapping>
 </web-app>

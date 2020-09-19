@@ -46,7 +46,6 @@ public class MqService {
         start = System.currentTimeMillis();
         System.out.println("===connect===" + start + "======");
         qMgr = new MQQueueManager(MQ_MANAGER);
-        System.out.println("-----========---------");
     }
 
     public static void sendMsg(String msgStr) throws Exception {
@@ -62,7 +61,7 @@ public class MqService {
             msg.encoding = CCSID;
             msg.writeString(msgStr);
             MQPutMessageOptions pmo = new MQPutMessageOptions();
-            /*设置消息用不过期*/
+            /*设置消息永不过期*/
             msg.expiry = -1;
             /*将消息放入队列*/
             queue.put(msg, pmo);
@@ -146,13 +145,14 @@ public class MqService {
         }
     }
 
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         Map<String,Object> map = new HashMap<>();
         map.put("date","20200504");
         map.put("time","12110101");
         map.put("desc","折扣");
         map.put("value","10");
         map.put("serNo","1001");
+        map.put("task_id","T000000001");
         final String msg = JsonUtils.toString(map);
         try {
             sendMessageToMq(msg,3);
@@ -160,7 +160,7 @@ public class MqService {
             System.out.println("系统异常，数据入库" + JsonUtils.toMap(msg,String.class,Object.class));
             e.printStackTrace();
         }
-    }*/
+    }
 
    /* public static void main(String[] args) throws InterruptedException, TimeoutException {
         Map<String,Object> map = new HashMap<>();
@@ -285,7 +285,7 @@ public class MqService {
         testTimeOut();
     }*/
 
-    public static void errTest(){
+    /*public static void errTest(){
         throw new DbankException(DbankExceptionEnum.INVALID_PARAM_ERROR);
     }
 
@@ -296,5 +296,5 @@ public class MqService {
             System.out.println("捕获到了异常");
             System.out.println("异常信息：" + e.getMessage());
         }
-    }
+    }*/
 }

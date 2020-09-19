@@ -60,7 +60,7 @@ public class SendPostReqDemo {
     }
 
     public static void main(String[] args) {
-        String url = "https://mt.creditcard.cmbc.com.cn/mbank/credit/dreamPage/thirdDreamValueQuery.json";
+        String url = "https://mt.creditcard.cmbc.com.cn/mbank/credit/tripartitle/yxmfActList.json";
         Map<String, String> req = new HashMap<>();
         Map<String, Object> reqData = new HashMap<>();
         req.put("_isThirdLogin","cmbc_zx");

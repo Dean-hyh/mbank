@@ -102,12 +102,6 @@
           <element id="library" level="project" name="Maven: com.google.j2objc:j2objc-annotations:1.1" />
           <element id="library" level="project" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.14" />
           <element id="library" level="project" name="Maven: org.apache.storm:storm-starter:1.0.0" />
-          <element id="library" level="module" name="Maven: cn.dean:CFCADecryptKit-CMBC:1.0" module-name="dean-controller" />
-          <element id="library" level="module" name="Maven: cn.dean:cryptokit:1.0" module-name="dean-controller" />
-          <element id="library" level="module" name="Maven: cn.dean:logback:1.0" module-name="dean-controller" />
-          <element id="library" level="module" name="Maven: cn.dean:SADK-CMBCNew:1.0" module-name="dean-controller" />
-          <element id="library" level="module" name="Maven: com.alibaba:jconsole:1.8.0" module-name="dean-controller" />
-          <element id="library" level="module" name="Maven: com.alibaba:tools:1.8.0" module-name="dean-controller" />
         </element>
       </element>
       <element id="directory" name="META-INF">
