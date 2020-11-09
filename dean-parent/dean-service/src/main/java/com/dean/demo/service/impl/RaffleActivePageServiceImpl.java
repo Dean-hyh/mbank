@@ -44,7 +44,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2019/12/16 13:48
  */
 @Service
-public class RaffleActivePageServiceImpl implements RaffleActivePageService {
+public class RaffleActivePageServiceImpl implements RaffleActivePageService{
 
     @Autowired
     private SnowFlake snowFlake;
@@ -52,7 +52,7 @@ public class RaffleActivePageServiceImpl implements RaffleActivePageService {
     @Autowired
     private ResourceFileServiceImpl resourceFileService;
 
-    private static final String IMG_PATH = "D:\\idea\\ideaSpace_dynamicDbbank\\dbank\\dbank-parent\\dbank-web\\src\\main\\webapp\\WEB-INF\\img\\";
+    private static final String IMG_PATH = "D:\\idea\\ideaSpace_dynamicDbbank\\dean\\dean-parent\\dean-controller\\src\\main\\webapp\\WEB-INF\\img\\";
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
