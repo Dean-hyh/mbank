@@ -17,11 +17,12 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
     protected Object determineCurrentLookupKey() {
         // TODO Auto-generated method stub
         String dataSource = DataSourceContextHolder.getDataSource();
-        if (dataSource.equals("slave")) {
+        if ("slave".equals(dataSource)) {
             logger.info("===========执行读库操作===========");
-        }else if(dataSource.equals("master")){
+        }else if("master".equals(dataSource)){
             logger.info("===========执行修改数据库操作===========");
         }else {
+            dataSource="master";
             logger.info("===========未知数据源===========");
         }
         return dataSource;

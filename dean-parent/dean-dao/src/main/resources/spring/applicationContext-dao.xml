@@ -12,7 +12,7 @@
     <bean id="dynamicDataSourceAspect" class="com.dean.demo.advise.DataSourceAspect"/>
     <aop:config>
         <!--织入-->
-        <aop:aspect id="dataSourceAspect" ref="dynamicDataSourceAspect">
+        <aop:aspect id="dataSourceAspect" ref="dynamicDataSourceAspect" order="-1">
             <!--切点-->
             <aop:pointcut id="dataSourceCutPoint" expression="execution(* com.dean.demo.dao.*.*(..))"/>
             <aop:before pointcut-ref="dataSourceCutPoint" method="before"/>

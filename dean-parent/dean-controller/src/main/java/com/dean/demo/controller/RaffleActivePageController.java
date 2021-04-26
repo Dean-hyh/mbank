@@ -48,6 +48,7 @@ public class RaffleActivePageController extends BaseController {
             raffleActivePageService.addRafflePage(raffleActivePageDTO);
         } catch (Exception e) {
             logger.error(e.getMessage());
+            logger.info("抽奖活动添加异常,{}",e);
             throw new DbankException(DbankExceptionEnum.INSERT_OPERATION_FAIL);
         }
         logger.info("页面添加成功");

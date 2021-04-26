@@ -91,7 +91,7 @@
     }
 
     function comm(param,flag) {
-        ajaxC("http://172.203.144.94:8082/thirdDream/demo",'text',"POST",param,function (result) {
+        ajaxC("http://172.203.144.66:8082/thirdDream/demo",'text',"POST",param,function (result) {
             console.log(result);
             if(flag == 2){
                 Fw.Fun1({param1: "AAAAAA",params:result},function(data){
@@ -111,7 +111,7 @@
                         "resp": data.respData
                     };
                     if(data.STATUS == 1){
-                        ajaxC("http://172.203.144.94:8082/thirdDream/demo",'json',"POST",ruseltData1,function (result){
+                        ajaxC("http://172.203.144.66:8082/thirdDream/demo",'json',"POST",ruseltData1,function (result){
                             console.log(result);
                         });
                     }
@@ -127,7 +127,7 @@
                         "resp": data.respData
                     };
                     if(data.STATUS == 1){
-                        ajaxC("http://172.203.144.94:8082/thirdDream/demo",'json',"POST",ruseltData2,function (result){
+                        ajaxC("http://172.203.144.66:8082/thirdDream/demo",'json',"POST",ruseltData2,function (result){
                             console.log(result);
                         });
                     }

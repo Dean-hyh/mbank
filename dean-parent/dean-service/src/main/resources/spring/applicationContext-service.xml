@@ -28,8 +28,20 @@
     </bean>
 
     <!--开启声明式事务的注解支持-->
-    <tx:annotation-driven/>
+    <tx:annotation-driven transaction-manager="transactionManager" order="999"/>
+    <!--todo 事务与数据源动态切换AOP执行顺序-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager" >
+        <tx:attributes>
+            <tx:method name="add*" propagation="REQUIRED"/>
+            <tx:method name="delete*" propagation="REQUIRED"/>
+            <tx:method name="upload*" propagation="REQUIRED"/>
+            <tx:method name="get*" propagation="SUPPORTS"/>
+        </tx:attributes>
+    </tx:advice>
 
+    <aop:config proxy-target-class="true">
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.dean.demo.service.impl.*.*(..))"/>
+    </aop:config>
     <!--Mysql事务交给Spring管理-->
     <bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">

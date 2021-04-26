@@ -22,8 +22,8 @@ import java.util.Map;
 @RequestMapping("/thirdDream")
 public class TestController extends BaseController {
 
-    @RequestMapping(value = "/one/{num}", method = RequestMethod.GET)
-    public ResponseEntity<Map<String, Object>> testCtrl(@PathVariable("num") Integer num) {
+    @RequestMapping(value = "/one/{num}/{test}", method = RequestMethod.GET)
+    public ResponseEntity<Map<String, Object>> testCtrl(@PathVariable("num") Integer num ,@PathVariable("test") String test) {
         Map<String, Object> result = new HashMap<>();
         Map<String, Object> resp = new HashMap<>();
         if (num % 2 == 1) {
@@ -33,6 +33,7 @@ public class TestController extends BaseController {
             Map<Integer, Object> evenMap = getEvenResp(num);
             resp.put("方法2", evenMap);
         }
+        resp.put("test",test);
         result.put("输入的值是：", num);
         result.put("获取到的结果是：", resp);
         return ResponseEntity.ok(result);

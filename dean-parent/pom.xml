@@ -291,10 +291,11 @@
             <version>9.1.0.0</version>
         </dependency>
 
+        <!--多线程类库-->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>23.0</version>
+            <version>30.1-jre</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.storm/storm-starter -->

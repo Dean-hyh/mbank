@@ -1,5 +1,10 @@
 package com.dean.demo;
 
+import com.dean.demo.utils.JsonUtils;
+import net.sf.json.JSONObject;
+import org.junit.Test;
+
+import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.*;
 
@@ -67,5 +72,35 @@ public class TimeoutTest {
             // TODO: handle exception
         }
         return "获得方法执行后的返回值";
+    }
+
+    @Test
+    public void test7(){
+        String str = "{\n" +
+                "    \"code\":\"AAAAAA\",\n" +
+                "    \"response\":{\n" +
+                "        \"STATUS\":\"1\",\n" +
+                "        \"MSG\":\"交易完成\",\n" +
+                "        \"data\":{\n" +
+                "            \"A000000001\":{\n" +
+                "                \"taskProgress1\":\"0\",\n" +
+                "                \"taskProgress2\":\"1\",\n" +
+                "                \"taskIsCompleted\":\"0\"\n" +
+                "            },\n" +
+                "            \"A000000002\":{\n" +
+                "                \"taskProgress1\":\"1\",\n" +
+                "                \"taskProgress2\":\"1\",\n" +
+                "                \"taskIsCompleted\":\"1\"\n" +
+                "            },\n" +
+                "            \"A000000003\":{\n" +
+                "                \"taskProgress1\":\"500\",\n" +
+                "                \"taskProgress2\":\"1000\",\n" +
+                "                \"taskIsCompleted\":\"0\"\n" +
+                "            }\n" +
+                "        }\n" +
+                "    }\n" +
+                "}";
+        JSONObject jsonObject = JSONObject.fromObject(str);
+
     }
 }

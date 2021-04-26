@@ -60,10 +60,10 @@ public class SendPostReqDemo {
     }
 
     public static void main(String[] args) {
-        String url = "https://mt.creditcard.cmbc.com.cn/mbank/credit/tripartitle/yxmfActList.json";
+        String url = "https://mt.creditcard.cmbc.com.cn/mspay/third/payStatus.json";
         Map<String, String> req = new HashMap<>();
         Map<String, Object> reqData = new HashMap<>();
-        req.put("_isThirdLogin","cmbc_zx");
+        req.put("merchantCode","cmbc_zx");
         req.put("params","TUlJRlNBWUtLb0VjejFVR0FRUUNBNkNDQlRnd2dnVTBBZ0VDTVlHZE1JR2FBZ0VDZ0JRUWtLZ0pCYzBndlNkSXVvaWI5VnB1Mml0aDN6QU5CZ2tx\n" +
                 "Z1J6UFZRR0NMUU1GQUFSd0tTeVFBa0QzMWo5d280SHRUL1RpdjlaNWZKVWQ1czJKVm5vZE0vbmNSWmYvUE44TnhnNnN2Y2s3am45VENTYmJUc1lX\n" +
                 "Y3JHaE9mQnFjVnUrZW02STNXeWJzbkdxeUx4Snl2R0tKZnpqNFgwdW5FWkZUbXJYVVJWbkNNZ3RzL3prd0lLd1hvM2I1TGxOeUxJQXh4b1FhVEND\n" +
@@ -86,7 +86,7 @@ public class SendPostReqDemo {
                 "RDdjMTJxNmwySkd4ZmpNZ2xjTUIvVkNJWWcrVzFHemQrQjllbW5LT3Y5Vyt5Ui9pdGZSZ05JZTdQdk1IY2lXRTVIb243akx5WC9PTFQrMzBBVUpv\n" +
                 "bU5QVUZ1bFJPSHdWTVFtRXh6Y2JVd0RtVEl2U05mOFVHajVkbS9vbXdzUUNZWERva1pTaUU1ZGc2WVJxZ3k0VmszanVmaDRPV3Zub0xKemNZRFZy\n" +
                 "eUpFZ0paMmpLcUdMQUVuMFh0bFBQQVkreFlBOHdGdmovTTRFM3hJbzV1bG0=");
-        req.put("method","refund");
+        req.put("method","payStatus");
         reqData.put("cmbcReq",req);
         final String request = JSON.toJSONString(reqData);
         final String status = doHttpPost(request, url);
