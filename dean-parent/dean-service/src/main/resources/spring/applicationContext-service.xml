@@ -13,6 +13,7 @@
     <!--配置要扫描的包-->
     <context:component-scan base-package="com.dean.demo.service.impl"/>
     <context:component-scan base-package="com.dean.demo.service.config"/>
+    <context:component-scan base-package="com.dean.demo.service.kafka"/>
 
     <!--加载配置文件方式1-->
     <!--<context:property-placeholder location="classpath:config/SnowFlake.properties"/>-->
